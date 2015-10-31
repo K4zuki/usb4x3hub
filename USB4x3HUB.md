@@ -1,3 +1,4 @@
+# BOM list for `r1` schematic:
 | Part | Value             | Vendor  | Description                                    | Link / DigiKey number                          |
 |:-----|:------------------|:--------|:-----------------------------------------------|:-----------------------------------------------|
 | C1   | 0.1uF             | DigiKey | 1005metric MLCC                                | 490-3261-1-ND                                  |
