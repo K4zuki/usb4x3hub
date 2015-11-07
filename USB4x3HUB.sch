@@ -4153,6 +4153,7 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.8" layer="51"/>
 <rectangle x1="-0.625" y1="0.925" x2="-0.3" y2="1" layer="51"/>
 <circle x="0" y="2.3" radius="0.1" width="0.4" layer="21"/>
+<rectangle x1="-0.2" y1="2.1" x2="0.2" y2="2.5" layer="21"/>
 </package>
 <package name="CHIPLED_1206">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
