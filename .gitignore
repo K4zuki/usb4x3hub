@@ -5,6 +5,8 @@
 *.dri
 *.gpi
 
+*/.hg
+*/.hg/*
 =======
 # Compiled Object files
 *.slo
