@@ -14,7 +14,7 @@
 | X2/3                   | C-08593           | 2   | AKIZUKI | 2.54 x 2p Pin-header                           | [C-08593][r01_C-08593]                 |
 | **DigiKey**            |                   |     |         |                                                |                                        |
 | C1/2/3/4/13            | 0.1uF             | 5   | DigiKey | 1005metric MLCC                                | 490-3261-1-ND                          |
-| CON1/2/3/4             | 47589-0001        | 4   | DigiKey | MOLEX USB microB Connector                     | WM17143CT-ND                           |
+| CON1/2/3/4             | 47589-0001        | 4   | DigiKey | MOLEX USB microAB Connector                    | WM17143CT-ND                           |
 | IC1                    | TUSB2036          | 1   | DigiKey | 2 or 3-port USB2.0 HUB IC                      | 296-27129-1-ND                         |
 | IC2                    | FSUSB74           | 1   | DigiKey | USB 1 to 4 Multiplexer                         | FSUSB74MPX-ND                          |
 | IC3/4/5                | TPS2041C          | 3   | DigiKey | USB current switch                             | 296-35520-1-ND                         |
