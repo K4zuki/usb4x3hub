@@ -2673,6 +2673,11 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="DIGIKEY" value="P15.0KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 </technology>
+<technology name="220R">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
 <technology name="270R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
@@ -6253,7 +6258,7 @@ SW4 = P0_10
 <instance part="SW1" gate="G$1" x="233.68" y="76.2"/>
 <instance part="SUPPLY1" gate="GND" x="35.56" y="210.82"/>
 <instance part="SUPPLY2" gate="GND" x="147.32" y="137.16"/>
-<instance part="SUPPLY3" gate="GND" x="157.48" y="106.68"/>
+<instance part="SUPPLY3" gate="GND" x="160.02" y="106.68"/>
 <instance part="SUPPLY4" gate="GND" x="127" y="154.94" rot="R90"/>
 <instance part="X1" gate="-1" x="142.24" y="53.34" rot="MR0"/>
 <instance part="X1" gate="-2" x="142.24" y="50.8" rot="MR0"/>
@@ -6273,7 +6278,7 @@ SW4 = P0_10
 <instance part="C1" gate="G$1" x="152.4" y="144.78"/>
 <instance part="C2" gate="G$1" x="147.32" y="144.78"/>
 <instance part="C3" gate="G$1" x="119.38" y="157.48"/>
-<instance part="C4" gate="G$1" x="157.48" y="114.3"/>
+<instance part="C4" gate="G$1" x="160.02" y="114.3"/>
 <instance part="SUPPLY11" gate="GND" x="322.58" y="241.3" rot="R90"/>
 <instance part="SUPPLY12" gate="GND" x="327.66" y="213.36" rot="R90"/>
 <instance part="SUPPLY13" gate="GND" x="332.74" y="187.96" rot="R90"/>
@@ -6360,9 +6365,12 @@ SW4 = P0_10
 <instance part="SUPPLY34" gate="GND" x="261.62" y="15.24"/>
 <instance part="SUPPLY35" gate="GND" x="266.7" y="15.24"/>
 <instance part="SUPPLY32" gate="GND" x="218.44" y="124.46"/>
-<instance part="Q1" gate="G$1" x="154.94" y="119.38"/>
-<instance part="C21" gate="G$1" x="152.4" y="114.3" rot="MR0"/>
-<instance part="SUPPLY36" gate="GND" x="152.4" y="106.68"/>
+<instance part="Q1" gate="G$1" x="154.94" y="119.38" smashed="yes">
+<attribute name="NAME" x="154.94" y="121.92" size="1.778" layer="95"/>
+<attribute name="VALUE" x="157.48" y="120.142" size="1.016" layer="96"/>
+</instance>
+<instance part="C21" gate="G$1" x="149.86" y="114.3" rot="MR0"/>
+<instance part="SUPPLY36" gate="GND" x="149.86" y="106.68"/>
 <instance part="R35" gate="G$1" x="162.56" y="154.94"/>
 <instance part="R36" gate="G$1" x="162.56" y="152.4"/>
 <instance part="R37" gate="G$1" x="162.56" y="149.86"/>
@@ -6554,10 +6562,11 @@ SW4 = P0_10
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="157.48" y1="109.22" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="109.22" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="Q1" gate="G$1" pin="P$2"/>
-<junction x="157.48" y="111.76"/>
+<junction x="160.02" y="111.76"/>
+<wire x1="160.02" y1="111.76" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
@@ -6752,8 +6761,9 @@ SW4 = P0_10
 <pinref part="Q1" gate="G$1" pin="P$1"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
-<wire x1="152.4" y1="109.22" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
-<junction x="152.4" y="111.76"/>
+<wire x1="149.86" y1="109.22" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
+<junction x="149.86" y="111.76"/>
+<wire x1="149.86" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -6867,10 +6877,11 @@ SW4 = P0_10
 <segment>
 <pinref part="IC1" gate="G$1" pin="XTAL1/CLK48"/>
 <pinref part="Q1" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="119.38" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="116.84" x2="157.48" y2="119.38" width="0.1524" layer="91"/>
-<junction x="157.48" y="119.38"/>
+<wire x1="160.02" y1="119.38" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
+<junction x="160.02" y="119.38"/>
+<wire x1="160.02" y1="116.84" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -7494,11 +7505,12 @@ SW4 = P0_10
 <segment>
 <pinref part="IC1" gate="G$1" pin="XTAL2"/>
 <pinref part="Q1" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="124.46" x2="152.4" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="124.46" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="116.84" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
-<junction x="152.4" y="119.38"/>
+<wire x1="149.86" y1="116.84" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="119.38" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
+<junction x="149.86" y="119.38"/>
 </segment>
 </net>
 <net name="N$60" class="0">
