@@ -81,7 +81,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 /.project
->>>>>>> mbed
 
 *.pdf
 pcb/tinyI2C_P.top.png
+.~*#
