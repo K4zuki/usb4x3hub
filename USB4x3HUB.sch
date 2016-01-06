@@ -362,7 +362,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="1.45" y1="-1.45" x2="1.45" y2="-1.15" width="0.2" layer="21"/>
 <wire x1="-1.15" y1="-1.45" x2="-1.45" y2="-1.45" width="0.2" layer="21"/>
 <wire x1="-1.45" y1="-1.45" x2="-1.45" y2="-1.15" width="0.2" layer="21"/>
-<circle x="-1.7" y="1.7" radius="0.1" width="0.2" layer="21"/>
+<circle x="-1.9" y="1.9" radius="0.1" width="0.2" layer="21"/>
 <text x="0" y="0" size="1.27" layer="25" ratio="20" align="center">&gt;NAME</text>
 <rectangle x1="-0.95" y1="1.05" x2="-0.55" y2="1.95" layer="29"/>
 <rectangle x1="-0.45" y1="1.05" x2="-0.05" y2="1.95" layer="29"/>
@@ -421,6 +421,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="0.25" y1="1.75" x2="0.25" y2="1.25" width="0.2" layer="31"/>
 <wire x1="-0.25" y1="1.75" x2="-0.25" y2="1.25" width="0.2" layer="31"/>
 <wire x1="-0.75" y1="1.75" x2="-0.75" y2="1.25" width="0.2" layer="31"/>
+<circle x="-1.9" y="1.9" radius="0.2" width="0.2" layer="21"/>
 </package>
 <package name="CON_USB_B_SHIELD">
 <description>&lt;b&gt;USB B TYPE SINGLE R/A DIP&lt;/b&gt; With Rear Shell, Without Rear Shell&lt;p&gt;
@@ -842,14 +843,14 @@ Created by Robert Siegler &amp;lt;rs@kmp-ag.de&amp;gt;</description>
 <pad name="2" x="10.75" y="-4.8" drill="0.8" diameter="2.5" shape="long" rot="R180"/>
 <text x="-0.69" y="-6.35" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <text x="0.58" y="5.08" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
-<wire x1="7.35" y1="-1.35" x2="7.35" y2="1.35" width="0.5" layer="46"/>
-<wire x1="7.65" y1="-1.35" x2="7.65" y2="1.35" width="0.5" layer="46"/>
-<wire x1="7.35" y1="1.35" x2="7.65" y2="1.35" width="0.5" layer="46" curve="-180"/>
-<wire x1="7.65" y1="-1.35" x2="7.35" y2="-1.35" width="0.5" layer="46" curve="-180"/>
-<wire x1="12.1" y1="-4.65" x2="9.4" y2="-4.65" width="0.5" layer="46"/>
-<wire x1="12.1" y1="-4.95" x2="9.4" y2="-4.95" width="0.5" layer="46"/>
-<wire x1="9.4" y1="-4.95" x2="9.4" y2="-4.65" width="0.5" layer="46" curve="-180"/>
-<wire x1="12.1" y1="-4.65" x2="12.1" y2="-4.95" width="0.5" layer="46" curve="-180"/>
+<wire x1="7.35" y1="-1.1" x2="7.35" y2="1.1" width="0.5" layer="46"/>
+<wire x1="7.65" y1="-1.1" x2="7.65" y2="1.1" width="0.5" layer="46"/>
+<wire x1="7.35" y1="1.1" x2="7.65" y2="1.1" width="0.5" layer="46" curve="-180"/>
+<wire x1="7.65" y1="-1.1" x2="7.35" y2="-1.1" width="0.5" layer="46" curve="-180"/>
+<wire x1="11.85" y1="-4.65" x2="9.65" y2="-4.65" width="0.5" layer="46"/>
+<wire x1="11.85" y1="-4.95" x2="9.65" y2="-4.95" width="0.5" layer="46"/>
+<wire x1="9.65" y1="-4.95" x2="9.65" y2="-4.65" width="0.5" layer="46" curve="-180"/>
+<wire x1="11.85" y1="-4.65" x2="11.85" y2="-4.95" width="0.5" layer="46" curve="-180"/>
 <wire x1="13.5" y1="-1.3" x2="13.5" y2="1.3" width="0.5" layer="46"/>
 <wire x1="14" y1="-1.3" x2="14" y2="1.3" width="0.5" layer="46"/>
 <wire x1="13.5" y1="1.3" x2="14" y2="1.3" width="0.5" layer="46" curve="-180"/>
@@ -863,6 +864,9 @@ Created by Robert Siegler &amp;lt;rs@kmp-ag.de&amp;gt;</description>
 <wire x1="8" y1="-4.5" x2="13.5" y2="-4.5" width="0.2" layer="51"/>
 <wire x1="14.3" y1="2.8" x2="14.3" y2="-2.8" width="0.2" layer="51"/>
 <wire x1="3.5" y1="4.5" x2="3.5" y2="-4.5" width="0.1" layer="51"/>
+<wire x1="7.5" y1="1.1" x2="7.5" y2="-1.1" width="0.8" layer="51"/>
+<wire x1="9.65" y1="-4.8" x2="11.85" y2="-4.8" width="0.8" layer="51"/>
+<wire x1="13.75" y1="1.3" x2="13.75" y2="-1.3" width="1" layer="51"/>
 </package>
 <package name="IC_SOT223">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -1757,7 +1761,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <package name="TP06RECT">
 <description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
 <smd name="TP" x="0" y="0" dx="0.4" dy="0.6" layer="1" stop="no" cream="no"/>
-<text x="0" y="0" size="1.2" layer="25" ratio="17" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.2" layer="49" ratio="17" align="center">&gt;NAME</text>
 <text x="-0.254" y="-0.381" size="0.0254" layer="27">&gt;VALUE</text>
 <text x="0" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
 <rectangle x1="-0.25" y1="-0.35" x2="0.25" y2="0.35" layer="29"/>
@@ -1775,23 +1779,6 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="2" y1="-2" x2="-2" y2="-2" width="0.2" layer="1"/>
 <wire x1="-2" y1="-2" x2="-2" y2="2" width="0.2" layer="1"/>
 </package>
-<package name="TP_1608">
-<smd name="TP" x="0" y="0" dx="1.8" dy="1" layer="1" stop="no" cream="no"/>
-<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.2" layer="51"/>
-<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.2" layer="51"/>
-<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.2" layer="51"/>
-<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.2" layer="51"/>
-<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.2" layer="21"/>
-<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.2" layer="21"/>
-<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.2" layer="21"/>
-<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.2" layer="21"/>
-<rectangle x1="-0.95" y1="-0.55" x2="0.95" y2="0.55" layer="29"/>
-<wire x1="-0.65" y1="0.25" x2="0.65" y2="0.25" width="0.4" layer="31"/>
-<wire x1="0.65" y1="0.25" x2="0.65" y2="-0.25" width="0.4" layer="31"/>
-<wire x1="0.65" y1="-0.25" x2="-0.65" y2="-0.25" width="0.4" layer="31"/>
-<wire x1="-0.65" y1="-0.25" x2="-0.65" y2="0.25" width="0.4" layer="31"/>
-<rectangle x1="-0.65" y1="-0.25" x2="0.65" y2="0.25" layer="31"/>
-</package>
 <package name="TP_4020">
 <smd name="TP" x="0" y="0" dx="3.8" dy="2" layer="1" stop="no" cream="no"/>
 <wire x1="-1.65" y1="0.75" x2="1.65" y2="0.75" width="0.4" layer="31"/>
@@ -1804,6 +1791,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="2.1" y1="1.2" x2="2.1" y2="-1.2" width="0.2" layer="21"/>
 <wire x1="2.1" y1="-1.2" x2="-2.1" y2="-1.2" width="0.2" layer="21"/>
 <wire x1="-2.1" y1="-1.2" x2="-2.1" y2="1.2" width="0.2" layer="21"/>
+<text x="0" y="0" size="1" layer="49" ratio="20" align="center">&gt;NAME</text>
 </package>
 <package name="ICON_REVISION2.0">
 <text x="0" y="0" size="2" layer="21" font="vector" ratio="10" align="center">&gt;VALUE</text>
@@ -1952,6 +1940,24 @@ grid 7.62 mm, diameter 18 mm</description>
 <rectangle x1="-1.5" y1="1.6" x2="-1.1" y2="2" layer="21"/>
 <circle x="-1.3" y="1.8" radius="0.2" width="0.2" layer="21"/>
 </package>
+<package name="TP_1608">
+<smd name="TP" x="0" y="0" dx="1.8" dy="1" layer="1" stop="no" cream="no"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.2" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.2" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.2" layer="51"/>
+<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.2" layer="21"/>
+<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.2" layer="21"/>
+<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.2" layer="21"/>
+<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.2" layer="21"/>
+<rectangle x1="-0.95" y1="-0.55" x2="0.95" y2="0.55" layer="29"/>
+<wire x1="-0.65" y1="0.25" x2="0.65" y2="0.25" width="0.4" layer="31"/>
+<wire x1="0.65" y1="0.25" x2="0.65" y2="-0.25" width="0.4" layer="31"/>
+<wire x1="0.65" y1="-0.25" x2="-0.65" y2="-0.25" width="0.4" layer="31"/>
+<wire x1="-0.65" y1="-0.25" x2="-0.65" y2="0.25" width="0.4" layer="31"/>
+<rectangle x1="-0.65" y1="-0.25" x2="0.65" y2="0.25" layer="31"/>
+<text x="0" y="0" size="1" layer="49" ratio="20" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -2015,6 +2021,72 @@ grid 7.62 mm, diameter 18 mm</description>
 <pin name="NC" x="12.7" y="-17.78" length="short" direction="nc" rot="R180"/>
 <text x="0" y="20.32" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-20.32" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-8.89" x2="-1.27" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-10.16" x2="-1.27" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-12.7" x2="-1.27" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-15.24" x2="-1.27" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-17.78" x2="-1.27" y2="-19.05" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-19.05" x2="1.27" y2="-16.51" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-16.51" x2="1.27" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-13.97" x2="1.27" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-6.35" x2="1.27" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.81" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-8.89" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="1.27" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-8.89" x2="1.27" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-5.08" x2="-1.27" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.81" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.81" x2="3.81" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-3.81" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="4.572" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-10.16" x2="-1.27" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-12.7" x2="-1.27" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-15.24" x2="-1.27" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-17.78" x2="-1.27" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-13.97" x2="2.54" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-13.97" x2="3.81" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-13.97" x2="3.81" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="4.572" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="12.7" x2="0" y2="1.524" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="1.524" x2="0" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="0" x2="0" y2="-8.89" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="-8.89" x2="0" y2="-10.16" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="0" x2="-0.508" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.524" x2="0" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0" y1="1.524" x2="0.508" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.508" y1="1.524" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="-0.508" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-8.89" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-8.89" x2="0" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="0" y1="-8.89" x2="0.508" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="17.78" x2="2.54" y2="17.78" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="17.78" x2="2.54" y2="-2.286" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="-2.286" x2="2.54" y2="-3.81" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-12.446" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="-12.446" x2="2.54" y2="-13.97" width="0.254" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="-3.81" x2="2.032" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-2.286" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-2.286" x2="2.54" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.286" x2="3.048" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-13.97" x2="2.032" y2="-12.446" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-12.446" x2="2.54" y2="-13.97" width="0.254" layer="94"/>
+<wire x1="2.032" y1="-12.446" x2="2.54" y2="-12.446" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-12.446" x2="3.048" y2="-12.446" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="6.35" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="5.08" size="1.27" layer="94">2</text>
 </symbol>
 <symbol name="CON_USB">
 <wire x1="-10.16" y1="7.366" x2="-10.16" y2="-7.366" width="0.254" layer="94"/>
@@ -2261,8 +2333,8 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="0.9525" y1="0" x2="0.9525" y2="-1.905" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-0.9525" y2="0" width="0.1524" layer="94"/>
 <wire x1="0.9525" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="2.54" y="0.762" size="1.016" layer="96">&gt;VALUE</text>
+<text x="0" y="2.54" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.016" layer="96" align="center">&gt;VALUE</text>
 <rectangle x1="-2.8575" y1="-0.3175" x2="-2.2225" y2="0.3175" layer="94" rot="R90"/>
 <rectangle x1="2.2225" y1="-0.3175" x2="2.8575" y2="0.3175" layer="94" rot="R90"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
@@ -2795,46 +2867,55 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="0.1U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-3261-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="302010024 " constant="no"/>
 </technology>
 <technology name="1.0U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-3890-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="302010040 " constant="no"/>
 </technology>
 <technology name="10P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-5921-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="302010001 " constant="no"/>
 </technology>
 <technology name="10U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="81-GRM155R60J106ME4D" constant="no"/>
+<attribute name="SEEED" value="302010053 " constant="no"/>
 </technology>
 <technology name="12P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="302010049 " constant="no"/>
 </technology>
 <technology name="18P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-5858-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="302010016 " constant="no"/>
 </technology>
 <technology name="2.2U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="4.7U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="302010019 " constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2933,56 +3014,67 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="1.0K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P1.00KLCT-ND " constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010006 " constant="no"/>
 </technology>
 <technology name="1.5K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P1.50KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010001 " constant="no"/>
 </technology>
 <technology name="100R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P100LCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010028 " constant="no"/>
 </technology>
 <technology name="10K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P10.0KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010047 " constant="no"/>
 </technology>
 <technology name="15K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P15.0KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010042 " constant="no"/>
 </technology>
 <technology name="220R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010550 " constant="no"/>
 </technology>
 <technology name="270R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="33R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P33.0LCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010609 " constant="no"/>
 </technology>
 <technology name="4.7K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P4.70KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010010 " constant="no"/>
 </technology>
 <technology name="75R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="301010058 " constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3046,21 +3138,25 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="12M">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="1253-1168-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="16M">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="306010078 " constant="no"/>
 </technology>
 <technology name="48M">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="1253-1227-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6395,10 +6491,7 @@ SW4 = P0_10
 <instance part="SUPPLY34" gate="GND" x="261.62" y="15.24"/>
 <instance part="SUPPLY35" gate="GND" x="266.7" y="15.24"/>
 <instance part="SUPPLY32" gate="GND" x="226.06" y="124.46"/>
-<instance part="Q1" gate="G$1" x="162.56" y="119.38" smashed="yes">
-<attribute name="NAME" x="162.56" y="121.92" size="1.778" layer="95"/>
-<attribute name="VALUE" x="165.1" y="120.142" size="1.016" layer="96"/>
-</instance>
+<instance part="Q1" gate="G$1" x="162.56" y="119.38"/>
 <instance part="C21" gate="G$1" x="157.48" y="114.3" rot="MR0"/>
 <instance part="SUPPLY36" gate="GND" x="157.48" y="106.68"/>
 <instance part="R35" gate="G$1" x="167.64" y="154.94"/>
