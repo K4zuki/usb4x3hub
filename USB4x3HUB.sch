@@ -540,26 +540,10 @@ Source: http://www.cypressindustries.com/pdf/85-32004-00x.pdf</description>
 <smd name="2" x="-0.65" y="4.15" dx="0.4" dy="1.4" layer="1" stop="no" cream="no"/>
 <smd name="1" x="-1.3" y="4.15" dx="0.4" dy="1.4" layer="1" stop="no" cream="no"/>
 <smd name="5" x="1.3" y="4.15" dx="0.4" dy="1.4" layer="1" stop="no" cream="no"/>
-<polygon width="0.5" layer="46">
-<vertex x="-4.25" y="1"/>
-<vertex x="-4.25" y="1.9" curve="-90"/>
-<vertex x="-4.2" y="1.95" curve="-90"/>
-<vertex x="-4.15" y="1.9"/>
-<vertex x="-4.15" y="1" curve="-90"/>
-<vertex x="-4.2" y="0.95" curve="-90"/>
-</polygon>
 <wire x1="3.8" y1="0" x2="-3.8" y2="0" width="0.1" layer="51"/>
 <wire x1="-3.8" y1="0" x2="-4.7" y2="0" width="0.1" layer="48"/>
 <pad name="SHD" x="-2.2" y="4.45" drill="0.6" diameter="0.95" shape="long" rot="R90"/>
 <pad name="SHD$1" x="2.2" y="4.45" drill="0.6" diameter="0.95" shape="long" rot="R90"/>
-<polygon width="0.5" layer="46">
-<vertex x="4.15" y="1"/>
-<vertex x="4.15" y="1.9" curve="-90"/>
-<vertex x="4.2" y="1.95" curve="-90"/>
-<vertex x="4.25" y="1.9"/>
-<vertex x="4.25" y="1" curve="-90"/>
-<vertex x="4.2" y="0.95" curve="-90"/>
-</polygon>
 <wire x1="-4" y1="-0.7" x2="4" y2="-0.7" width="0.1" layer="51"/>
 <wire x1="-4" y1="-0.7" x2="-3.8" y2="0" width="0.1" layer="51"/>
 <wire x1="4" y1="-0.7" x2="3.8" y2="0" width="0.1" layer="51"/>
@@ -648,6 +632,8 @@ Source: http://www.cypressindustries.com/pdf/85-32004-00x.pdf</description>
 <wire x1="4.45" y1="2.15" x2="4.45" y2="0.75" width="0.4" layer="31"/>
 <wire x1="4.45" y1="0.75" x2="2.85" y2="0.75" width="0.4" layer="31"/>
 <wire x1="2.85" y1="0.75" x2="2.85" y2="2.15" width="0.4" layer="31"/>
+<wire x1="-4.2" y1="1.9" x2="-4.2" y2="1" width="0.6" layer="46"/>
+<wire x1="4.2" y1="1.9" x2="4.2" y2="1" width="0.6" layer="46"/>
 </package>
 <package name="IC_05_0.95_50MIL">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;&lt;p&gt;
@@ -3114,7 +3100,7 @@ grid 7.62 mm, diameter 18 mm</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="296-18203-1-ND" constant="no"/>
+<attribute name="DIGIKEY" value="296-18235-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6271,7 +6257,7 @@ Source: www.kingbright.com</description>
 <part name="ICON1" library="mylib" deviceset="ICON_OSHW" device="" value="OSHW"/>
 <part name="ICON2" library="mylib" deviceset="ICON_REVISION" device="_2.0" value="r0.3"/>
 <part name="TP3" library="mylib" deviceset="TESTPAD" device=""/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="" value="215f3cd"/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="" value="942afa9"/>
 <part name="TP1" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="TP2" library="mylib" deviceset="TESTPAD" device="_4020"/>
 </parts>
