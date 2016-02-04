@@ -3216,7 +3216,7 @@ grid 7.62 mm, diameter 18 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CLOCK_OSC_4" prefix="Q">
+<deviceset name="OSC4_*" prefix="Q">
 <gates>
 <gate name="G$1" symbol="OSC_4P" x="0" y="0"/>
 </gates>
@@ -3229,7 +3229,15 @@ grid 7.62 mm, diameter 18 mm</description>
 <connect gate="G$1" pin="VCC@2" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+</technology>
+<technology name="48M">
+<attribute name="DIGIKEY" value="887-2327-1-ND" constant="no"/>
+</technology>
+<technology name="6.0M">
+<attribute name="DIGIKEY" value="CTX974CT-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6158,7 +6166,7 @@ Source: www.kingbright.com</description>
 <part name="R44" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R45" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R42" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="Q1" library="mylib" deviceset="CLOCK_OSC_4" device=""/>
+<part name="Q1" library="mylib" deviceset="OSC4_*" device="" technology="6.0M" value="OSC4_6.0M"/>
 <part name="SUPPLY32" library="mylib" deviceset="GND" device=""/>
 <part name="TP3" library="mylib" deviceset="TESTPAD" device=""/>
 <part name="C4" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
@@ -6401,7 +6409,9 @@ IC1(4) = P0_13</text>
 <instance part="R44" gate="G$1" x="167.64" y="132.08"/>
 <instance part="R45" gate="G$1" x="167.64" y="129.54"/>
 <instance part="R42" gate="G$1" x="101.6" y="71.12"/>
-<instance part="Q1" gate="G$1" x="152.4" y="114.3"/>
+<instance part="Q1" gate="G$1" x="152.4" y="114.3">
+<attribute name="DIGIKEY" x="137.16" y="101.6" size="1.778" layer="96" display="both"/>
+</instance>
 <instance part="SUPPLY32" gate="GND" x="134.62" y="106.68"/>
 <instance part="TP3" gate="1" x="167.64" y="124.46" rot="R180"/>
 <instance part="C4" gate="G$1" x="134.62" y="111.76"/>
