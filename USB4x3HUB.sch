@@ -3198,7 +3198,7 @@ grid 7.62 mm, diameter 18 mm</description>
 </technology>
 </technologies>
 </device>
-<device name="DRJ" package="DFN80P410X410_8N">
+<device name="_DRJ" package="DFN80P410X410_8N">
 <connects>
 <connect gate="G$1" pin="ADJ" pad="1"/>
 <connect gate="G$1" pin="IN" pad="2 3 4"/>
@@ -3207,11 +3207,15 @@ grid 7.62 mm, diameter 18 mm</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="ADIGIKEY" value="" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="3.3">
+<attribute name="DIGIKEY" value="296-32364-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 </technology>
 <technology name="5.0">
-<attribute name="ADIGIKEY" value="" constant="no"/>
+<attribute name="DIGIKEY" value="296-19663-1-ND" constant="no"/>
 <attribute name="MOUSER" value="595-TLV1117-50CDRJR" constant="no"/>
 </technology>
 </technologies>
@@ -6148,7 +6152,6 @@ Source: www.kingbright.com</description>
 <part name="C12" library="mylib" deviceset="C_SMD_*" device="_2012" technology="4.7U"/>
 <part name="C13" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
 <part name="SUPPLY17" library="mylib" deviceset="GND" device=""/>
-<part name="C14" library="mylib" deviceset="C_SMD_*" device="_2012" technology="4.7U"/>
 <part name="C15" library="mylib" deviceset="C_SMD_*" device="_2012" technology="4.7U"/>
 <part name="C16" library="mylib" deviceset="C_SMD_*" device="_2012" technology="4.7U"/>
 <part name="R1" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K"/>
@@ -6215,10 +6218,10 @@ Source: www.kingbright.com</description>
 <part name="R35" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R36" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R37" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="IC6" library="mylib" deviceset="LDO4_*" device="_SOT223" technology="3.3" value="3.3V"/>
-<part name="IC7" library="mylib" deviceset="LDO4_*" device="_SOT223" technology="5.0" value="5V"/>
-<part name="IC8" library="mylib" deviceset="LDO4_*" device="_SOT223" technology="5.0" value="5V"/>
-<part name="IC9" library="mylib" deviceset="LDO4_*" device="_SOT223" technology="5.0" value="5V"/>
+<part name="IC6" library="mylib" deviceset="LDO4_*" device="_DRJ" technology="3.3" value="3.3V"/>
+<part name="IC7" library="mylib" deviceset="LDO4_*" device="_DRJ" technology="5.0" value="5V"/>
+<part name="IC8" library="mylib" deviceset="LDO4_*" device="_DRJ" technology="5.0" value="5V"/>
+<part name="IC9" library="mylib" deviceset="LDO4_*" device="_DRJ" technology="5.0" value="5V"/>
 <part name="R38" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="TP100" library="mylib" deviceset="TESTPAD" device="_F"/>
 <part name="TP101" library="mylib" deviceset="TESTPAD" device="_F"/>
@@ -6251,6 +6254,7 @@ Source: www.kingbright.com</description>
 <part name="R45" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R46" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R47" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
+<part name="C14" library="mylib" deviceset="C_SMD_*" device="_2012" technology="4.7U"/>
 </parts>
 <sheets>
 <sheet>
@@ -6391,7 +6395,6 @@ SW4 = P0_10
 <instance part="C12" gate="G$1" x="35.56" y="218.44"/>
 <instance part="C13" gate="G$1" x="175.26" y="76.2" rot="R270"/>
 <instance part="SUPPLY17" gate="GND" x="182.88" y="76.2" rot="R90"/>
-<instance part="C14" gate="G$1" x="317.5" y="243.84"/>
 <instance part="C15" gate="G$1" x="322.58" y="215.9"/>
 <instance part="C16" gate="G$1" x="327.66" y="190.5"/>
 <instance part="R1" gate="G$1" x="160.02" y="45.72"/>
@@ -6507,6 +6510,7 @@ SW4 = P0_10
 <instance part="R45" gate="G$1" x="236.22" y="165.1"/>
 <instance part="R46" gate="G$1" x="261.62" y="152.4"/>
 <instance part="R47" gate="G$1" x="299.72" y="139.7"/>
+<instance part="C14" gate="G$1" x="58.42" y="218.44"/>
 </instances>
 <busses>
 </busses>
@@ -6596,11 +6600,8 @@ SW4 = P0_10
 <pinref part="CON5" gate="G$1" pin="VCC"/>
 <wire x1="304.8" y1="246.38" x2="312.42" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="312.42" y1="246.38" x2="317.5" y2="246.38" width="0.1524" layer="91"/>
 <junction x="312.42" y="246.38"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="317.5" y1="246.38" x2="353.06" y2="246.38" width="0.1524" layer="91"/>
-<junction x="317.5" y="246.38"/>
+<wire x1="312.42" y1="246.38" x2="353.06" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -6681,6 +6682,11 @@ SW4 = P0_10
 <junction x="35.56" y="213.36"/>
 <wire x1="35.56" y1="213.36" x2="35.56" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="IC6" gate="G$1" pin="ADJ"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="215.9" x2="58.42" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="210.82" x2="48.26" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="210.82" x2="48.26" y2="213.36" width="0.1524" layer="91"/>
+<junction x="48.26" y="213.36"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
@@ -6740,13 +6746,10 @@ SW4 = P0_10
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<wire x1="320.04" y1="241.3" x2="317.5" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="317.5" y1="241.3" x2="312.42" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="241.3" x2="312.42" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="241.3" x2="304.8" y2="241.3" width="0.1524" layer="91"/>
 <junction x="312.42" y="241.3"/>
-<pinref part="C14" gate="G$1" pin="2"/>
-<junction x="317.5" y="241.3"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="GND"/>
@@ -6924,13 +6927,11 @@ SW4 = P0_10
 <net name="3.3V" class="0">
 <segment>
 <wire x1="55.88" y1="220.98" x2="58.42" y2="220.98" width="0.1524" layer="91"/>
+<label x="66.04" y="220.98" size="1.778" layer="95"/>
+<pinref part="IC6" gate="G$1" pin="OUT"/>
+<pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="220.98" x2="66.04" y2="220.98" width="0.1524" layer="91"/>
 <junction x="58.42" y="220.98"/>
-<label x="66.04" y="220.98" size="1.778" layer="95"/>
-<wire x1="48.26" y1="226.06" x2="58.42" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="226.06" x2="58.42" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="IC6" gate="G$1" pin="OUT"/>
-<pinref part="IC6" gate="G$1" pin="OUT/EN/NC"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VDD"/>
@@ -7566,18 +7567,13 @@ SW4 = P0_10
 </net>
 <net name="5V1" class="0">
 <segment>
-<wire x1="231.14" y1="246.38" x2="279.4" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="246.38" x2="279.4" y2="246.38" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="VIN"/>
 <label x="233.68" y="246.38" size="1.778" layer="95"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="279.4" y1="246.38" x2="284.48" y2="246.38" width="0.1524" layer="91"/>
 <junction x="279.4" y="246.38"/>
-<wire x1="228.6" y1="246.38" x2="231.14" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="251.46" x2="231.14" y2="251.46" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="251.46" x2="231.14" y2="246.38" width="0.1524" layer="91"/>
-<junction x="231.14" y="246.38"/>
 <pinref part="IC7" gate="G$1" pin="OUT"/>
-<pinref part="IC7" gate="G$1" pin="OUT/EN/NC"/>
 </segment>
 </net>
 <net name="5V2" class="0">
@@ -7585,15 +7581,10 @@ SW4 = P0_10
 <pinref part="IC4" gate="G$1" pin="VIN"/>
 <label x="259.08" y="218.44" size="1.778" layer="95"/>
 <pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="256.54" y1="218.44" x2="284.48" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="254" y1="218.44" x2="284.48" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="218.44" x2="289.56" y2="218.44" width="0.1524" layer="91"/>
 <junction x="284.48" y="218.44"/>
-<wire x1="254" y1="218.44" x2="256.54" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="223.52" x2="256.54" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="223.52" x2="256.54" y2="218.44" width="0.1524" layer="91"/>
-<junction x="256.54" y="218.44"/>
 <pinref part="IC8" gate="G$1" pin="OUT"/>
-<pinref part="IC8" gate="G$1" pin="OUT/EN/NC"/>
 </segment>
 </net>
 <net name="5V3" class="0">
@@ -7603,13 +7594,8 @@ SW4 = P0_10
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="289.56" y1="193.04" x2="294.64" y2="193.04" width="0.1524" layer="91"/>
 <junction x="289.56" y="193.04"/>
-<wire x1="281.94" y1="193.04" x2="289.56" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="193.04" x2="281.94" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="198.12" x2="281.94" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="198.12" x2="281.94" y2="193.04" width="0.1524" layer="91"/>
-<junction x="281.94" y="193.04"/>
+<wire x1="279.4" y1="193.04" x2="289.56" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="IC9" gate="G$1" pin="OUT"/>
-<pinref part="IC9" gate="G$1" pin="OUT/EN/NC"/>
 </segment>
 </net>
 <net name="N$50" class="0">
