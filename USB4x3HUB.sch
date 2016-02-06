@@ -1887,6 +1887,57 @@ grid 7.62 mm, diameter 18 mm</description>
 <rectangle x1="-0.65" y1="-0.25" x2="0.65" y2="0.25" layer="31"/>
 <text x="0" y="0" size="1" layer="49" ratio="20" align="center">&gt;NAME</text>
 </package>
+<package name="DFN80P410X410_8N">
+<wire x1="-2.1" y1="-2.1" x2="-1.7" y2="-2.1" width="0.2" layer="21"/>
+<wire x1="-1.7" y1="-2.1" x2="1.7" y2="-2.1" width="0.2" layer="51"/>
+<wire x1="1.7" y1="-2.1" x2="2.1" y2="-2.1" width="0.2" layer="21"/>
+<wire x1="2.1" y1="-2.1" x2="2.1" y2="2.1" width="0.2" layer="21"/>
+<wire x1="2.1" y1="2.1" x2="1.7" y2="2.1" width="0.2" layer="21"/>
+<wire x1="1.7" y1="2.1" x2="-1.7" y2="2.1" width="0.2" layer="51"/>
+<wire x1="-1.7" y1="2.1" x2="-2.1" y2="2.1" width="0.2" layer="21"/>
+<wire x1="-2.1" y1="2.1" x2="-2.1" y2="-2.1" width="0.2" layer="21"/>
+<smd name="EP" x="0" y="0" dx="3" dy="2.2" layer="1" cream="no"/>
+<rectangle x1="0.2" y1="0.2" x2="1.3" y2="0.9" layer="31"/>
+<rectangle x1="-1.3" y1="0.2" x2="-0.2" y2="0.9" layer="31"/>
+<rectangle x1="-1.3" y1="-0.9" x2="-0.2" y2="-0.2" layer="31"/>
+<rectangle x1="0.2" y1="-0.9" x2="1.3" y2="-0.2" layer="31"/>
+<wire x1="-1.3" y1="0.9" x2="-0.2" y2="0.9" width="0.2" layer="31"/>
+<wire x1="-0.2" y1="0.9" x2="-0.2" y2="0.2" width="0.2" layer="31"/>
+<wire x1="-0.2" y1="0.2" x2="-1.3" y2="0.2" width="0.2" layer="31"/>
+<wire x1="-1.3" y1="0.2" x2="-1.3" y2="0.9" width="0.2" layer="31"/>
+<wire x1="0.2" y1="0.9" x2="1.3" y2="0.9" width="0.2" layer="31"/>
+<wire x1="1.3" y1="0.9" x2="1.3" y2="0.2" width="0.2" layer="31"/>
+<wire x1="1.3" y1="0.2" x2="0.2" y2="0.2" width="0.2" layer="31"/>
+<wire x1="0.2" y1="0.2" x2="0.2" y2="0.9" width="0.2" layer="31"/>
+<wire x1="-1.3" y1="-0.2" x2="-0.2" y2="-0.2" width="0.2" layer="31"/>
+<wire x1="-0.2" y1="-0.2" x2="-0.2" y2="-0.9" width="0.2" layer="31"/>
+<wire x1="-0.2" y1="-0.9" x2="-1.3" y2="-0.9" width="0.2" layer="31"/>
+<wire x1="-1.3" y1="-0.9" x2="-1.3" y2="-0.2" width="0.2" layer="31"/>
+<wire x1="0.2" y1="-0.2" x2="1.3" y2="-0.2" width="0.2" layer="31"/>
+<wire x1="1.3" y1="-0.2" x2="1.3" y2="-0.9" width="0.2" layer="31"/>
+<wire x1="1.3" y1="-0.9" x2="0.2" y2="-0.9" width="0.2" layer="31"/>
+<wire x1="0.2" y1="-0.9" x2="0.2" y2="-0.2" width="0.2" layer="31"/>
+<wire x1="0.4" y1="1.7" x2="0.4" y2="2.5" width="0.3" layer="31"/>
+<wire x1="1.2" y1="1.7" x2="1.2" y2="2.5" width="0.3" layer="31"/>
+<wire x1="-0.4" y1="1.7" x2="-0.4" y2="2.5" width="0.3" layer="31"/>
+<wire x1="-1.2" y1="1.7" x2="-1.2" y2="2.5" width="0.3" layer="31"/>
+<wire x1="-1.2" y1="-1.7" x2="-1.2" y2="-2.5" width="0.3" layer="31"/>
+<wire x1="-0.4" y1="-1.7" x2="-0.4" y2="-2.5" width="0.3" layer="31"/>
+<wire x1="0.4" y1="-1.7" x2="0.4" y2="-2.5" width="0.3" layer="31"/>
+<wire x1="1.2" y1="-1.7" x2="1.2" y2="-2.5" width="0.3" layer="31"/>
+<smd name="1" x="-1.2" y="-2.1" dx="0.4" dy="1.2" layer="1" cream="no"/>
+<smd name="2" x="-0.4" y="-2.1" dx="0.4" dy="1.2" layer="1" cream="no"/>
+<smd name="3" x="0.4" y="-2.1" dx="0.4" dy="1.2" layer="1" cream="no"/>
+<smd name="4" x="1.2" y="-2.1" dx="0.4" dy="1.2" layer="1" cream="no"/>
+<smd name="5" x="1.2" y="2.1" dx="0.4" dy="1.2" layer="1" cream="no"/>
+<smd name="6" x="0.4" y="2.1" dx="0.4" dy="1.2" layer="1" cream="no"/>
+<smd name="7" x="-0.4" y="2.1" dx="0.4" dy="1.2" layer="1" cream="no"/>
+<smd name="8" x="-1.2" y="2.1" dx="0.4" dy="1.2" layer="1" cream="no"/>
+<circle x="-2.5" y="-2.5" radius="0.3" width="0.2" layer="21"/>
+<rectangle x1="-2.7" y1="-2.7" x2="-2.3" y2="-2.3" layer="21"/>
+<text x="0" y="0" size="1.2" layer="25" ratio="17" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.2" layer="27" ratio="17" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -2260,8 +2311,8 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="2.286" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="2.286" x2="-5.08" y2="2.286" width="0.4064" layer="94"/>
 <wire x1="-5.08" y1="2.286" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<text x="2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-8.89" size="1.016" layer="96">&gt;VALUE</text>
+<text x="2.54" y="-7.62" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="2.54" y="-8.89" size="1.016" layer="96" font="vector">&gt;VALUE</text>
 <text x="-2.032" y="-4.318" size="1.524" layer="95">G/ADJ</text>
 <text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
@@ -3144,6 +3195,24 @@ grid 7.62 mm, diameter 18 mm</description>
 <technology name="3.3">
 <attribute name="DIGIKEY" value="AZ1117CR-3.3TRG1DICT-ND" constant="no"/>
 <attribute name="MOUSER" value="621-AZ1117CR-3.3TRG1" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DRJ" package="DFN80P410X410_8N">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="1"/>
+<connect gate="G$1" pin="IN" pad="2 3 4"/>
+<connect gate="G$1" pin="OUT" pad="5 6 7 EP"/>
+<connect gate="G$1" pin="OUT/EN/NC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ADIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="5.0">
+<attribute name="ADIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="595-TLV1117-50CDRJR" constant="no"/>
 </technology>
 </technologies>
 </device>

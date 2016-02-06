@@ -2981,28 +2981,28 @@ design rules under a new name.</description>
 <signal name="N$20">
 <contactref element="IC4" pad="3"/>
 <contactref element="IC1" pad="14"/>
-<wire x1="24.25" y1="48.5" x2="31.9" y2="48.5" width="0.3" layer="1"/>
+<wire x1="24.25" y1="48.5" x2="35.7" y2="48.5" width="0.3" layer="1"/>
 <contactref element="R46" pad="1"/>
-<wire x1="35.6" y1="52.2" x2="31.9" y2="48.5" width="0.3" layer="1"/>
+<wire x1="39.4" y1="52.2" x2="35.7" y2="48.5" width="0.3" layer="1"/>
 <wire x1="42.7" y1="49.15" x2="42.7" y2="50" width="0.3" layer="1"/>
 <wire x1="42.7" y1="50" x2="43.5" y2="50.8" width="0.3" layer="1"/>
 <wire x1="43.5" y1="50.8" x2="43.5" y2="52.1" width="0.3" layer="1"/>
 <wire x1="43.5" y1="52.1" x2="42.7" y2="52.9" width="0.3" layer="1"/>
-<wire x1="35.6" y1="52.2" x2="42" y2="52.2" width="0.3" layer="1"/>
+<wire x1="39.4" y1="52.2" x2="42" y2="52.2" width="0.3" layer="1"/>
 <wire x1="42" y1="52.2" x2="42.7" y2="52.9" width="0.3" layer="1"/>
 </signal>
 <signal name="N$21">
 <contactref element="IC1" pad="13"/>
 <contactref element="IC4" pad="4"/>
-<wire x1="33.2" y1="50.6" x2="36.3" y2="53.7" width="0.3" layer="1"/>
-<wire x1="25" y1="50.6" x2="33.2" y2="50.6" width="0.3" layer="1"/>
+<wire x1="37" y1="50.6" x2="40.1" y2="53.7" width="0.3" layer="1"/>
+<wire x1="25" y1="50.6" x2="37" y2="50.6" width="0.3" layer="1"/>
 <wire x1="25" y1="50.6" x2="24.25" y2="51.35" width="0.3" layer="1"/>
 <wire x1="24.25" y1="51.35" x2="24.25" y2="51.7" width="0.3" layer="1"/>
 <wire x1="43.5" y1="49.15" x2="43.5" y2="50.1" width="0.3" layer="1"/>
 <wire x1="43.5" y1="50.1" x2="44" y2="50.6" width="0.3" layer="1"/>
 <wire x1="44" y1="50.6" x2="44" y2="53.2" width="0.3" layer="1"/>
 <wire x1="44" y1="53.2" x2="43.5" y2="53.7" width="0.3" layer="1"/>
-<wire x1="43.5" y1="53.7" x2="36.3" y2="53.7" width="0.3" layer="1"/>
+<wire x1="43.5" y1="53.7" x2="40.1" y2="53.7" width="0.3" layer="1"/>
 </signal>
 <signal name="N$22">
 <contactref element="CON6" pad="2"/>
@@ -3347,9 +3347,9 @@ design rules under a new name.</description>
 <signal name="N$37">
 <contactref element="IC1" pad="15"/>
 <contactref element="R5" pad="1"/>
-<wire x1="29.4" y1="45.2" x2="35.9" y2="51.7" width="0.2" layer="1"/>
-<wire x1="35.9" y1="51.7" x2="41.2" y2="51.7" width="0.2" layer="1"/>
-<wire x1="29.4" y1="45.2" x2="27.7" y2="45.2" width="0.2" layer="1"/>
+<wire x1="33.3" y1="45.2" x2="39.8" y2="51.7" width="0.2" layer="1"/>
+<wire x1="39.8" y1="51.7" x2="41.2" y2="51.7" width="0.2" layer="1"/>
+<wire x1="33.3" y1="45.2" x2="27.7" y2="45.2" width="0.2" layer="1"/>
 <wire x1="27.7" y1="45.2" x2="27.3" y2="45.6" width="0.2" layer="1"/>
 <wire x1="41.9" y1="49.15" x2="41.9" y2="49.7" width="0.2" layer="1"/>
 <wire x1="41.9" y1="49.7" x2="41.7" y2="49.9" width="0.2" layer="1"/>
@@ -3359,9 +3359,9 @@ design rules under a new name.</description>
 <signal name="N$38">
 <contactref element="IC1" pad="16"/>
 <contactref element="R6" pad="1"/>
-<wire x1="41.1" y1="51.3" x2="36" y2="51.3" width="0.2" layer="1"/>
-<wire x1="29.5" y1="44.8" x2="36" y2="51.3" width="0.2" layer="1"/>
-<wire x1="29.5" y1="44.8" x2="27.7" y2="44.8" width="0.2" layer="1"/>
+<wire x1="41.1" y1="51.3" x2="39.9" y2="51.3" width="0.2" layer="1"/>
+<wire x1="33.4" y1="44.8" x2="39.9" y2="51.3" width="0.2" layer="1"/>
+<wire x1="33.4" y1="44.8" x2="27.7" y2="44.8" width="0.2" layer="1"/>
 <wire x1="27.7" y1="44.8" x2="27.3" y2="44.4" width="0.2" layer="1"/>
 <wire x1="41.1" y1="49.15" x2="41.1" y2="49.7" width="0.2" layer="1"/>
 <wire x1="41.1" y1="49.7" x2="41.3" y2="49.9" width="0.2" layer="1"/>
