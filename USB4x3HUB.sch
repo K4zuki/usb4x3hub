@@ -1240,10 +1240,10 @@ chip</description>
 <package name="C_2.5PHI5">
 <description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
 grid 2.54 mm, diameter 5 mm</description>
-<wire x1="-2.301" y1="2.27" x2="-2.047" y2="2.27" width="0.2" layer="21"/>
-<wire x1="-2.047" y1="2.016" x2="-2.047" y2="2.27" width="0.2" layer="21"/>
-<wire x1="-2.047" y1="2.27" x2="-1.793" y2="2.27" width="0.2" layer="21"/>
-<wire x1="-2.047" y1="2.27" x2="-2.047" y2="2.524" width="0.2" layer="21"/>
+<wire x1="-2.099" y1="2.03" x2="-2.353" y2="2.03" width="0.2" layer="21"/>
+<wire x1="-2.353" y1="2.284" x2="-2.353" y2="2.03" width="0.2" layer="21"/>
+<wire x1="-2.353" y1="2.03" x2="-2.607" y2="2.03" width="0.2" layer="21"/>
+<wire x1="-2.353" y1="2.03" x2="-2.353" y2="1.776" width="0.2" layer="21"/>
 <wire x1="-1.5875" y1="0" x2="-0.635" y2="0" width="0.127" layer="51"/>
 <wire x1="1.5875" y1="0" x2="0.635" y2="0" width="0.127" layer="51"/>
 <wire x1="-0.635" y1="1.27" x2="-0.635" y2="0.9525" width="0.254" layer="51"/>
@@ -1262,23 +1262,23 @@ grid 2.54 mm, diameter 5 mm</description>
 <pad name="+" x="-1.25" y="0" drill="0.8128" diameter="1.6002"/>
 <text x="0" y="0" size="1.2" layer="25" ratio="17" align="center">&gt;NAME</text>
 <text x="0" y="0" size="1.2" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-1.25" y1="-2.15" x2="-1.25" y2="-1.1" width="0.2" layer="21"/>
-<wire x1="-1.25" y1="1.1" x2="-1.25" y2="2.15" width="0.2" layer="21"/>
-<wire x1="-1.25" y1="-1.1" x2="-1.25" y2="1.1" width="0.2" layer="21" curve="-180"/>
-<rectangle x1="-1.9" y1="0.95" x2="-1.65" y2="1.8" layer="21"/>
-<rectangle x1="-2.1" y1="0.85" x2="-1.85" y2="1.6" layer="21"/>
-<rectangle x1="-2.25" y1="0.7" x2="-2.05" y2="1.3" layer="21"/>
-<rectangle x1="-2.4" y1="0.45" x2="-2.2" y2="1" layer="21"/>
-<rectangle x1="-1.45" y1="1.9" x2="-1.3" y2="2.05" layer="21"/>
-<rectangle x1="-1.7" y1="1.1" x2="-1.35" y2="2" layer="21"/>
-<rectangle x1="-2.5" y1="0.2" x2="-2.3" y2="0.5" layer="21"/>
-<rectangle x1="-1.45" y1="-2.05" x2="-1.3" y2="-1.9" layer="21"/>
-<rectangle x1="-1.7" y1="-2" x2="-1.35" y2="-1.1" layer="21"/>
-<rectangle x1="-1.9" y1="-1.8" x2="-1.65" y2="-0.95" layer="21"/>
-<rectangle x1="-2.1" y1="-1.6" x2="-1.85" y2="-0.85" layer="21"/>
-<rectangle x1="-2.25" y1="-1.3" x2="-2.05" y2="-0.7" layer="21"/>
-<rectangle x1="-2.4" y1="-1" x2="-2.2" y2="-0.45" layer="21"/>
-<rectangle x1="-2.5" y1="-0.5" x2="-2.3" y2="-0.2" layer="21"/>
+<wire x1="1.25" y1="2.15" x2="1.25" y2="1.1" width="0.2" layer="21"/>
+<wire x1="1.25" y1="-1.1" x2="1.25" y2="-2.15" width="0.2" layer="21"/>
+<wire x1="1.25" y1="1.1" x2="1.25" y2="-1.1" width="0.2" layer="21" curve="-180"/>
+<rectangle x1="1.65" y1="-1.8" x2="1.9" y2="-0.95" layer="21" rot="R180"/>
+<rectangle x1="1.85" y1="-1.6" x2="2.1" y2="-0.85" layer="21" rot="R180"/>
+<rectangle x1="2.05" y1="-1.3" x2="2.25" y2="-0.7" layer="21" rot="R180"/>
+<rectangle x1="2.2" y1="-1" x2="2.4" y2="-0.45" layer="21" rot="R180"/>
+<rectangle x1="1.3" y1="-2.05" x2="1.45" y2="-1.9" layer="21" rot="R180"/>
+<rectangle x1="1.35" y1="-2" x2="1.7" y2="-1.1" layer="21" rot="R180"/>
+<rectangle x1="2.3" y1="-0.5" x2="2.5" y2="-0.2" layer="21" rot="R180"/>
+<rectangle x1="1.3" y1="1.9" x2="1.45" y2="2.05" layer="21" rot="R180"/>
+<rectangle x1="1.35" y1="1.1" x2="1.7" y2="2" layer="21" rot="R180"/>
+<rectangle x1="1.65" y1="0.95" x2="1.9" y2="1.8" layer="21" rot="R180"/>
+<rectangle x1="1.85" y1="0.85" x2="2.1" y2="1.6" layer="21" rot="R180"/>
+<rectangle x1="2.05" y1="0.7" x2="2.25" y2="1.3" layer="21" rot="R180"/>
+<rectangle x1="2.2" y1="0.45" x2="2.4" y2="1" layer="21" rot="R180"/>
+<rectangle x1="2.3" y1="0.2" x2="2.5" y2="0.5" layer="21" rot="R180"/>
 </package>
 <package name="C_5PHI13">
 <description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
