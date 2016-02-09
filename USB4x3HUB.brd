@@ -1936,21 +1936,21 @@ design rules under a new name.</description>
 <attribute name="DIGIKEY" value="P33.0LCT-ND" x="56.3" y="41.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SEEED" value="301010609 " x="56.3" y="41.2" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C17" library="mylib" package="CR_2125" value="" x="30.1" y="73.5" smashed="yes" rot="R270">
+<element name="C15" library="mylib" package="CR_2125" value="" x="30.1" y="73.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.1" y="77.3" size="1.2" layer="25" font="vector" ratio="17" rot="R270" align="center"/>
 <attribute name="VALUE" x="28.6" y="73.6" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="AKIZUKI" value="" x="30.1" y="73.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER" value="" x="30.1" y="73.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY" value="490-9962-1-ND" x="30.1" y="73.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C18" library="mylib" package="CR_2125" value="" x="30.1" y="55.5" smashed="yes" rot="R270">
+<element name="C16" library="mylib" package="CR_2125" value="" x="30.1" y="55.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.6" y="55.5" size="1.2" layer="25" font="vector" ratio="17" rot="R270" align="center"/>
 <attribute name="VALUE" x="28.6" y="55.6" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="AKIZUKI" value="" x="30.1" y="55.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUSER" value="" x="30.1" y="55.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIGIKEY" value="490-9962-1-ND" x="30.1" y="55.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C19" library="mylib" package="CR_2125" value="" x="30.1" y="37.5" smashed="yes" rot="R270">
+<element name="C17" library="mylib" package="CR_2125" value="" x="30.1" y="37.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.6" y="37.5" size="1.2" layer="25" font="vector" ratio="17" rot="R270" align="center"/>
 <attribute name="VALUE" x="28.6" y="37.6" size="1.27" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="AKIZUKI" value="" x="30.1" y="37.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1986,7 +1986,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="56.7" y="26.7" size="1" layer="27" font="vector" ratio="20" rot="R90"/>
 <attribute name="DIGIKEY" value="296-18235-1-ND" x="53.4" y="29.2" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C20" library="mylib" package="C0402" value="" x="53.2" y="32.5" smashed="yes">
+<element name="C23" library="mylib" package="C0402" value="" x="53.2" y="32.5" smashed="yes">
 <attribute name="NAME" x="56.4" y="32.3" size="1" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="52.6" y="30.6" size="1" layer="27" font="vector" ratio="20"/>
 <attribute name="AKIZUKI" value="" x="53.2" y="32.5" size="1.778" layer="27" display="off"/>
@@ -2223,7 +2223,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="39.5" y="32.1" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="39.5" y="33.3" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="C21" library="mylib" package="C0402" value="" x="53.9" y="41.2" smashed="yes" rot="R180">
+<element name="C18" library="mylib" package="C0402" value="" x="53.9" y="41.2" smashed="yes" rot="R180">
 <attribute name="AKIZUKI" value="" x="53.9" y="41.2" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
 <attribute name="SEEED" value="302010024 " x="53.9" y="41.2" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
 <attribute name="MOUSER" value="" x="53.9" y="41.2" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
@@ -2231,7 +2231,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="51.7" y="41.2" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="53.9" y="41.2" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="C22" library="mylib" package="C0402" value="" x="53.9" y="39" smashed="yes" rot="R180">
+<element name="C19" library="mylib" package="C0402" value="" x="53.9" y="39" smashed="yes" rot="R180">
 <attribute name="AKIZUKI" value="" x="53.9" y="39" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
 <attribute name="SEEED" value="302010024 " x="53.9" y="39" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
 <attribute name="MOUSER" value="" x="53.9" y="39" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
@@ -2239,7 +2239,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="57.7" y="39" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="53.9" y="39" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="C23" library="mylib" package="C0402" value="" x="53.9" y="36.8" smashed="yes" rot="R180">
+<element name="C20" library="mylib" package="C0402" value="" x="53.9" y="36.8" smashed="yes" rot="R180">
 <attribute name="AKIZUKI" value="" x="53.9" y="36.8" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
 <attribute name="SEEED" value="302010024 " x="53.9" y="36.8" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
 <attribute name="MOUSER" value="" x="53.9" y="36.8" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
@@ -2247,7 +2247,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="57.7" y="36.8" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="53.9" y="36.8" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="C24" library="mylib" package="C0402" value="" x="53.9" y="34.6" smashed="yes" rot="R180">
+<element name="C21" library="mylib" package="C0402" value="" x="53.9" y="34.6" smashed="yes" rot="R180">
 <attribute name="AKIZUKI" value="" x="53.9" y="34.6" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
 <attribute name="SEEED" value="302010024 " x="53.9" y="34.6" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
 <attribute name="MOUSER" value="" x="53.9" y="34.6" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>
@@ -2255,7 +2255,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="57.7" y="34.6" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="53.9" y="34.6" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="C25" library="mylib" package="C0402" value="1u/1005" x="46.1" y="46.5" smashed="yes">
+<element name="C22" library="mylib" package="C0402" value="1u/1005" x="46.1" y="46.5" smashed="yes">
 <attribute name="AKIZUKI" value="" x="46.1" y="46.5" size="1.2" layer="27" ratio="17" display="off"/>
 <attribute name="SEEED" value="302010040 " x="46.1" y="46.5" size="1.2" layer="27" ratio="17" display="off"/>
 <attribute name="MOUSER" value="" x="46.1" y="46.5" size="1.2" layer="27" ratio="17" display="off"/>
@@ -2353,11 +2353,11 @@ design rules under a new name.</description>
 <contactref element="R12" pad="1"/>
 <contactref element="R13" pad="1"/>
 <contactref element="R14" pad="1"/>
+<contactref element="C15" pad="2"/>
+<contactref element="C16" pad="2"/>
 <contactref element="C17" pad="2"/>
-<contactref element="C18" pad="2"/>
-<contactref element="C19" pad="2"/>
 <contactref element="IC10" pad="4"/>
-<contactref element="C20" pad="2"/>
+<contactref element="C23" pad="2"/>
 <via x="54.6" y="32.5" extent="1-16" drill="0.3"/>
 <via x="54.4" y="26.1" extent="1-16" drill="0.3"/>
 <wire x1="51.6" y1="45.8" x2="51.3" y2="45.8" width="0.4" layer="1"/>
@@ -2396,15 +2396,15 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <wire x1="40.55" y1="34.75" x2="40.6" y2="34.7" width="0.6" layer="1"/>
 <wire x1="40.6" y1="34.7" x2="42" y2="34.7" width="0.6" layer="1"/>
-<contactref element="C21" pad="2"/>
-<contactref element="C22" pad="2"/>
+<contactref element="C18" pad="2"/>
+<contactref element="C19" pad="2"/>
 <via x="52.6" y="38.5" extent="1-16" drill="0.3"/>
 <wire x1="53.3" y1="39" x2="53.1" y2="39" width="0.6" layer="1"/>
 <wire x1="53.1" y1="39" x2="52.6" y2="38.5" width="0.6" layer="1"/>
-<contactref element="C23" pad="2"/>
+<contactref element="C20" pad="2"/>
 <via x="52.5" y="36.8" extent="1-16" drill="0.3"/>
-<contactref element="C24" pad="2"/>
-<contactref element="C25" pad="2"/>
+<contactref element="C21" pad="2"/>
+<contactref element="C22" pad="2"/>
 <via x="52.5" y="34.6" extent="1-16" drill="0.3"/>
 <wire x1="43.05" y1="47" x2="44" y2="47" width="0.3" layer="1"/>
 <wire x1="44" y1="47" x2="44.4" y2="47.4" width="0.3" layer="1"/>
@@ -2648,22 +2648,11 @@ design rules under a new name.</description>
 <vertex x="31.2" y="42"/>
 <vertex x="31.2" y="38"/>
 </polygon>
-<via x="41.2" y="67.9" extent="1-16" drill="0.3"/>
+<contactref element="C15" pad="1"/>
+<contactref element="C16" pad="1"/>
 <contactref element="C17" pad="1"/>
-<contactref element="C18" pad="1"/>
-<contactref element="C19" pad="1"/>
-<via x="40" y="68.7" extent="1-16" drill="0.3"/>
-<via x="40.8" y="67.1" extent="1-16" drill="0.3"/>
-<via x="41.2" y="66.3" extent="1-16" drill="0.3"/>
-<via x="40.4" y="66.3" extent="1-16" drill="0.3"/>
-<via x="39.2" y="68.7" extent="1-16" drill="0.3"/>
-<via x="40.8" y="68.7" extent="1-16" drill="0.3"/>
-<via x="40.4" y="69.4" extent="1-16" drill="0.3"/>
-<via x="39.2" y="67.1" extent="1-16" drill="0.3"/>
-<via x="40.4" y="67.9" extent="1-16" drill="0.3"/>
-<via x="40" y="67.1" extent="1-16" drill="0.3"/>
-<via x="39.6" y="69.4" extent="1-16" drill="0.3"/>
-<via x="42" y="67.9" extent="1-16" drill="0.3"/>
+<via x="41.1" y="68.7" extent="1-16" drill="0.3"/>
+<via x="40.5" y="69.3" extent="1-16" drill="0.3"/>
 <via x="30.4" y="59" extent="1-16" drill="0.3"/>
 <via x="30" y="58.4" extent="1-16" drill="0.3"/>
 <via x="29.2" y="59.6" extent="1-16" drill="0.3"/>
@@ -2702,15 +2691,28 @@ design rules under a new name.</description>
 <polygon width="0.25" layer="16">
 <vertex x="31.2" y="54.4"/>
 <vertex x="42.8" y="66"/>
-<vertex x="42.8" y="70"/>
+<vertex x="42.8" y="67.9"/>
+<vertex x="40.7" y="70"/>
 <vertex x="38.6" y="70"/>
 <vertex x="31.2" y="62.6"/>
 </polygon>
-<via x="42.4" y="67.1" extent="1-16" drill="0.3"/>
-<via x="41.6" y="67.1" extent="1-16" drill="0.3"/>
-<via x="42" y="66.3" extent="1-16" drill="0.3"/>
-<via x="39.6" y="66.3" extent="1-16" drill="0.3"/>
-<via x="39.6" y="67.9" extent="1-16" drill="0.3"/>
+<via x="41.7" y="68.1" extent="1-16" drill="0.3"/>
+<via x="42.3" y="67.5" extent="1-16" drill="0.3"/>
+<via x="41.1" y="67.5" extent="1-16" drill="0.3"/>
+<via x="40.5" y="68.1" extent="1-16" drill="0.3"/>
+<via x="41.7" y="66.9" extent="1-16" drill="0.3"/>
+<via x="39.9" y="68.7" extent="1-16" drill="0.3"/>
+<via x="39.3" y="69.3" extent="1-16" drill="0.3"/>
+<via x="42.3" y="66.3" extent="1-16" drill="0.3"/>
+<via x="38.7" y="68.7" extent="1-16" drill="0.3"/>
+<via x="39.3" y="68.1" extent="1-16" drill="0.3"/>
+<via x="39.9" y="67.5" extent="1-16" drill="0.3"/>
+<via x="40.5" y="66.9" extent="1-16" drill="0.3"/>
+<via x="41.1" y="66.3" extent="1-16" drill="0.3"/>
+<via x="38.1" y="68.1" extent="1-16" drill="0.3"/>
+<via x="38.7" y="67.5" extent="1-16" drill="0.3"/>
+<via x="39.3" y="66.9" extent="1-16" drill="0.3"/>
+<via x="39.9" y="66.3" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="3.3V">
 <contactref element="IC2" pad="4"/>
@@ -2767,7 +2769,7 @@ design rules under a new name.</description>
 <contactref element="R25" pad="2"/>
 <contactref element="R26" pad="1"/>
 <contactref element="IC10" pad="8"/>
-<contactref element="C20" pad="1"/>
+<contactref element="C23" pad="1"/>
 <via x="52.6" y="33.3" extent="1-16" drill="0.3"/>
 <wire x1="52.6" y1="33.3" x2="52.6" y2="32.5" width="0.8" layer="1"/>
 <wire x1="52.6" y1="33.3" x2="51.9" y2="33.3" width="0.8" layer="16"/>
@@ -3119,7 +3121,7 @@ design rules under a new name.</description>
 <wire x1="50.075" y1="37.775" x2="50.1" y2="37.8" width="0.2" layer="1"/>
 <wire x1="50.1" y1="37.8" x2="50.1" y2="38.5" width="0.2" layer="1"/>
 <wire x1="50.1" y1="38.5" x2="50.3" y2="38.7" width="0.2" layer="1"/>
-<contactref element="C21" pad="1"/>
+<contactref element="C18" pad="1"/>
 <wire x1="54.5" y1="40.1" x2="53.6" y2="40.1" width="0.2" layer="1"/>
 <wire x1="54.5" y1="41.2" x2="54.5" y2="40.1" width="0.2" layer="1"/>
 <via x="53.6" y="40.1" extent="1-16" drill="0.3"/>
@@ -3142,7 +3144,7 @@ design rules under a new name.</description>
 <wire x1="51.525" y1="37.7" x2="51.525" y2="37.675" width="0.2" layer="1"/>
 <wire x1="51.525" y1="37.675" x2="51.8" y2="37.9" width="0.2" layer="1"/>
 <wire x1="51.8" y1="37.9" x2="53.4" y2="37.9" width="0.2" layer="1"/>
-<contactref element="C22" pad="1"/>
+<contactref element="C19" pad="1"/>
 <wire x1="54.5" y1="39" x2="54.5" y2="37.9" width="0.2" layer="1"/>
 <wire x1="53.4" y1="37.9" x2="55.1" y2="39.6" width="0.2" layer="16"/>
 <wire x1="55.1" y1="39.6" x2="63" y2="39.6" width="0.2" layer="16"/>
@@ -3163,7 +3165,7 @@ design rules under a new name.</description>
 <wire x1="50.8" y1="37.6" x2="50.8" y2="36.1" width="0.2" layer="1"/>
 <wire x1="50.8" y1="36.1" x2="51.2" y2="35.7" width="0.2" layer="1"/>
 <wire x1="51.2" y1="35.7" x2="53.4" y2="35.7" width="0.2" layer="1"/>
-<contactref element="C23" pad="1"/>
+<contactref element="C20" pad="1"/>
 <wire x1="54.5" y1="36.8" x2="54.5" y2="35.7" width="0.2" layer="1"/>
 <wire x1="54" y1="35.8" x2="62" y2="35.8" width="0.2" layer="16"/>
 </signal>
@@ -3181,7 +3183,7 @@ design rules under a new name.</description>
 <wire x1="51.9" y1="34" x2="52.9" y2="34" width="0.2" layer="1"/>
 <wire x1="52.9" y1="34" x2="53.4" y2="33.5" width="0.2" layer="1"/>
 <wire x1="53.4" y1="33.5" x2="54.5" y2="33.5" width="0.2" layer="1"/>
-<contactref element="C24" pad="1"/>
+<contactref element="C21" pad="1"/>
 <wire x1="54.5" y1="34.6" x2="54.5" y2="33.5" width="0.2" layer="1"/>
 </signal>
 <signal name="TGT_RX">
@@ -3558,7 +3560,7 @@ design rules under a new name.</description>
 <wire x1="43.05" y1="44.6" x2="44.1" y2="44.6" width="0.3" layer="1"/>
 <wire x1="44.1" y1="44.6" x2="44.9" y2="45.4" width="0.3" layer="1"/>
 <wire x1="44.9" y1="45.4" x2="45.5" y2="45.4" width="0.3" layer="1"/>
-<contactref element="C25" pad="1"/>
+<contactref element="C22" pad="1"/>
 <wire x1="45.5" y1="46.5" x2="45.5" y2="45.4" width="0.3" layer="1"/>
 </signal>
 <signal name="N$63">
