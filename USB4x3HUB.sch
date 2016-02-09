@@ -5215,7 +5215,7 @@ Source: www.kingbright.com</description>
 <part name="R25" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R26" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="IC10" library="mylib" deviceset="IC_TTL_SINGLE_74_139" device="_FLAT" value=" SN74LVC1G139DCUR"/>
-<part name="C23" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
+<part name="C22" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
 <part name="SUPPLY33" library="mylib" deviceset="GND" device=""/>
 <part name="LED1" library="led_local" deviceset="LED" device="CHIPLED_0805" technology="RD" value="RD"/>
 <part name="LED2" library="led_local" deviceset="LED" device="CHIPLED_0805" technology="BL" value="BL"/>
@@ -5265,7 +5265,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY36" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY38" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY39" library="mylib" deviceset="GND" device=""/>
-<part name="C22" library="mylib" deviceset="C_SMD_*" device="_1005" technology="1.0U" value="1u/1005"/>
+<part name="C23" library="mylib" deviceset="C_SMD_*" device="_1005" technology="1.0U" value="1u/1005"/>
 <part name="TP4" library="mylib" deviceset="TESTPAD" device=""/>
 <part name="R45" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R46" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
@@ -5457,7 +5457,7 @@ SW4 = P0_10
 <instance part="IC10" gate="G$1" x="284.48" y="73.66">
 <attribute name="DIGIKEY" x="284.48" y="60.96" size="1.016" layer="96" align="top-center" display="both"/>
 </instance>
-<instance part="C23" gate="G$1" x="302.26" y="81.28"/>
+<instance part="C22" gate="G$1" x="302.26" y="81.28"/>
 <instance part="SUPPLY33" gate="GND" x="307.34" y="78.74" rot="R90"/>
 <instance part="LED1" gate="G$1" x="314.96" y="73.66" rot="R270">
 <attribute name="DIGIKEY" x="317.5" y="73.914" size="0.8128" layer="96" display="both"/>
@@ -5517,7 +5517,7 @@ SW4 = P0_10
 <instance part="SUPPLY36" gate="GND" x="43.18" y="157.48" rot="R90"/>
 <instance part="SUPPLY38" gate="GND" x="43.18" y="134.62" rot="R90"/>
 <instance part="SUPPLY39" gate="GND" x="43.18" y="109.22" rot="R90"/>
-<instance part="C22" gate="G$1" x="162.56" y="144.78" rot="R270"/>
+<instance part="C23" gate="G$1" x="162.56" y="144.78" rot="R270"/>
 <instance part="TP4" gate="1" x="109.22" y="71.12" rot="R180"/>
 <instance part="R45" gate="G$1" x="236.22" y="165.1"/>
 <instance part="R46" gate="G$1" x="261.62" y="152.4"/>
@@ -5880,13 +5880,13 @@ SW4 = P0_10
 <pinref part="R43" gate="G$1" pin="1"/>
 <pinref part="R44" gate="G$1" pin="1"/>
 <pinref part="R42" gate="G$1" pin="1"/>
-<pinref part="C22" gate="G$1" pin="2"/>
+<pinref part="C23" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="144.78" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
 <junction x="160.02" y="142.24"/>
 </segment>
 <segment>
 <pinref part="IC10" gate="G$1" pin="GND"/>
-<pinref part="C23" gate="G$1" pin="2"/>
+<pinref part="C22" gate="G$1" pin="2"/>
 <pinref part="SUPPLY33" gate="GND" pin="GND"/>
 <wire x1="302.26" y1="78.74" x2="299.72" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="304.8" y1="78.74" x2="302.26" y2="78.74" width="0.1524" layer="91"/>
@@ -6005,7 +6005,7 @@ SW4 = P0_10
 <segment>
 <wire x1="302.26" y1="83.82" x2="307.34" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="IC10" gate="G$1" pin="VCC"/>
-<pinref part="C23" gate="G$1" pin="1"/>
+<pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="302.26" y1="83.82" x2="299.72" y2="83.82" width="0.1524" layer="91"/>
 <junction x="302.26" y="83.82"/>
 <label x="307.34" y="83.82" size="1.778" layer="95"/>
@@ -6732,7 +6732,7 @@ SW4 = P0_10
 <segment>
 <pinref part="IC1" gate="G$1" pin="!RESET!"/>
 <pinref part="R37" gate="G$1" pin="2"/>
-<pinref part="C22" gate="G$1" pin="1"/>
+<pinref part="C23" gate="G$1" pin="1"/>
 <wire x1="170.18" y1="149.86" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
 <junction x="172.72" y="149.86"/>
 <wire x1="165.1" y1="144.78" x2="172.72" y2="144.78" width="0.1524" layer="91"/>
