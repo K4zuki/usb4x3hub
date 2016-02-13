@@ -9414,7 +9414,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="AKIZUKI" value="C-07674" constant="no"/>
-<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DIGIKEY" value="UE27AC54100-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10467,7 +10467,10 @@ Source: Samtec TSW.pdf</description>
 <connect gate="-6" pin="1" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="AKIZUKI" value="C-05336" constant="no"/>
+<attribute name="DIGIKEY" value="952-2372-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12209,7 +12212,7 @@ Source: www.kingbright.com</description>
 <part name="TP102" library="mylib" deviceset="TESTPAD" device="_F"/>
 <part name="ICON1" library="mylib" deviceset="ICON_OSHW" device="" value="OSHW"/>
 <part name="ICON2" library="mylib" deviceset="ICON_REVISION" device="_2.0" value="r0.4"/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device=""/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="" value="71cae1b"/>
 <part name="TP1" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="TP2" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="R41" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>

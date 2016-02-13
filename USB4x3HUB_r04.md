@@ -1,15 +1,15 @@
 | Qty   | Value                   | Parts               | Description               | AKIZUKI   | DIGIKEY           | MOUSER                | NOT_COMPONENT   | SEEED       |
 |:------|:------------------------|:--------------------|:--------------------------|:----------|:------------------|:----------------------|:----------------|:------------|
-| 1     | TSW-106-02-S-S-RA       | X1                  | HEADER RIGHT ANGLE        | C-05336   |                   |                       |                 |             |
-| 3     | USB A CONNECTOR         | CON5-7              | USB A CONNECTOR           | C-07674   |                   |                       |                 |             |
+| 1     | TSW-106-02-S-S-RA       | X1                  | HEADER RIGHT ANGLE        | C-05336   | 952-2372-ND       |                       |                 |             |
+| 3     | USB A CONNECTOR         | CON5-7              | USB A CONNECTOR           | C-07674   | UE27AC54100-ND    |                       |                 |             |
 | 1     | RD                      | LED1                | LED                       | I-06419   | 160-1168-1-ND     |                       |                 |             |
 | 1     | YL                      | LED4                | LED                       | I-06420   | 160-1170-1-ND     |                       |                 |             |
 | 1     | GR                      | LED3                | LED                       | I-06423   | 160-1169-1-ND     |                       |                 |             |
 | 1     | BL                      | LED2                | LED                       | I-06424   | 160-1643-1-ND     |                       |                 |             |
-| 1     | RD                      | SW1                 | 2P tact switch            | P-08213   |                   |                       |                 |             |
-| 1     | BL                      | SW2                 | 2P tact switch            | P-08214   |                   |                       |                 |             |
-| 1     | GR                      | SW3                 | 2P tact switch            | P-08215   |                   |                       |                 |             |
-| 1     | YL                      | SW4                 | 2P tact switch            | P-08216   |                   |                       |                 |             |
+| 1     | RD                      | SW1                 | 2P tact switch            | P-08213   | 679-2452-ND       |                       |                 |             |
+| 1     | BL                      | SW2                 | 2P tact switch            | P-08214   | 679-2452-ND       |                       |                 |             |
+| 1     | GR                      | SW3                 | 2P tact switch            | P-08215   | 679-2452-ND       |                       |                 |             |
+| 1     | YL                      | SW4                 | 2P tact switch            | P-08216   | 679-2452-ND       |                       |                 |             |
 | 1     | SN74LVC1G139DCUR        | IC10                | single 74 logic: 139      |           | 296-18235-1-ND    |                       |                 |             |
 | 3     | 5V                      | IC7-9               | LDO with 4 pins           |           | 296-19663-1-ND    | 595-TLV1117-50CDRJR   |                 |             |
 | 1     | TUSB2036                | IC1                 | 2/3-port USB hub IC       |           | 296-27129-1-ND    |                       |                 |             |
