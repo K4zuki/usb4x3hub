@@ -523,6 +523,9 @@ Source: http://www.cypressindustries.com/pdf/85-32004-00x.pdf</description>
 <wire x1="6.3" y1="-0.8" x2="6.3" y2="-13" width="0.2" layer="51"/>
 <wire x1="-6.3" y1="-13" x2="6.3" y2="-13" width="0.2" layer="51"/>
 <wire x1="-6.3" y1="-6.3" x2="6.3" y2="-6.3" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="1.4" x2="-6.3" y2="-0.8" width="0.2" layer="51"/>
+<wire x1="-6.3" y1="1.4" x2="6.3" y2="1.4" width="0.2" layer="51"/>
+<wire x1="6.3" y1="1.4" x2="6.3" y2="-0.8" width="0.2" layer="51"/>
 </package>
 <package name="CON_USB_47589-0001MOLEX">
 <description>http://www.mouser.jp/ProductDetail/Molex/47589-0001/?qs=KKUMDL8WE1J88PqW%2fNep5w%3d%3d&amp;_cdc=0</description>
