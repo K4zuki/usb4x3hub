@@ -63,7 +63,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Attributes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
@@ -395,6 +395,7 @@
 <text x="55" y="69.7" size="2" layer="47" ratio="10" align="center">h=10</text>
 <dimension x1="100.4" y1="74" x2="93.7" y2="74" x3="97.05" y3="91" textsize="2" textratio="10" layer="50" dtype="horizontal"/>
 <dimension x1="100.4" y1="74" x2="105.7" y2="86" x3="92.9" y3="80" textsize="2" textratio="10" layer="50" dtype="vertical"/>
+<text x="25" y="2.6" size="1.2" layer="51" ratio="17">JUST in MXA2-8-6SS (TAKACHI)</text>
 </plain>
 <libraries>
 <library name="mylib">
