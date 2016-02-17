@@ -834,11 +834,11 @@ Created by Robert Siegler &amp;lt;rs@kmp-ag.de&amp;gt;</description>
 </package>
 <package name="CON_DCJACK_C-1604">
 <description>http://akizukidenshi.com/catalog/g/gC-01604/</description>
-<pad name="1" x="7.5" y="0" drill="0.8" diameter="2.5" shape="long" rot="R90"/>
-<pad name="3" x="13.75" y="0" drill="1" diameter="2.5" shape="long" rot="R90"/>
+<pad name="1" x="7.5" y="0" drill="0.8" diameter="2.5" shape="long" rot="R90" thermals="no"/>
+<pad name="3" x="13.75" y="0" drill="1" diameter="2.5" shape="long" rot="R90" thermals="no"/>
 <pad name="2" x="10.75" y="-4.8" drill="0.8" diameter="2.5" shape="long" rot="R180"/>
-<text x="-0.69" y="-6.35" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-<text x="0.58" y="5.08" size="1.27" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+<text x="0" y="0" size="1.2" layer="25" font="vector" ratio="17" align="center">&gt;NAME</text>
 <wire x1="7.35" y1="-1.1" x2="7.35" y2="1.1" width="0.5" layer="46"/>
 <wire x1="7.65" y1="-1.1" x2="7.65" y2="1.1" width="0.5" layer="46"/>
 <wire x1="7.35" y1="1.1" x2="7.65" y2="1.1" width="0.5" layer="46" curve="-180"/>
@@ -1879,8 +1879,6 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="-3.3" y1="3.3" x2="3.3" y2="3.3" width="0.2" layer="51"/>
 <wire x1="3.3" y1="3.3" x2="3.3" y2="-2" width="0.2" layer="51"/>
 <wire x1="3.3" y1="-2" x2="2" y2="-3.3" width="0.2" layer="51"/>
-<circle x="-1.4" y="-4" radius="0.3" width="0.4" layer="21"/>
-<rectangle x1="-1.6" y1="-4.2" x2="-1.2" y2="-3.8" layer="21"/>
 </package>
 <package name="ICON_MINLAB_6.2MM">
 <wire x1="0" y1="5.4" x2="0.8" y2="6.2" width="0.4064" layer="41" curve="-90"/>
@@ -8864,6 +8862,28 @@ grid 7.62 mm, diameter 18 mm</description>
 <rectangle x1="4.7" y1="-0.3" x2="5.3" y2="0.3" layer="21"/>
 <rectangle x1="1.9" y1="-2" x2="3.6" y2="2.1" layer="51"/>
 </package>
+<package name="TB111-2-2-U-1-1">
+<wire x1="0" y1="-3.4" x2="0" y2="4.3" width="0.2" layer="21"/>
+<wire x1="0" y1="-3.4" x2="-5.7" y2="-3.4" width="0.2" layer="21"/>
+<wire x1="-5.7" y1="-3.4" x2="-5.7" y2="4.3" width="0.2" layer="21"/>
+<wire x1="-5.7" y1="4.3" x2="0" y2="4.3" width="0.2" layer="21"/>
+<wire x1="0" y1="4.3" x2="5.7" y2="4.3" width="0.2" layer="21"/>
+<wire x1="5.7" y1="4.3" x2="5.7" y2="-3.4" width="0.2" layer="21"/>
+<wire x1="5.7" y1="-3.4" x2="0" y2="-3.4" width="0.2" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.2" diameter="2" thermals="no"/>
+<pad name="2" x="2.54" y="0" drill="1.2" diameter="2" thermals="no"/>
+<circle x="2.54" y="0" radius="2" width="0.2" layer="51"/>
+<circle x="-2.54" y="0" radius="2" width="0.2" layer="51"/>
+<text x="0" y="0" size="1.2" layer="25" ratio="17" align="center">&gt;NAME</text>
+<wire x1="-2.5" y1="-3.6" x2="-2.5" y2="-5.4" width="0.2" layer="51"/>
+<wire x1="-2.5" y1="-3.6" x2="-3" y2="-4.1" width="0.2" layer="51"/>
+<wire x1="-2.5" y1="-3.6" x2="-2" y2="-4.1" width="0.2" layer="51"/>
+<wire x1="2.6" y1="-3.6" x2="2.6" y2="-5.4" width="0.2" layer="51"/>
+<wire x1="2.6" y1="-3.6" x2="2.1" y2="-4.1" width="0.2" layer="51"/>
+<wire x1="2.6" y1="-3.6" x2="3.1" y2="-4.1" width="0.2" layer="51"/>
+<circle x="-2.5" y="-4.5" radius="0.3" width="0.4" layer="21"/>
+<rectangle x1="-2.7" y1="-4.7" x2="-2.3" y2="-4.3" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -9314,6 +9334,12 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="5.08" y1="-2.54" x2="2.54" y2="-5.08" width="0.254" layer="94" curve="-90"/>
 <wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MPINV">
+<text x="-1.27" y="1.27" size="1.778" layer="96">&gt;VALUE</text>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<rectangle x1="0" y1="-0.254" x2="1.778" y2="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10349,6 +10375,25 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="NOT_COMPONENT" value="YES" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TB111-2-*" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MPINV" x="0" y="0"/>
+<gate name="G$2" symbol="MPIN" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="2-U-1-1" package="TB111-2-2-U-1-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$2" pin="1" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AKIZUKI" value="P-01306" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12263,7 +12308,7 @@ Source: www.kingbright.com</description>
 <part name="TP102" library="mylib" deviceset="TESTPAD" device="_F"/>
 <part name="ICON1" library="mylib" deviceset="ICON_OSHW" device="" value="OSHW"/>
 <part name="ICON2" library="mylib" deviceset="ICON_REVISION" device="_2.0" value="r0.4"/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="" value="71cae1b"/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device=""/>
 <part name="TP1" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="TP2" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="R41" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
@@ -12298,6 +12343,7 @@ Source: www.kingbright.com</description>
 <part name="P2" library="mylib" deviceset="PCB_CORNER" device=""/>
 <part name="P3" library="mylib" deviceset="PCB_CORNER" device=""/>
 <part name="P4" library="mylib" deviceset="PCB_CORNER" device=""/>
+<part name="J2" library="mylib" deviceset="TB111-2-*" device="2-U-1-1"/>
 </parts>
 <sheets>
 <sheet>
@@ -12336,7 +12382,7 @@ SW4 = P0_10
 <wire x1="170.18" y1="127" x2="157.48" y2="127" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="157.48" y1="127" x2="157.48" y2="160.02" width="0.1524" layer="94" style="shortdash"/>
 <text x="157.48" y="160.02" size="1.778" layer="94" rot="R180">10k/1005</text>
-<text x="22.86" y="246.38" size="2.54" layer="94">6~9V/2A</text>
+<text x="7.62" y="248.92" size="2.54" layer="94">6~9V/2A</text>
 <wire x1="233.68" y1="167.64" x2="243.84" y2="167.64" width="0.1524" layer="94" style="shortdash"/>
 <text x="248.92" y="101.6" size="1.778" layer="94" rot="MR0" align="bottom-right">10k/1005</text>
 <wire x1="243.84" y1="124.46" x2="243.84" y2="167.64" width="0.1524" layer="94" style="shortdash"/>
@@ -12361,6 +12407,9 @@ SW4 = P0_10
 <wire x1="246.38" y1="5.08" x2="251.46" y2="5.08" width="0.3048" layer="94"/>
 <wire x1="256.54" y1="10.16" x2="256.54" y2="17.78" width="0.3048" layer="94"/>
 <wire x1="251.46" y1="22.86" x2="246.38" y2="22.86" width="0.3048" layer="94"/>
+<text x="228.6" y="53.34" size="2.54" layer="94">SW1-4 and
+LED1-4
+= P-04073(EG4643-ND) if use panel</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -12400,8 +12449,8 @@ SW4 = P0_10
 <instance part="CON7" gate="G$1" x="370.84" y="185.42">
 <attribute name="AKIZUKI" x="370.84" y="177.8" size="1.4224" layer="96" align="top-center" display="both"/>
 </instance>
-<instance part="J1" gate="G$1" x="30.48" y="238.76">
-<attribute name="AKIZUKI" x="30.48" y="233.68" size="1.4224" layer="96" align="top-center" display="both"/>
+<instance part="J1" gate="G$1" x="15.24" y="241.3">
+<attribute name="AKIZUKI" x="15.24" y="236.22" size="1.4224" layer="96" align="top-center" display="both"/>
 </instance>
 <instance part="U1" gate="G$1" x="139.7" y="78.74">
 <attribute name="DIGIKEY" x="139.7" y="63.5" size="1.4224" layer="96" align="top-center" display="both"/>
@@ -12454,7 +12503,7 @@ SW4 = P0_10
 <instance part="C8" gate="G$1" x="312.42" y="243.84"/>
 <instance part="C9" gate="G$1" x="317.5" y="215.9"/>
 <instance part="C10" gate="G$1" x="322.58" y="187.96"/>
-<instance part="C11" gate="G$1" x="50.8" y="238.76"/>
+<instance part="C11" gate="G$1" x="35.56" y="241.3"/>
 <instance part="C12" gate="G$1" x="71.12" y="238.76"/>
 <instance part="C13" gate="G$1" x="175.26" y="76.2" rot="R270"/>
 <instance part="SUPPLY17" gate="GND" x="182.88" y="76.2" rot="R90"/>
@@ -12493,7 +12542,7 @@ SW4 = P0_10
 <instance part="SUPPLY25" gate="GND" x="246.38" y="203.2"/>
 <instance part="SUPPLY26" gate="GND" x="246.38" y="231.14"/>
 <instance part="SUPPLY27" gate="GND" x="276.86" y="175.26"/>
-<instance part="SUPPLY29" gate="GND" x="50.8" y="223.52"/>
+<instance part="SUPPLY29" gate="GND" x="35.56" y="226.06"/>
 <instance part="C15" gate="G$1" x="236.22" y="243.84"/>
 <instance part="C16" gate="G$1" x="236.22" y="215.9"/>
 <instance part="C17" gate="G$1" x="266.7" y="187.96"/>
@@ -12576,10 +12625,14 @@ SW4 = P0_10
 <instance part="SUPPLY40" gate="GND" x="355.6" y="210.82" rot="R270"/>
 <instance part="SUPPLY41" gate="GND" x="355.6" y="182.88" rot="R270"/>
 <instance part="I1" gate="G$1" x="370.84" y="25.4"/>
-<instance part="P1" gate="G$1" x="251.46" y="17.78"/>
-<instance part="P2" gate="G$1" x="246.38" y="17.78" rot="R90"/>
-<instance part="P3" gate="G$1" x="246.38" y="10.16" rot="R180"/>
-<instance part="P4" gate="G$1" x="251.46" y="10.16" rot="R270"/>
+<instance part="P1" gate="G$1" x="251.46" y="17.78" rot="R90"/>
+<instance part="P2" gate="G$1" x="246.38" y="17.78" rot="R180"/>
+<instance part="P3" gate="G$1" x="246.38" y="10.16" rot="R270"/>
+<instance part="P4" gate="G$1" x="251.46" y="10.16"/>
+<instance part="J2" gate="G$1" x="43.18" y="243.84">
+<attribute name="AKIZUKI" x="43.18" y="246.38" size="1.778" layer="96" display="both"/>
+</instance>
+<instance part="J2" gate="G$2" x="43.18" y="238.76"/>
 </instances>
 <busses>
 </busses>
@@ -12729,8 +12782,11 @@ SW4 = P0_10
 <segment>
 <pinref part="C11" gate="G$1" pin="+"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="241.3" x2="50.8" y2="241.3" width="0.1524" layer="91"/>
-<label x="40.64" y="241.3" size="1.778" layer="95"/>
+<wire x1="20.32" y1="243.84" x2="35.56" y2="243.84" width="0.1524" layer="91"/>
+<label x="25.4" y="243.84" size="1.778" layer="95"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="243.84" x2="35.56" y2="243.84" width="0.1524" layer="91"/>
+<junction x="35.56" y="243.84"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -12756,9 +12812,11 @@ SW4 = P0_10
 <pinref part="J1" gate="G$1" pin="3"/>
 <pinref part="C11" gate="G$1" pin="-"/>
 <pinref part="SUPPLY29" gate="GND" pin="GND"/>
-<wire x1="35.56" y1="236.22" x2="50.8" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="226.06" x2="50.8" y2="236.22" width="0.1524" layer="91"/>
-<junction x="50.8" y="236.22"/>
+<wire x1="20.32" y1="238.76" x2="35.56" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="228.6" x2="35.56" y2="238.76" width="0.1524" layer="91"/>
+<junction x="35.56" y="238.76"/>
+<pinref part="J2" gate="G$2" pin="1"/>
+<wire x1="35.56" y1="238.76" x2="40.64" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
