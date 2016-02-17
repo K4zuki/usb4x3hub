@@ -1879,6 +1879,8 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="-3.3" y1="3.3" x2="3.3" y2="3.3" width="0.2" layer="51"/>
 <wire x1="3.3" y1="3.3" x2="3.3" y2="-2" width="0.2" layer="51"/>
 <wire x1="3.3" y1="-2" x2="2" y2="-3.3" width="0.2" layer="51"/>
+<circle x="-1.4" y="-4" radius="0.3" width="0.4" layer="21"/>
+<rectangle x1="-1.6" y1="-4.2" x2="-1.2" y2="-3.8" layer="21"/>
 </package>
 <package name="ICON_MINLAB_6.2MM">
 <wire x1="0" y1="5.4" x2="0.8" y2="6.2" width="0.4064" layer="41" curve="-90"/>
@@ -8845,6 +8847,23 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="1.05" y1="-0.25" x2="0.75" y2="-0.25" width="0.4" layer="31"/>
 <wire x1="0.75" y1="-0.25" x2="0.75" y2="0.25" width="0.4" layer="31"/>
 </package>
+<package name="C_730X430X430_E">
+<smd name="+" x="3" y="0" dx="2" dy="3" layer="1"/>
+<smd name="-" x="-3" y="0" dx="2" dy="3" layer="1"/>
+<wire x1="-3.6" y1="2.1" x2="-3.6" y2="-2.1" width="0.2" layer="51"/>
+<wire x1="-3.6" y1="-2.1" x2="3.6" y2="-2.1" width="0.2" layer="51"/>
+<wire x1="3.6" y1="-2.1" x2="3.6" y2="2.1" width="0.2" layer="51"/>
+<wire x1="3.6" y1="2.1" x2="-3.6" y2="2.1" width="0.2" layer="51"/>
+<wire x1="-3.6" y1="1.8" x2="-3.6" y2="2.1" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="2.1" x2="3.6" y2="2.1" width="0.2" layer="21"/>
+<wire x1="3.6" y1="2.1" x2="3.6" y2="1.8" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="-1.8" x2="-3.6" y2="-2.1" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="-2.1" x2="3.6" y2="-2.1" width="0.2" layer="21"/>
+<wire x1="3.6" y1="-2.1" x2="3.6" y2="-1.8" width="0.2" layer="21"/>
+<circle x="5" y="0" radius="0.4" width="0.4" layer="21"/>
+<rectangle x1="4.7" y1="-0.3" x2="5.3" y2="0.3" layer="21"/>
+<rectangle x1="1.9" y1="-2" x2="3.6" y2="2.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -9740,6 +9759,20 @@ grid 7.62 mm, diameter 18 mm</description>
 </technology>
 <technology name="100U">
 <attribute name="DIGIKEY" value="P16468CT-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_7.3X4.3X4.3" package="C_730X430X430_E">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value=" " constant="no"/>
+</technology>
+<technology name="100U">
+<attribute name="DIGIKEY" value="493-13840-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
