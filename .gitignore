@@ -85,3 +85,4 @@ $RECYCLE.BIN/
 *.pdf
 pcb/tinyI2C_P.top.png
 .~*#
+*.lck
