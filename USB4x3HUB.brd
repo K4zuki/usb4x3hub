@@ -1089,6 +1089,8 @@ SOT23-5&lt;br&gt;</description>
 <wire x1="-3.3" y1="3.3" x2="3.3" y2="3.3" width="0.2" layer="51"/>
 <wire x1="3.3" y1="3.3" x2="3.3" y2="-2" width="0.2" layer="51"/>
 <wire x1="3.3" y1="-2" x2="2" y2="-3.3" width="0.2" layer="51"/>
+<circle x="-1.4" y="-4" radius="0.3" width="0.4" layer="21"/>
+<rectangle x1="-1.6" y1="-4.2" x2="-1.2" y2="-3.8" layer="21"/>
 </package>
 <package name="CR_2125">
 <smd name="1" x="-1.2" y="0" dx="1.4" dy="1.4" layer="1" stop="no" cream="no"/>
