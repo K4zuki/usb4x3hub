@@ -47,7 +47,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
@@ -149,7 +149,7 @@
 <dimension x1="10" y1="27" x2="10" y2="45" x3="-5.5" y3="36" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="17" y1="8.5" x2="10" y2="27" x3="-5.5" y3="17.75" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="17.7" y1="20.7" x2="17.7" y2="33.3" x3="14.9" y3="27" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<text x="14.1" y="16.9" size="2" layer="21" ratio="10">@_K4ZUKI_</text>
+<text x="14.1" y="16.3" size="2" layer="21" ratio="10">@_K4ZUKI_</text>
 <text x="49.9" y="78.9" size="2" layer="21" ratio="10" rot="R180">USB4x3HUB</text>
 <text x="23.4" y="85.4" size="2" layer="21" ratio="10">thickness t=1.6mm</text>
 <wire x1="33.9" y1="43.4" x2="35.6" y2="43.4" width="0" layer="41"/>
