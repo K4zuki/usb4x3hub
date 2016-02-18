@@ -8863,13 +8863,10 @@ grid 7.62 mm, diameter 18 mm</description>
 <rectangle x1="1.9" y1="-2" x2="3.6" y2="2.1" layer="51"/>
 </package>
 <package name="TB111-2-2-U-1-1">
-<wire x1="0" y1="-3.4" x2="0" y2="4.3" width="0.2" layer="21"/>
-<wire x1="0" y1="-3.4" x2="-5.7" y2="-3.4" width="0.2" layer="21"/>
 <wire x1="-5.7" y1="-3.4" x2="-5.7" y2="4.3" width="0.2" layer="21"/>
-<wire x1="-5.7" y1="4.3" x2="0" y2="4.3" width="0.2" layer="21"/>
-<wire x1="0" y1="4.3" x2="5.7" y2="4.3" width="0.2" layer="21"/>
+<wire x1="-5.7" y1="4.3" x2="5.7" y2="4.3" width="0.2" layer="21"/>
 <wire x1="5.7" y1="4.3" x2="5.7" y2="-3.4" width="0.2" layer="21"/>
-<wire x1="5.7" y1="-3.4" x2="0" y2="-3.4" width="0.2" layer="21"/>
+<wire x1="5.7" y1="-3.4" x2="-5.7" y2="-3.4" width="0.2" layer="21"/>
 <pad name="1" x="-2.54" y="0" drill="1.2" diameter="2" thermals="no"/>
 <pad name="2" x="2.54" y="0" drill="1.2" diameter="2" thermals="no"/>
 <circle x="2.54" y="0" radius="2" width="0.2" layer="51"/>
@@ -8881,8 +8878,19 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="2.6" y1="-3.6" x2="2.6" y2="-5.4" width="0.2" layer="51"/>
 <wire x1="2.6" y1="-3.6" x2="2.1" y2="-4.1" width="0.2" layer="51"/>
 <wire x1="2.6" y1="-3.6" x2="3.1" y2="-4.1" width="0.2" layer="51"/>
-<circle x="-2.5" y="-4.5" radius="0.3" width="0.4" layer="21"/>
-<rectangle x1="-2.7" y1="-4.7" x2="-2.3" y2="-4.3" layer="21"/>
+<wire x1="-5.7" y1="4.3" x2="-5.7" y2="-3.4" width="0.2" layer="51"/>
+<wire x1="-5.7" y1="-3.4" x2="5.7" y2="-3.4" width="0.2" layer="51"/>
+<wire x1="5.7" y1="-3.4" x2="5.7" y2="4.3" width="0.2" layer="51"/>
+<wire x1="5.7" y1="4.3" x2="-5.7" y2="4.3" width="0.2" layer="51"/>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="-1.6" width="0.4" layer="51"/>
+<wire x1="-4.1" y1="0" x2="-1" y2="0" width="0.4" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.4" layer="51"/>
+<wire x1="1" y1="0" x2="4.1" y2="0" width="0.4" layer="51"/>
+<polygon width="0.2" layer="21">
+<vertex x="-2.5" y="-3.7"/>
+<vertex x="-3" y="-4.2"/>
+<vertex x="-2" y="-4.2"/>
+</polygon>
 </package>
 </packages>
 <symbols>
