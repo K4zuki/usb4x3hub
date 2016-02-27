@@ -8892,6 +8892,60 @@ grid 7.62 mm, diameter 18 mm</description>
 <vertex x="-2" y="-4.2"/>
 </polygon>
 </package>
+<package name="CON_USB_614104150121WURTH">
+<text x="0" y="0" size="1.27" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+<pad name="SHLD@1" x="6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<pad name="SHLD" x="-6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<pad name="3" x="1" y="0" drill="0.9"/>
+<pad name="2" x="-1" y="0" drill="0.9"/>
+<pad name="4" x="3.5" y="0" drill="0.9"/>
+<pad name="1" x="-3.5" y="0" drill="0.9"/>
+<wire x1="-7.3" y1="0" x2="-4.5" y2="0" width="0.2" layer="21"/>
+<wire x1="4.5" y1="0" x2="7.3" y2="0" width="0.2" layer="21"/>
+<wire x1="-7.3" y1="0" x2="-7.3" y2="-2.7" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-9" x2="-6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="-7.3" y1="0" x2="-7.3" y2="-2.7" width="0.2" layer="51"/>
+<wire x1="-7.3" y1="-2.7" x2="-6.3" y2="-2.7" width="0.2" layer="51"/>
+<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-10" width="0.2" layer="51"/>
+<wire x1="7.3" y1="0" x2="7.3" y2="-2.6" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-2.6" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-9" x2="6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="7.3" y1="0" x2="7.3" y2="-2.6" width="0.2" layer="51"/>
+<wire x1="7.3" y1="-2.6" x2="6.3" y2="-2.6" width="0.2" layer="51"/>
+<wire x1="6.3" y1="-2.6" x2="6.3" y2="-10" width="0.2" layer="51"/>
+<wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="51"/>
+<wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="-7.3" y1="0" x2="7.3" y2="0" width="0.2" layer="51"/>
+<wire x1="-6.4" y1="-6.6" x2="-6.4" y2="-8.1" width="0.6" layer="46"/>
+<wire x1="6.4" y1="-6.6" x2="6.4" y2="-8.1" width="0.6" layer="46"/>
+<wire x1="6.3" y1="-2.6" x2="7.3" y2="-2.6" width="0.2" layer="21"/>
+<wire x1="-7.3" y1="-2.7" x2="-6.3" y2="-2.7" width="0.2" layer="21"/>
+</package>
+<package name="C_2.5PHI5_875105142005WURTH">
+<wire x1="-2.5" y1="2.7" x2="-0.7" y2="2.7" width="0.2" layer="21"/>
+<wire x1="0.7" y1="2.7" x2="2.5" y2="2.7" width="0.2" layer="21"/>
+<wire x1="2.5" y1="2.7" x2="2.5" y2="-1.9" width="0.2" layer="21"/>
+<wire x1="1.7" y1="-2.7" x2="0.7" y2="-2.7" width="0.2" layer="21"/>
+<wire x1="1.7" y1="-2.7" x2="-1.7" y2="-2.7" width="0.2" layer="51"/>
+<wire x1="-0.7" y1="-2.7" x2="-1.7" y2="-2.7" width="0.2" layer="21"/>
+<smd name="+" x="0" y="-2.2" dx="1" dy="3" layer="1" cream="no"/>
+<smd name="-" x="0" y="2.2" dx="1" dy="3" layer="1" cream="no"/>
+<wire x1="-2.5" y1="-1.9" x2="-2.5" y2="2.7" width="0.2" layer="21"/>
+<wire x1="0" y1="3.2" x2="0" y2="1.2" width="0.8" layer="31"/>
+<wire x1="0" y1="-1.2" x2="0" y2="-3.2" width="0.8" layer="31"/>
+<wire x1="-2.5" y1="-1.9" x2="-1.7" y2="-2.7" width="0.2" layer="21"/>
+<wire x1="1.7" y1="-2.7" x2="2.5" y2="-1.9" width="0.2" layer="21"/>
+<text x="0" y="0" size="1.2" layer="25" ratio="17" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.2" layer="27" ratio="17" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.5" width="0.2" layer="51"/>
+<wire x1="-2.5" y1="-1.9" x2="-2.5" y2="2.7" width="0.2" layer="51"/>
+<wire x1="-2.5" y1="2.7" x2="2.5" y2="2.7" width="0.2" layer="51"/>
+<wire x1="2.5" y1="2.7" x2="2.5" y2="-1.9" width="0.2" layer="51"/>
+<wire x1="2.5" y1="-1.9" x2="1.7" y2="-2.7" width="0.2" layer="51"/>
+<wire x1="-2.5" y1="-1.9" x2="-1.7" y2="-2.7" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -9498,6 +9552,20 @@ grid 7.62 mm, diameter 18 mm</description>
 </technology>
 </technologies>
 </device>
+<device name="_A_614104150121" package="CON_USB_614104150121WURTH">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SHLD" pad="SHLD SHLD@1"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="732-5962-1-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="IC_POWER_TPS2041C" prefix="IC" uservalue="yes">
@@ -9807,6 +9875,20 @@ grid 7.62 mm, diameter 18 mm</description>
 </technology>
 <technology name="100U">
 <attribute name="DIGIKEY" value="493-13840-1-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_875105142005WURTH" package="C_2.5PHI5_875105142005WURTH">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+</technology>
+<technology name="100U">
+<attribute name="DIGIKEY" value="732-6394-1-ND" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12201,9 +12283,9 @@ Source: www.kingbright.com</description>
 <part name="IC3" library="mylib" deviceset="IC_POWER_TPS2041C" device="" value="TPS2041C"/>
 <part name="IC4" library="mylib" deviceset="IC_POWER_TPS2041C" device="" value="TPS2041C"/>
 <part name="IC5" library="mylib" deviceset="IC_POWER_TPS2041C" device="" value="TPS2041C"/>
-<part name="CON5" library="mylib" deviceset="CON_USB" device="_A"/>
-<part name="CON6" library="mylib" deviceset="CON_USB" device="_A"/>
-<part name="CON7" library="mylib" deviceset="CON_USB" device="_A"/>
+<part name="CON5" library="mylib" deviceset="CON_USB" device="_A_614104150121"/>
+<part name="CON6" library="mylib" deviceset="CON_USB" device="_A_614104150121"/>
+<part name="CON7" library="mylib" deviceset="CON_USB" device="_A_614104150121"/>
 <part name="J1" library="mylib" deviceset="CON_DCJACK" device="_C1604"/>
 <part name="U1" library="mylib" deviceset="IC_LPC81X_16" device="_JDH16" value="LPC812M101JDH16"/>
 <part name="SW4" library="mylib" deviceset="TACTSW2_*" device="_P807X" technology="YL" value="YL"/>
@@ -12235,9 +12317,9 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY14" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="mylib" deviceset="GND" device=""/>
-<part name="C8" library="mylib" deviceset="C_DENKAI_*" device="_2.5P6.3_C6" technology="100U" value="100u/OS-CON"/>
-<part name="C9" library="mylib" deviceset="C_DENKAI_*" device="_2.5P6.3_C6" technology="100U" value="100u/OS-CON"/>
-<part name="C10" library="mylib" deviceset="C_DENKAI_*" device="_2.5P6.3_C6" technology="100U" value="100u/OS-CON"/>
+<part name="C8" library="mylib" deviceset="C_DENKAI_*" device="_875105142005WURTH" technology="100U" value="100u/OS-CON"/>
+<part name="C9" library="mylib" deviceset="C_DENKAI_*" device="_875105142005WURTH" technology="100U" value="100u/OS-CON"/>
+<part name="C10" library="mylib" deviceset="C_DENKAI_*" device="_875105142005WURTH" technology="100U" value="100u/OS-CON"/>
 <part name="C11" library="mylib" deviceset="C_DENKAI_*" device="_2.5P6.3_C6" technology="100U" value="100u/OS-CON"/>
 <part name="C12" library="mylib" deviceset="C_SMD_*" device="_2012" technology="4.7U" value="4.7u/2012"/>
 <part name="C13" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
@@ -12448,15 +12530,9 @@ LED1-4
 <instance part="IC5" gate="G$1" x="307.34" y="185.42">
 <attribute name="DIGIKEY" x="307.34" y="175.26" size="1.016" layer="96" align="top-center" display="both"/>
 </instance>
-<instance part="CON5" gate="G$1" x="370.84" y="241.3">
-<attribute name="AKIZUKI" x="370.84" y="233.68" size="1.4224" layer="96" align="top-center" display="both"/>
-</instance>
-<instance part="CON6" gate="G$1" x="370.84" y="213.36">
-<attribute name="AKIZUKI" x="370.84" y="205.74" size="1.4224" layer="96" align="top-center" display="both"/>
-</instance>
-<instance part="CON7" gate="G$1" x="370.84" y="185.42">
-<attribute name="AKIZUKI" x="370.84" y="177.8" size="1.4224" layer="96" align="top-center" display="both"/>
-</instance>
+<instance part="CON5" gate="G$1" x="370.84" y="241.3"/>
+<instance part="CON6" gate="G$1" x="370.84" y="213.36"/>
+<instance part="CON7" gate="G$1" x="370.84" y="185.42"/>
 <instance part="J1" gate="G$1" x="15.24" y="241.3">
 <attribute name="AKIZUKI" x="15.24" y="236.22" size="1.4224" layer="96" align="top-center" display="both"/>
 </instance>
