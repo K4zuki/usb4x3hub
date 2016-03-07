@@ -12334,10 +12334,10 @@ Source: www.kingbright.com</description>
 <part name="CON7" library="mylib" deviceset="CON_USB" device="_A_614104150121"/>
 <part name="J1" library="mylib" deviceset="CON_DCJACK" device="_C1604"/>
 <part name="U1" library="mylib" deviceset="IC_LPC81X_16" device="_JDH16" value="LPC812M101JDH16"/>
-<part name="SW4" library="mylib" deviceset="TACTSW2_*" device="_P807X" technology="YL" value="YL"/>
-<part name="SW3" library="mylib" deviceset="TACTSW2_*" device="_P807X" technology="GR" value="GR"/>
-<part name="SW2" library="mylib" deviceset="TACTSW2_*" device="_P807X" technology="BL" value="BL"/>
-<part name="SW1" library="mylib" deviceset="TACTSW2_*" device="_P807X" technology="RD" value="RD"/>
+<part name="SW4" library="mylib" deviceset="TACTSW2_*" device="FSM2JMTR" value="YL"/>
+<part name="SW3" library="mylib" deviceset="TACTSW2_*" device="FSM2JMTR" value="GR"/>
+<part name="SW2" library="mylib" deviceset="TACTSW2_*" device="FSM2JMTR" value="BL"/>
+<part name="SW1" library="mylib" deviceset="TACTSW2_*" device="FSM2JMTR" value="RD"/>
 <part name="SUPPLY1" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="mylib" deviceset="GND" device=""/>
@@ -12606,18 +12606,10 @@ LED1-4
 <instance part="U1" gate="G$1" x="139.7" y="78.74">
 <attribute name="DIGIKEY" x="139.7" y="63.5" size="1.4224" layer="96" align="top-center" display="both"/>
 </instance>
-<instance part="SW4" gate="G$1" x="195.58" y="76.2">
-<attribute name="AKIZUKI" x="195.58" y="78.74" size="1.016" layer="96" rot="R90" display="both"/>
-</instance>
-<instance part="SW3" gate="G$1" x="210.82" y="76.2">
-<attribute name="AKIZUKI" x="210.82" y="78.74" size="1.016" layer="96" rot="R90" display="both"/>
-</instance>
-<instance part="SW2" gate="G$1" x="226.06" y="76.2">
-<attribute name="AKIZUKI" x="226.06" y="78.74" size="1.016" layer="96" rot="R90" display="both"/>
-</instance>
-<instance part="SW1" gate="G$1" x="241.3" y="76.2">
-<attribute name="AKIZUKI" x="241.3" y="78.74" size="1.016" layer="96" rot="R90" display="both"/>
-</instance>
+<instance part="SW4" gate="G$1" x="195.58" y="76.2"/>
+<instance part="SW3" gate="G$1" x="210.82" y="76.2"/>
+<instance part="SW2" gate="G$1" x="226.06" y="76.2"/>
+<instance part="SW1" gate="G$1" x="241.3" y="76.2"/>
 <instance part="SUPPLY1" gate="GND" x="71.12" y="223.52"/>
 <instance part="SUPPLY2" gate="GND" x="144.78" y="137.16"/>
 <instance part="SUPPLY4" gate="GND" x="127" y="154.94" rot="R90"/>
