@@ -839,10 +839,6 @@ Created by Robert Siegler &amp;lt;rs@kmp-ag.de&amp;gt;</description>
 <pad name="2" x="10.75" y="-4.8" drill="0.8" diameter="2.5" shape="long" rot="R180"/>
 <text x="0" y="0" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
 <text x="0" y="0" size="1.2" layer="25" font="vector" ratio="17" align="center">&gt;NAME</text>
-<wire x1="7.35" y1="-1.1" x2="7.35" y2="1.1" width="0.5" layer="46"/>
-<wire x1="7.65" y1="-1.1" x2="7.65" y2="1.1" width="0.5" layer="46"/>
-<wire x1="7.35" y1="1.1" x2="7.65" y2="1.1" width="0.5" layer="46" curve="-180"/>
-<wire x1="7.65" y1="-1.1" x2="7.35" y2="-1.1" width="0.5" layer="46" curve="-180"/>
 <wire x1="11.85" y1="-4.65" x2="9.65" y2="-4.65" width="0.5" layer="46"/>
 <wire x1="11.85" y1="-4.95" x2="9.65" y2="-4.95" width="0.5" layer="46"/>
 <wire x1="9.65" y1="-4.95" x2="9.65" y2="-4.65" width="0.5" layer="46" curve="-180"/>
@@ -865,6 +861,7 @@ Created by Robert Siegler &amp;lt;rs@kmp-ag.de&amp;gt;</description>
 <wire x1="0" y1="4.5" x2="14.3" y2="4.5" width="0.2" layer="51"/>
 <wire x1="0" y1="4.5" x2="0" y2="-4.5" width="0.2" layer="51"/>
 <wire x1="0" y1="-4.5" x2="14.3" y2="-4.5" width="0.2" layer="51"/>
+<wire x1="7.5" y1="1.1" x2="7.5" y2="-1.1" width="0.8" layer="46"/>
 </package>
 <package name="IC_SOT223">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -8972,6 +8969,15 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="0" y1="-0.5" x2="0.1" y2="-0.5" width="0.2" layer="21"/>
 <smd name="2" x="0" y="0" dx="0.8" dy="0.3" layer="1" cream="no"/>
 </package>
+<package name="PCB_CORNER_NH">
+<wire x1="5" y1="0" x2="0" y2="-5" width="2" layer="46" curve="-90"/>
+<wire x1="-5.1" y1="-5" x2="0" y2="-5" width="2" layer="46"/>
+<wire x1="5" y1="0" x2="5" y2="5.1" width="2" layer="46"/>
+<wire x1="-6.1" y1="-4" x2="0" y2="-4" width="0" layer="20"/>
+<wire x1="0" y1="-4" x2="4" y2="0" width="0" layer="20" curve="90"/>
+<wire x1="4" y1="0" x2="4" y2="6.1" width="0" layer="20"/>
+<circle x="0" y="0" radius="1.6" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -9350,10 +9356,10 @@ grid 7.62 mm, diameter 18 mm</description>
 <text x="-2.032" y="-4.318" size="1.524" layer="95">G/ADJ</text>
 <text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
-<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="pwr"/>
-<pin name="ADJ" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
-<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
-<pin name="OUT/EN/NC" x="0" y="5.08" visible="off" length="short" direction="hiz" rot="R270"/>
+<pin name="IN" x="-7.62" y="0" visible="pad" length="short" direction="pwr"/>
+<pin name="ADJ" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
+<pin name="OUT/EN/NC" x="0" y="5.08" visible="pad" length="short" direction="hiz" rot="R270"/>
 </symbol>
 <symbol name="MPIN">
 <text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
@@ -9936,16 +9942,19 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="0.1U">
 <attribute name="AKIZUKI" value="P-05650" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
 </technology>
 <technology name="1.0U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="302010139" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10420,7 +10429,9 @@ grid 7.62 mm, diameter 18 mm</description>
 </device>
 <device name="_1.2" package="ICON_REVISION1.2">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="NOT_COMPONENT" value="YES" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -10499,6 +10510,13 @@ grid 7.62 mm, diameter 18 mm</description>
 </gates>
 <devices>
 <device name="" package="PCB_CORNER">
+<technologies>
+<technology name="">
+<attribute name="NOT_COMPONENT" value="YES" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_NH" package="PCB_CORNER_NH">
 <technologies>
 <technology name="">
 <attribute name="NOT_COMPONENT" value="YES" constant="no"/>
@@ -12281,6 +12299,7 @@ Source: www.kingbright.com</description>
 <package name="GIT-REVISION">
 <text x="0" y="0" size="1.27" layer="51">&gt;GIT</text>
 <circle x="0" y="0" radius="0.2" width="0.2" layer="51"/>
+<text x="0" y="0" size="1" layer="21" ratio="20" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -12447,7 +12466,7 @@ Source: www.kingbright.com</description>
 <part name="TP102" library="mylib" deviceset="TESTPAD" device="_F"/>
 <part name="ICON1" library="mylib" deviceset="ICON_OSHW" device="" value="OSHW"/>
 <part name="ICON2" library="mylib" deviceset="ICON_REVISION" device="_2.0" value="r0.4"/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="" value="f9bc818"/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="" value="a30fd1f"/>
 <part name="TP1" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="TP2" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="R41" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
