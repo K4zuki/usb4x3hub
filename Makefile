@@ -1,9 +1,14 @@
 # include Makefile.win
 include Makefile.in
 
+
+
+
 MDDIR:= doc
 DATADIR:= doc/data
 TARGETDIR:= doc/Out
+IMAGEDIR:= doc/images
+WAVEDIR:= doc/images/waves
 
 INPUT:= TITLE.md
 TARGET = TARGET
