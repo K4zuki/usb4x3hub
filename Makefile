@@ -10,6 +10,14 @@ TARGET = TARGET
 
 CSV:= $(shell cd $(DATADIR); ls *.csv)
 TABLES:= $(CSV:%.csv=$(TARGETDIR)/%.tmd)
+
+WAVEYAML:= $(shell cd $(DATADIR); ls *.yaml)
+PYWAVEOPTS:= -c
+PYWAVEOPTS += 'import sys, yaml, json; \
+							json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)'
+WAVEJSON:= $(WAVEYAML:%.yaml=$(TARGETDIR)/%.json)
+WAVEPNG:= $(WAVEYAML:%.yaml=$(WAVEDIR)/%.png)
+
 FILTERED= $(INPUT:%.md=$(TARGETDIR)/%.fmd)
 HTML:=$(TARGETDIR)/$(TARGET).html
 DOCX:=$(TARGETDIR)/$(TARGET).docx
@@ -22,9 +30,11 @@ PANFLAGS += -M css=$(MISC)/github_css/github.css
 PANFLAGS += -M short-hash=`git rev-parse --short HEAD`
 PANFLAGS += -M tables=true
 
-.PHONY: docx html filtered tables pdf tex merge clean
+MARKDOWN = $(shell ls $(MDDIR)/*.md)
 
-all: $(TARGETDIR) $(DATADIR) $(MDDIR) html
+.PHONY: docx html filtered tables pdf tex merge clean linking
+
+all: html
 
 docx: $(DOCX)
 $(DOCX): $(HTML)
@@ -32,34 +42,45 @@ $(DOCX): $(HTML)
 	$(PYTHON) $(DOCXPWRTR) -I $(MDDIR)/$(INPUT) -O $(DOCX)
 
 html: $(HTML)
-
-$(HTML): $(TABLES) $(FILTERED)
+$(HTML): $(TARGETDIR)/$(TARGET).md
 	$(PANDOC) $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
 		$(FILTERED) -o $(HTML)
 
-pdf: tex
-	cd $(TARGETDIR); \
-	rm -f ./images; \
-	ln -s ../images; \
+pdf: $(TARGETDIR)/$(IMAGEDIR) $(TARGETDIR)/$(TARGET).tex
+	cd $(TARGETDIR);\
+	xelatex --no-pdf $(TARGET).tex; \
 	xelatex $(TARGET).tex
 
-tex: merge $(TARGETDIR)/$(TARGET).tex
-$(TARGETDIR)/$(TARGET).tex:
-	$(PANDOC) $(PANFLAGS) --template=$(MISC)/CJK_xelatex.tex --latex-engine=xelatex \
-		$(TARGETDIR)/$(TARGET).md -o $(TARGETDIR)/$(TARGET).tex; \
-	xelatex --output-directory=$(TARGETDIR) --no-pdf $(TARGETDIR)/$(TARGET).tex
+linking: $(TARGETDIR)/$(IMAGEDIR)
+$(TARGETDIR)/$(IMAGEDIR):
+	rm -f $(TARGETDIR)/$(IMAGEDIR); \
+	cd $(TARGETDIR);\
+	ln -s ../$(IMAGEDIR)
 
-merge: filtered $(TARGETDIR)/$(TARGET).md
-$(TARGETDIR)/$(TARGET).md:
+tex: $(TARGETDIR)/$(TARGET).tex
+$(TARGETDIR)/$(TARGET).tex: $(TARGETDIR)/$(TARGET).md
+	$(PANDOC) $(PANFLAGS) --template=$(MISC)/CJK_xelatex.tex --latex-engine=xelatex \
+		$(TARGETDIR)/$(TARGET).md -o $(TARGETDIR)/$(TARGET).tex
+
+merge: $(TARGETDIR)/$(TARGET).md
+$(TARGETDIR)/$(TARGET).md: $(FILTERED)
 	cat $(FILTERED) > $(TARGETDIR)/$(TARGET).md
 
-filtered: $(MDDIR) $(TABLES) $(FILTERED)
-$(FILTERED): $(MDDIR)/$(INPUT)
+filtered: $(FILTERED)
+$(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(TABLES) $(WAVEPNG)
 	cat $< | $(PYTHON) $(FILTER) --out $@
 
-tables: $(TARGETDIR) $(DATADIR) $(TABLES)
+tables: $(TABLES)
 $(TARGETDIR)/%.tmd: $(DATADIR)/%.csv
 	$(PYTHON) $(CSV2TABLE) --file $< --out $@ --delimiter ','
+
+wavedrom: $(WAVEPNG)
+$(WAVEDIR)/%.png: $(TARGETDIR)/%.json
+	phantomjs $(WAVEDROM) -i $< -p $@
+
+yaml2json: $(WAVEJSON)
+$(TARGETDIR)/%.json: $(DATADIR)/%.yaml
+	$(PYTHON) $(PYWAVEOPTS) < $< > $@
 
 $(TARGETDIR):
 	mkdir -p $(TARGETDIR)
@@ -67,6 +88,10 @@ $(DATADIR):
 	mkdir -p $(DATADIR)
 $(MDDIR):
 	mkdir -p $(MDDIR)
+$(IMAGEDIR):
+	mkdir -p $(IMAGEDIR)
+$(WAVEDIR):
+	mkdir -p $(WAVEDIR)
 
 clean: $(TARGETDIR)
-	rm -rf $(TARGETDIR)/*
+	rm -rf $(TARGETDIR)/* $(WAVEDIR)/
