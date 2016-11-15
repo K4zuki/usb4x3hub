@@ -1,9 +1,6 @@
 # include Makefile.win
 include Makefile.in
 
-
-
-
 MDDIR:= doc
 DATADIR:= doc/data
 TARGETDIR:= doc/Out
