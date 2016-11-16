@@ -43,7 +43,7 @@ $(DOCX): $(HTML)
 	$(PANDOC) --reference-docx=$(REFERENCE) $(HTML) -o $(DOCX); \
 	$(PYTHON) $(DOCXPWRTR) -I $(MDDIR)/$(INPUT) -O $(DOCX)
 
-html: $(HTML)
+html: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(HTML)
 $(HTML): $(MDDIR)/$(TARGETDIR)/$(TARGET).md
 	$(PANDOC) $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
 		$(FILTERED) -o $(HTML)
@@ -62,11 +62,11 @@ $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR):
 tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
 $(MDDIR)/$(TARGETDIR)/$(TARGET).tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
 	$(PANDOC) $(PANFLAGS) --template=$(MISC)/CJK_xelatex.tex --latex-engine=xelatex \
-		$(MDDIR)/$(TARGETDIR)/$(TARGET).md -o $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
+	$(MDDIR)/$(TARGETDIR)/$(TARGET).md -o $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
 
 merge: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
 $(MDDIR)/$(TARGETDIR)/$(TARGET).md: $(FILTERED)
-	cat $(FILTERED) > $(TARGETDIR)/$(TARGET).md
+	cat $(FILTERED) > $(MDDIR)/$(TARGETDIR)/$(TARGET).md
 
 filtered: $(FILTERED)
 $(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(TABLES) $(WAVEPNG)
