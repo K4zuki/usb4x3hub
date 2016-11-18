@@ -52,7 +52,7 @@ html:
 # 		$(FILTERED) -o $(HTML)
 
 pdf:
-	cd $(MDDIR);
+	cd $(MDDIR);\
 	make pdf
 # $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
 # 	cd $(MDDIR)/$(TARGETDIR);\
