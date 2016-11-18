@@ -38,62 +38,71 @@ MARKDOWN = $(shell ls $(MDDIR)/*.md)
 
 all: html
 
-docx: $(DOCX)
-$(DOCX): $(HTML)
-	$(PANDOC) --reference-docx=$(REFERENCE) $(HTML) -o $(DOCX); \
-	$(PYTHON) $(DOCXPWRTR) -I $(MDDIR)/$(INPUT) -O $(DOCX)
+# docx: $(DOCX)
+# $(DOCX): $(HTML)
+# 	$(PANDOC) --reference-docx=$(REFERENCE) $(HTML) -o $(DOCX); \
+# 	$(PYTHON) $(DOCXPWRTR) -I $(MDDIR)/$(INPUT) -O $(DOCX)
 
-html: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(HTML)
-$(HTML): $(MDDIR)/$(TARGETDIR)/$(TARGET).md
-	$(PANDOC) $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
-		$(FILTERED) -o $(HTML)
+html:
+	cd $(MDDIR);\
+	make html
+# $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(HTML)
+# $(HTML): $(MDDIR)/$(TARGETDIR)/$(TARGET).md
+# 	$(PANDOC) $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
+# 		$(FILTERED) -o $(HTML)
 
-pdf: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
-	cd $(MDDIR)/$(TARGETDIR);\
-	xelatex --no-pdf $(TARGET).tex; \
-	xelatex $(TARGET).tex
+pdf:
+	cd $(MDDIR);
+	make pdf
+# $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
+# 	cd $(MDDIR)/$(TARGETDIR);\
+# 	xelatex --no-pdf $(TARGET).tex; \
+# 	xelatex $(TARGET).tex
 
-linking: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR)
-$(MDDIR)/$(TARGETDIR)/$(IMAGEDIR):
-	rm -f $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR); \
-	cd $(MDDIR)/$(TARGETDIR);\
-	ln -s ../$(IMAGEDIR)
+# linking: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR)
+# $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR):
+# 	rm -f $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR); \
+# 	cd $(MDDIR)/$(TARGETDIR);\
+# 	ln -s ../$(IMAGEDIR)
 
-tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
-$(MDDIR)/$(TARGETDIR)/$(TARGET).tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
-	$(PANDOC) $(PANFLAGS) --template=$(MISC)/CJK_xelatex.tex --latex-engine=xelatex \
-	$(MDDIR)/$(TARGETDIR)/$(TARGET).md -o $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
+# tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
+# $(MDDIR)/$(TARGETDIR)/$(TARGET).tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
+# 	$(PANDOC) $(PANFLAGS) --template=$(MISC)/CJK_xelatex.tex --latex-engine=xelatex \
+# 	$(MDDIR)/$(TARGETDIR)/$(TARGET).md -o $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
 
-merge: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
-$(MDDIR)/$(TARGETDIR)/$(TARGET).md: $(FILTERED)
-	cat $(FILTERED) > $(MDDIR)/$(TARGETDIR)/$(TARGET).md
+# merge: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
+# $(MDDIR)/$(TARGETDIR)/$(TARGET).md: $(FILTERED)
+# 	cat $(FILTERED) > $(MDDIR)/$(TARGETDIR)/$(TARGET).md
 
-filtered: $(FILTERED)
-$(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(TABLES) $(WAVEPNG)
-	cat $< | $(PYTHON) $(FILTER) --out $@
+# filtered: $(FILTERED)
+# $(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(TABLES) $(WAVEPNG)
+# 	cat $< | $(PYTHON) $(FILTER) --out $@
 
-tables: $(TABLES)
-$(MDDIR)/$(TARGETDIR)/%.tmd: $(MDDIR)/$(DATADIR)/%.csv
-	$(PYTHON) $(CSV2TABLE) --file $< --out $@ --delimiter ','
+# tables: $(TABLES)
+# $(MDDIR)/$(TARGETDIR)/%.tmd: $(MDDIR)/$(DATADIR)/%.csv
+# 	$(PYTHON) $(CSV2TABLE) --file $< --out $@ --delimiter ','
 
-wavedrom: $(WAVEPNG)
-$(MDDIR)/$(WAVEDIR)/%.png: $(MDDIR)/$(TARGETDIR)/%.json
-	phantomjs $(WAVEDROM) -i $< -p $@
+# wavedrom: $(WAVEPNG)
+# $(MDDIR)/$(WAVEDIR)/%.png: $(MDDIR)/$(TARGETDIR)/%.json
+# 	phantomjs $(WAVEDROM) -i $< -p $@
 
-yaml2json: $(WAVEJSON)
-$(MDDIR)/$(TARGETDIR)/%.json: $(MDDIR)/$(DATADIR)/%.yaml
-	$(PYTHON) $(PYWAVEOPTS) < $< > $@
+# yaml2json: $(WAVEJSON)
+# $(MDDIR)/$(TARGETDIR)/%.json: $(MDDIR)/$(DATADIR)/%.yaml
+# 	$(PYTHON) $(PYWAVEOPTS) < $< > $@
 
-$(MDDIR)/$(TARGETDIR):
-	mkdir -p $(MDDIR)/$(TARGETDIR)
-$(MDDIR)/$(DATADIR):
-	mkdir -p $(MDDIR)/$(DATADIR)
-$(MDDIR):
-	mkdir -p $(MDDIR)
-$(MDDIR)/$(IMAGEDIR):
-	mkdir -p $(MDDIR)/$(IMAGEDIR)
-$(MDDIR)/$(WAVEDIR):
-	mkdir -p $(MDDIR)/$(WAVEDIR)
+# $(MDDIR)/$(TARGETDIR):
+# 	mkdir -p $(MDDIR)/$(TARGETDIR)
+# $(MDDIR)/$(DATADIR):
+# 	mkdir -p $(MDDIR)/$(DATADIR)
+# $(MDDIR):
+# 	mkdir -p $(MDDIR)
+# $(MDDIR)/$(IMAGEDIR):
+# 	mkdir -p $(MDDIR)/$(IMAGEDIR)
+# $(MDDIR)/$(WAVEDIR):
+# 	mkdir -p $(MDDIR)/$(WAVEDIR)
 
-clean: $(MDDIR)/$(TARGETDIR)
-	rm -rf $(MDDIR)/$(TARGETDIR)/* $(MDDIR)/$(WAVEDIR)/
+clean:
+	cd $(MDDIR);\
+	make clean
+# $(MDDIR)/$(TARGETDIR)
+	# rm -rf $(MDDIR)/$(TARGETDIR)/* $(MDDIR)/$(WAVEDIR)/
