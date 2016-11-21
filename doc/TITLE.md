@@ -83,12 +83,13 @@ USBミニBコネクタDIP化キット[^004]を接続しただけの、簡素で�
 
 ![回路図(マイコン部分を拡大)](images/USB4x3HUB_r04_LPC812.png)
 
+\newpage
 `../mbed/main.cpp`{.listingtable .cpp}
 
 # 付録
 ## 回路図
 \newpage
-`images/USB4x3HUB_r04_sch.png`{.rotate .caption="回路図" .angle=90}{ }
+`images/USB4x3HUB_r04_sch.png`{.rotate .caption="回路図" .angle=90}{}
 
 \newpage
 ## 基板図
@@ -98,7 +99,7 @@ USBミニBコネクタDIP化キット[^004]を接続しただけの、簡素で�
 \newpage
 ## 基板寸法とパネル寸法の例
 \newpage
-`images/USB4x3HUB_r04-a30fd1f_meas.png`{.rotate .caption="寸法図" .angle=90}{ }
+`images/USB4x3HUB_r04-a30fd1f_meas.png`{.rotate .caption="寸法図" .angle=90}{}
 
 <!--  -->
 [^001]: https://www.switch-science.com/catalog/1966/

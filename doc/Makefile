@@ -8,7 +8,7 @@ IMAGEDIR:= images
 WAVEDIR:= images/waves
 
 INPUT:= TITLE.md
-TARGET = TARGET
+TARGET = USB4x3HUB
 
 CSV:= $(shell cd $(MDDIR)/$(DATADIR); ls *.csv)
 TABLES:= $(CSV:%.csv=$(MDDIR)/$(TARGETDIR)/%.tmd)
@@ -70,7 +70,7 @@ $(MDDIR)/$(TARGETDIR)/$(TARGET).md: $(FILTERED)
 
 filtered: $(FILTERED)
 $(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(TABLES) $(WAVEPNG)
-	cat $< | $(PYTHON) $(FILTER) --out $@
+	cat $< | $(PYTHON) $(FILTER) --mode tex --out $@
 
 tables: $(TABLES)
 $(MDDIR)/$(TARGETDIR)/%.tmd: $(MDDIR)/$(DATADIR)/%.csv

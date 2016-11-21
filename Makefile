@@ -8,7 +8,7 @@ IMAGEDIR:= images
 WAVEDIR:= images/waves
 
 INPUT:= TITLE.md
-TARGET = TARGET
+TARGET = USB4x3HUB
 
 CSV:= $(shell cd $(MDDIR)/$(DATADIR); ls *.csv)
 TABLES:= $(CSV:%.csv=$(MDDIR)/$(TARGETDIR)/%.tmd)
@@ -38,7 +38,9 @@ MARKDOWN = $(shell ls $(MDDIR)/*.md)
 
 all: html
 
-# docx: $(DOCX)
+docx:
+	cd $(MDDIR);\
+	make docx
 # $(DOCX): $(HTML)
 # 	$(PANDOC) --reference-docx=$(REFERENCE) $(HTML) -o $(DOCX); \
 # 	$(PYTHON) $(DOCXPWRTR) -I $(MDDIR)/$(INPUT) -O $(DOCX)
@@ -59,34 +61,50 @@ pdf:
 # 	xelatex --no-pdf $(TARGET).tex; \
 # 	xelatex $(TARGET).tex
 
-# linking: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR)
+linking:
+	cd $(MDDIR);\
+	make linking
+
 # $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR):
 # 	rm -f $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR); \
 # 	cd $(MDDIR)/$(TARGETDIR);\
 # 	ln -s ../$(IMAGEDIR)
 
-# tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
+tex:
+	cd $(MDDIR);\
+	make tex
+
 # $(MDDIR)/$(TARGETDIR)/$(TARGET).tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
 # 	$(PANDOC) $(PANFLAGS) --template=$(MISC)/CJK_xelatex.tex --latex-engine=xelatex \
 # 	$(MDDIR)/$(TARGETDIR)/$(TARGET).md -o $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
 
-# merge: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
+merge:
+	cd $(MDDIR);\
+	make merge
 # $(MDDIR)/$(TARGETDIR)/$(TARGET).md: $(FILTERED)
 # 	cat $(FILTERED) > $(MDDIR)/$(TARGETDIR)/$(TARGET).md
 
-# filtered: $(FILTERED)
+filtered:
+	cd $(MDDIR);\
+	make filtered
 # $(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(TABLES) $(WAVEPNG)
 # 	cat $< | $(PYTHON) $(FILTER) --out $@
 
-# tables: $(TABLES)
+tables:
+	cd $(MDDIR);\
+	make tables
 # $(MDDIR)/$(TARGETDIR)/%.tmd: $(MDDIR)/$(DATADIR)/%.csv
 # 	$(PYTHON) $(CSV2TABLE) --file $< --out $@ --delimiter ','
 
-# wavedrom: $(WAVEPNG)
+wavedrom:
+	cd $(MDDIR);\
+	make wavedrom
 # $(MDDIR)/$(WAVEDIR)/%.png: $(MDDIR)/$(TARGETDIR)/%.json
 # 	phantomjs $(WAVEDROM) -i $< -p $@
 
-# yaml2json: $(WAVEJSON)
+yaml2json:
+	cd $(MDDIR);\
+	make yaml2json
 # $(MDDIR)/$(TARGETDIR)/%.json: $(MDDIR)/$(DATADIR)/%.yaml
 # 	$(PYTHON) $(PYWAVEOPTS) < $< > $@
 
