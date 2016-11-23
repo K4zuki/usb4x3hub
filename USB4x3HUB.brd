@@ -42,9 +42,9 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="0" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
@@ -312,7 +312,7 @@
 <dimension x1="-32.1" y1="20.7" x2="-25" y2="20.7" x3="-28.55" y3="17.6" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="-32.1" y1="20.7" x2="-39.6" y2="20.7" x3="-35.85" y3="12.9" textsize="1.778" layer="47" dtype="horizontal"/>
 <wire x1="12" y1="9.5" x2="69.5" y2="9.5" width="2" layer="42"/>
-<wire x1="12" y1="79.5" x2="69.5" y2="79.5" width="4" layer="39"/>
+<wire x1="-50" y1="79.5" x2="120" y2="79.5" width="4" layer="39"/>
 <wire x1="12" y1="9.5" x2="69.5" y2="9.5" width="2" layer="41"/>
 <wire x1="12" y1="80.5" x2="69.5" y2="80.5" width="2" layer="41"/>
 <wire x1="12" y1="80.5" x2="69.5" y2="80.5" width="2" layer="42"/>
@@ -342,7 +342,7 @@
 <dimension x1="-37" y1="16" x2="-28.08046875" y2="7.972421875" x3="-22.282771875" y3="2.754496875" textsize="2" textratio="10" layer="47" dtype="radius"/>
 <circle x="110.4" y="27" radius="4" width="0" layer="50"/>
 <circle x="110.4" y="73.6" radius="4" width="0" layer="50"/>
-<wire x1="12.1" y1="10.5" x2="69.6" y2="10.5" width="4" layer="39"/>
+<wire x1="-50" y1="10.5" x2="120" y2="10.5" width="4" layer="39"/>
 <text x="55" y="69.7" size="2" layer="47" ratio="10" align="center">h=10</text>
 <dimension x1="100.4" y1="74" x2="93.7" y2="74" x3="97.05" y3="91" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="100.4" y1="74" x2="105.7" y2="86" x3="92.9" y3="80" textsize="2" textratio="10" layer="47" dtype="vertical"/>
@@ -415,6 +415,8 @@
 <wire x1="-49" y1="74" x2="-25" y2="74" width="0" layer="50" curve="-180"/>
 <wire x1="93.7" y1="74" x2="117.7" y2="74" width="0" layer="50" curve="-180"/>
 <wire x1="93.7" y1="16" x2="117.7" y2="16" width="0" layer="50" curve="180"/>
+<dimension x1="69.5" y1="71.4" x2="58.5" y2="71.4" x3="64" y3="71.4" textsize="1" textratio="20" layer="20"/>
+<dimension x1="104.9" y1="73.6" x2="100.4" y2="73.6" x3="102.65" y3="73.6" textsize="1" textratio="20" layer="20"/>
 </plain>
 <libraries>
 <library name="mylib">
