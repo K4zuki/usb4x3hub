@@ -4534,7 +4534,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="46.5" y="30.2" size="1" layer="25" font="vector" ratio="20" align="center"/>
 <attribute name="VALUE" x="44.5" y="30.9" size="1" layer="27" font="vector" rot="R270" align="center"/>
 </element>
-<element name="IC10" library="mylib" package="SOT65P315X290-8N" value=" SN74LVC1G139DCUR" x="53.4" y="29.2" smashed="yes">
+<element name="IC10" library="mylib" package="SOT65P315X290-8N" value="SN74LVC1G139DCTR" x="53.4" y="29.2" smashed="yes">
 <attribute name="NAME" x="57.3" y="29.2" size="1.2" layer="25" font="vector" ratio="17" align="center"/>
 <attribute name="VALUE" x="56.7" y="26.7" size="1" layer="27" font="vector" ratio="20" rot="R90"/>
 <attribute name="DIGIKEY" value="296-18235-1-ND" x="53.4" y="29.2" size="1.778" layer="27" display="off"/>

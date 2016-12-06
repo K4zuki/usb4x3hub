@@ -8978,6 +8978,13 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="4" y1="0" x2="4" y2="6.1" width="0" layer="20"/>
 <circle x="0" y="0" radius="1.6" width="0.2" layer="51"/>
 </package>
+<package name="ICON_REVISION1.7">
+<text x="-0.1" y="0" size="1.7" layer="21" font="vector" ratio="12" align="center">&gt;VALUE</text>
+<wire x1="-3.1" y1="1.2" x2="2.4" y2="1.2" width="0.2" layer="21"/>
+<wire x1="2.4" y1="1.2" x2="2.4" y2="-1.2" width="0.2" layer="21"/>
+<wire x1="2.4" y1="-1.2" x2="-3.1" y2="-1.2" width="0.2" layer="21"/>
+<wire x1="-3.1" y1="-1.2" x2="-3.1" y2="1.2" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -9956,6 +9963,12 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010139" constant="no"/>
 </technology>
+<technology name="10U">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="445-11238-1-ND" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SEEED" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_2012" package="CR_2125">
@@ -10295,7 +10308,7 @@ grid 7.62 mm, diameter 18 mm</description>
 </technology>
 </technologies>
 </device>
-<device name="_SC82−AB" package="SOT130P220X135-4N">
+<device name="_SC82-AB" package="SOT130P220X135-4N">
 <connects>
 <connect gate="G$1" pin="ADJ" pad="1"/>
 <connect gate="G$1" pin="IN" pad="2"/>
@@ -10428,6 +10441,13 @@ grid 7.62 mm, diameter 18 mm</description>
 </technologies>
 </device>
 <device name="_1.2" package="ICON_REVISION1.2">
+<technologies>
+<technology name="">
+<attribute name="NOT_COMPONENT" value="YES" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_1.7" package="ICON_REVISION1.7">
 <technologies>
 <technology name="">
 <attribute name="NOT_COMPONENT" value="YES" constant="no"/>
@@ -12301,6 +12321,16 @@ Source: www.kingbright.com</description>
 <circle x="0" y="0" radius="0.2" width="0.2" layer="51"/>
 <text x="0" y="0" size="1" layer="21" ratio="20" align="center">&gt;VALUE</text>
 </package>
+<package name="GIT-REVISION_1.2">
+<text x="0" y="0" size="1.27" layer="51">&gt;GIT</text>
+<circle x="0" y="0" radius="0.2" width="0.2" layer="51"/>
+<text x="0" y="0" size="1.2" layer="21" ratio="18" align="center">&gt;VALUE</text>
+</package>
+<package name="GIT-REVISION_1.7">
+<text x="0" y="0" size="1.27" layer="51">&gt;GIT</text>
+<circle x="0" y="0" radius="0.2" width="0.2" layer="51"/>
+<text x="0" y="0" size="1.7" layer="21" ratio="12" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="GIT-REVISION">
@@ -12317,7 +12347,21 @@ Source: www.kingbright.com</description>
 <gate name="G$1" symbol="GIT-REVISION" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="GIT-REVISION">
+<device name="_1.0" package="GIT-REVISION">
+<technologies>
+<technology name="">
+<attribute name="NOT_COMPONENT" value="YES" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_1.2" package="GIT-REVISION_1.2">
+<technologies>
+<technology name="">
+<attribute name="NOT_COMPONENT" value="YES" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_1.7" package="GIT-REVISION_1.7">
 <technologies>
 <technology name="">
 <attribute name="NOT_COMPONENT" value="YES" constant="no"/>
@@ -12436,7 +12480,7 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY31" library="mylib" deviceset="GND" device=""/>
 <part name="R24" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
 <part name="R25" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="IC10" library="mylib" deviceset="IC_TTL_SINGLE_74_139" device="_FLAT" value=" SN74LVC1G139DCUR"/>
+<part name="IC10" library="mylib" deviceset="IC_TTL_SINGLE_74_139" device="_FLAT" value="SN74LVC1G139DCTR"/>
 <part name="C22" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
 <part name="SUPPLY33" library="mylib" deviceset="GND" device=""/>
 <part name="LED1" library="led_local" deviceset="LED" device="CHIPLED_0805" technology="RD" value="RD"/>
@@ -12466,7 +12510,7 @@ Source: www.kingbright.com</description>
 <part name="TP102" library="mylib" deviceset="TESTPAD" device="_F"/>
 <part name="ICON1" library="mylib" deviceset="ICON_OSHW" device="" value="OSHW"/>
 <part name="ICON2" library="mylib" deviceset="ICON_REVISION" device="_2.0" value="r0.4"/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="" value="a30fd1f"/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.0" value="a30fd1f"/>
 <part name="TP1" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="TP2" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="R41" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
