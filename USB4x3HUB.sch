@@ -980,64 +980,6 @@ Created by Robert Siegler &amp;lt;rs@kmp-ag.de&amp;gt;</description>
 <wire x1="0.55" y1="-1" x2="1.45" y2="-1" width="0.2" layer="31"/>
 <wire x1="0.55" y1="-1.4" x2="1.45" y2="-1.4" width="0.2" layer="31"/>
 </package>
-<package name="SW_TACTSW_2P">
-<wire x1="3.302" y1="-0.762" x2="3.048" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="3.302" y1="-0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.1524" layer="51"/>
-<wire x1="-3.302" y1="0.762" x2="-3.048" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-3.302" y1="0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-3.048" y1="-0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.1524" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.1524" layer="51"/>
-<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.1524" layer="51"/>
-<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.1524" layer="51"/>
-<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
-<wire x1="-1.27" y1="3.048" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
-<wire x1="1.27" y1="2.794" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
-<wire x1="1.27" y1="2.794" x2="1.27" y2="3.048" width="0.0508" layer="21"/>
-<wire x1="1.143" y1="-2.794" x2="-1.27" y2="-2.794" width="0.0508" layer="21"/>
-<wire x1="1.143" y1="-2.794" x2="1.143" y2="-3.048" width="0.0508" layer="21"/>
-<wire x1="-1.27" y1="-2.794" x2="-1.27" y2="-3.048" width="0.0508" layer="21"/>
-<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.1524" layer="51"/>
-<wire x1="-2.159" y1="-3.048" x2="-1.27" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="51"/>
-<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.1524" layer="51"/>
-<wire x1="2.159" y1="3.048" x2="1.27" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="3.048" x2="-1.27" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-3.048" x2="1.143" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="-0.762" x2="3.048" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="0.762" x2="3.048" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-3.048" y1="-0.762" x2="-3.048" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-3.048" y1="0.762" x2="-3.048" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-2.159" x2="1.27" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="1.27" y1="2.286" x2="-1.27" y2="2.286" width="0.1524" layer="51"/>
-<wire x1="-2.413" y1="1.27" x2="-2.413" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="-2.413" y1="-0.508" x2="-2.413" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="-2.413" y1="0.508" x2="-2.159" y2="-0.381" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="1.778" width="0.1524" layer="21"/>
-<circle x="-2.159" y="-2.159" radius="0.508" width="0.1524" layer="51"/>
-<circle x="2.159" y="-2.032" radius="0.508" width="0.1524" layer="51"/>
-<circle x="2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
-<circle x="-2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="0.635" width="0.0508" layer="51"/>
-<circle x="0" y="0" radius="0.254" width="0.1524" layer="21"/>
-<pad name="A2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="A1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-4.318" y="1.651" size="1.27" layer="51" ratio="10">1</text>
-<text x="3.556" y="1.524" size="1.27" layer="51" ratio="10">2</text>
-</package>
 <package name="SW_TACTSW_P8073">
 <pad name="A2" x="3.2" y="0" drill="1.3" shape="octagon" rot="R90"/>
 <pad name="A1" x="-3.2" y="0" drill="1.3" shape="octagon"/>
@@ -8856,6 +8798,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <vertex x="-3" y="-4.2"/>
 <vertex x="-2" y="-4.2"/>
 </polygon>
+<text x="0" y="0" size="1.27" layer="47" ratio="17" align="center">h=10</text>
 </package>
 <package name="CON_USB_614104150121WURTH">
 <text x="0" y="0" size="1.27" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
@@ -8984,6 +8927,122 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="2.4" y1="1.2" x2="2.4" y2="-1.2" width="0.2" layer="21"/>
 <wire x1="2.4" y1="-1.2" x2="-3.1" y2="-1.2" width="0.2" layer="21"/>
 <wire x1="-3.1" y1="-1.2" x2="-3.1" y2="1.2" width="0.2" layer="21"/>
+</package>
+<package name="SW_TACTSW_2P">
+<pad name="2" x="2.5" y="0" drill="1" shape="octagon"/>
+<pad name="1" x="-2.5" y="0" drill="1" shape="octagon"/>
+<text x="-2.5" y="-5" size="1.2" layer="27" ratio="17">&gt;VALUE</text>
+<wire x1="3" y1="1.4" x2="3" y2="1.1" width="0.2" layer="21"/>
+<wire x1="3" y1="1.1" x2="3" y2="-1.1" width="0.2" layer="51"/>
+<wire x1="3" y1="-1.1" x2="3" y2="-1.4" width="0.2" layer="21"/>
+<wire x1="1.4" y1="-3" x2="-1.4" y2="-3" width="0.2" layer="21"/>
+<wire x1="-3" y1="-1.4" x2="-3" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-3" y1="-1.1" x2="-3" y2="1.1" width="0.2" layer="51"/>
+<wire x1="-3" y1="1.1" x2="-3" y2="1.4" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="1.4" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="0.4" width="2" layer="21"/>
+<wire x1="-1.4" y1="3" x2="1.4" y2="3" width="0.2" layer="21"/>
+<wire x1="-3" y1="-1.4" x2="-1.4" y2="-3" width="0.2" layer="21"/>
+<wire x1="1.4" y1="-3" x2="3" y2="-1.4" width="0.2" layer="21"/>
+<wire x1="3" y1="1.4" x2="1.4" y2="3" width="0.2" layer="21"/>
+<wire x1="-1.4" y1="3" x2="-3" y2="1.4" width="0.2" layer="21"/>
+<text x="-2.9" y="3.4" size="1.2" layer="25" ratio="17">&gt;NAME</text>
+</package>
+<package name="SW_TACTSW_SKRPACE010">
+<wire x1="2.1" y1="1.6" x2="2.1" y2="0.6" width="0.2" layer="51"/>
+<wire x1="2.1" y1="0.6" x2="2.1" y2="-0.6" width="0.2" layer="21"/>
+<wire x1="2.1" y1="-0.6" x2="2.1" y2="-1.6" width="0.2" layer="51"/>
+<wire x1="2.1" y1="-1.6" x2="1.2" y2="-1.6" width="0.2" layer="51"/>
+<wire x1="1.2" y1="-1.6" x2="-1.2" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="-1.2" y1="-1.6" x2="-2.1" y2="-1.6" width="0.2" layer="51"/>
+<wire x1="-2.1" y1="-1.6" x2="-2.1" y2="-0.6" width="0.2" layer="51"/>
+<wire x1="-2.1" y1="-0.6" x2="-2.1" y2="0.6" width="0.2" layer="21"/>
+<wire x1="-2.1" y1="0.6" x2="-2.1" y2="1.6" width="0.2" layer="51"/>
+<wire x1="-2.1" y1="1.6" x2="-1.2" y2="1.6" width="0.2" layer="51"/>
+<wire x1="-1.2" y1="1.6" x2="1.2" y2="1.6" width="0.2" layer="21"/>
+<wire x1="1.2" y1="1.6" x2="2.1" y2="1.6" width="0.2" layer="51"/>
+<polygon width="0.2" layer="21">
+<vertex x="0.4" y="1"/>
+<vertex x="-0.4" y="1" curve="90"/>
+<vertex x="-1.4" y="0" curve="90"/>
+<vertex x="-0.4" y="-1"/>
+<vertex x="0.4" y="-1" curve="90"/>
+<vertex x="1.4" y="0" curve="90"/>
+</polygon>
+<text x="0" y="0" size="1" layer="47" ratio="20" align="center">h=[  ]</text>
+<smd name="1" x="-2.1" y="1.3" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="2" x="2.1" y="1.3" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="3" x="-2.1" y="-1.3" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<smd name="4" x="2.1" y="-1.3" dx="1.1" dy="0.7" layer="1" cream="no"/>
+<polygon width="0.2" layer="31">
+<vertex x="-2.5" y="1.5"/>
+<vertex x="-1.7" y="1.5"/>
+<vertex x="-1.7" y="1.1"/>
+<vertex x="-2.5" y="1.1"/>
+</polygon>
+<polygon width="0.2" layer="31">
+<vertex x="1.7" y="1.5"/>
+<vertex x="2.5" y="1.5"/>
+<vertex x="2.5" y="1.1"/>
+<vertex x="1.7" y="1.1"/>
+</polygon>
+<polygon width="0.2" layer="31">
+<vertex x="1.7" y="-1.1"/>
+<vertex x="2.5" y="-1.1"/>
+<vertex x="2.5" y="-1.5"/>
+<vertex x="1.7" y="-1.5"/>
+</polygon>
+<polygon width="0.2" layer="31">
+<vertex x="-2.5" y="-1.1"/>
+<vertex x="-1.7" y="-1.1"/>
+<vertex x="-1.7" y="-1.5"/>
+<vertex x="-2.5" y="-1.5"/>
+</polygon>
+</package>
+<package name="SW_TACTSW_B3F-10XX">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="-2.159" x2="1.27" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="2.286" x2="-1.27" y2="2.286" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="1.27" x2="-2.413" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="-0.508" x2="-2.413" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="0.508" x2="-2.159" y2="-0.381" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="1.778" width="0.15" layer="21"/>
+<circle x="-2.159" y="-2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="2.159" y="-2.032" radius="0.508" width="0.1524" layer="51"/>
+<circle x="2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="-2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="0.635" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="0.254" width="0.1524" layer="21"/>
+<pad name="1" x="-3.2" y="2.2" drill="1" shape="octagon"/>
+<pad name="2" x="3.2" y="2.2" drill="1" shape="octagon"/>
+<pad name="3" x="-3.2" y="-2.2" drill="1" shape="octagon"/>
+<pad name="4" x="3.2" y="-2.2" drill="1" shape="octagon"/>
+<text x="-3" y="3.6" size="1.2" layer="25" font="vector" ratio="17">&gt;NAME</text>
+<text x="-3" y="-5" size="1.2" layer="27" font="vector" ratio="17">&gt;VALUE</text>
+<text x="-4.3" y="1.6" size="1.27" layer="51" ratio="10">1</text>
+<text x="3.5" y="1.5" size="1.27" layer="51" ratio="10">2</text>
+<text x="-4.5" y="-2.7" size="1.27" layer="51" ratio="10">3</text>
+<text x="3.5" y="-2.7" size="1.27" layer="51" ratio="10">4</text>
+<wire x1="-2.1" y1="3" x2="2.1" y2="3" width="0.2" layer="21"/>
+<wire x1="-2.1" y1="-3" x2="2.1" y2="-3" width="0.2" layer="21"/>
+<wire x1="-3" y1="1" x2="-3" y2="-1" width="0.2" layer="21"/>
+<wire x1="3" y1="1" x2="3" y2="-1" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9747,13 +9806,21 @@ grid 7.62 mm, diameter 18 mm</description>
 <gate name="G$1" symbol="SW_1X1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SW_TACTSW_2P">
+<device name="_AKI" package="SW_TACTSW_2P">
 <connects>
-<connect gate="G$1" pin="P" pad="A1"/>
-<connect gate="G$1" pin="S" pad="A2"/>
+<connect gate="G$1" pin="P" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="AKIZUKI" value="" constant="no"/>
+</technology>
+<technology name="BK">
+<attribute name="AKIZUKI" value="P-08078" constant="no"/>
+</technology>
+<technology name="WH">
+<attribute name="AKIZUKI" value="P-08080" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="_P807X" package="SW_TACTSW_P8073">
@@ -9800,6 +9867,45 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="450-2146-1-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SKRPACE010" package="SW_TACTSW_SKRPACE010">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="WH">
+<attribute name="AKIZUKI" value="P-06185" constant="no"/>
+<attribute name="MOUSER" value="688-SKRPAC" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_B3F-10XX" package="SW_TACTSW_B3F-10XX">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="BK">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="RD">
+<attribute name="AKIZUKI" value="" constant="no"/>
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
 </technology>
 </technologies>
 </device>

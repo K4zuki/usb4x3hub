@@ -3775,6 +3775,7 @@ SOT23-5&lt;br&gt;</description>
 <vertex x="-3" y="-4.2"/>
 <vertex x="-2" y="-4.2"/>
 </polygon>
+<text x="0" y="0" size="1.27" layer="47" ratio="17" align="center">h=10</text>
 </package>
 <package name="SW_TACTSW_FSM2JMTR">
 <text x="0" y="0" size="1.2" layer="25" font="vector" ratio="17" align="center">&gt;NAME</text>
