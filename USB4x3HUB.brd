@@ -415,7 +415,7 @@
 <wire x1="-49" y1="74" x2="-25" y2="74" width="0" layer="50" curve="-180"/>
 <wire x1="93.7" y1="74" x2="117.7" y2="74" width="0" layer="50" curve="-180"/>
 <wire x1="93.7" y1="16" x2="117.7" y2="16" width="0" layer="50" curve="180"/>
-<dimension x1="69.5" y1="71.4" x2="58.5" y2="71.4" x3="64" y3="71.4" textsize="1" textratio="20" layer="20"/>
+<dimension x1="69.5" y1="71.4" x2="58.5" y2="71.4" x3="64" y3="71.4" textsize="1" textratio="20" layer="47"/>
 <dimension x1="104.9" y1="73.6" x2="100.4" y2="73.6" x3="102.65" y3="73.6" textsize="1" textratio="20" layer="20"/>
 </plain>
 <libraries>
