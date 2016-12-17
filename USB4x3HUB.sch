@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10740,7 +10740,7 @@ grid 7.62 mm, diameter 18 mm</description>
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="TSW-106-02-S-S-RA">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <wire x1="-7.7" y1="-2" x2="7.7" y2="-2" width="0.2" layer="21"/>
 <wire x1="7.7" y1="-2" x2="7.7" y2="-0.1" width="0.2" layer="21"/>
@@ -10777,7 +10777,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="-7.7" y1="-2" x2="-7.7" y2="-0.1" width="0.2" layer="51"/>
 </package>
 <package name="TSW-102-02-S-S">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <wire x1="-2.6" y1="1.1" x2="2.6" y2="1.1" width="0.2" layer="21"/>
 <wire x1="2.6" y1="1.1" x2="2.6" y2="-1.1" width="0.2" layer="21"/>
@@ -10800,7 +10800,7 @@ Source: Samtec TSW.pdf</description>
 <wire x1="-2.6" y1="1.1" x2="-2.6" y2="-1.1" width="0.2" layer="51"/>
 </package>
 <package name="TSW-102-02-S-S-RA">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <wire x1="-2.669" y1="-2.046" x2="2.669" y2="-2.046" width="0.2032" layer="21"/>
 <wire x1="2.669" y1="-2.046" x2="2.669" y2="-0.106" width="0.2032" layer="21"/>
@@ -10821,7 +10821,7 @@ Source: Samtec TSW.pdf</description>
 </polygon>
 </package>
 <package name="TSW-106-02-S-S">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
+<description>&lt;b&gt;THROUGH-HOLE .025inch SQ POST HEADER&lt;/b&gt;&lt;p&gt;
 Source: Samtec TSW.pdf</description>
 <pad name="1" x="6.35" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
 <pad name="2" x="3.81" y="0" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
@@ -10921,6 +10921,7 @@ Source: Samtec TSW.pdf</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="S1011EC-02-ND" constant="no"/>
 <attribute name="SEEED" value="320020016" constant="no"/>
 </technology>
 </technologies>
@@ -13393,12 +13394,10 @@ LED1-4
 <segment>
 <pinref part="SUPPLY34" gate="GND" pin="GND"/>
 <pinref part="TP2" gate="1" pin="1"/>
-<pinref part="TP2" gate="1" pin="1"/>
 <wire x1="261.62" y1="25.4" x2="261.62" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
-<pinref part="TP1" gate="1" pin="1"/>
 <pinref part="TP1" gate="1" pin="1"/>
 <wire x1="266.7" y1="25.4" x2="266.7" y2="17.78" width="0.1524" layer="91"/>
 </segment>
