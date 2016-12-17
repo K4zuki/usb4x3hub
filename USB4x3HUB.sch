@@ -9044,6 +9044,60 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="-3" y1="1" x2="-3" y2="-1" width="0.2" layer="21"/>
 <wire x1="3" y1="1" x2="3" y2="-1" width="0.2" layer="21"/>
 </package>
+<package name="SW_TACTSW_B3F-4000">
+<wire x1="-1.905" y1="1.905" x2="1.905" y2="1.905" width="0.2" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="1.905" y2="1.905" width="0.2" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="-1.905" y2="-1.905" width="0.2" layer="21"/>
+<wire x1="-1.905" y1="1.905" x2="-1.905" y2="-1.905" width="0.2" layer="21"/>
+<wire x1="-1.651" y1="1.651" x2="1.651" y2="1.651" width="0.2" layer="21"/>
+<wire x1="1.651" y1="-1.651" x2="1.651" y2="1.651" width="0.2" layer="21"/>
+<wire x1="1.651" y1="-1.651" x2="-1.651" y2="-1.651" width="0.2" layer="21"/>
+<wire x1="-1.651" y1="1.651" x2="-1.651" y2="-1.651" width="0.2" layer="21"/>
+<wire x1="6.1" y1="5" x2="5" y2="6.1" width="0.2" layer="21"/>
+<wire x1="6.1" y1="5" x2="6.1" y2="3.8" width="0.2" layer="21"/>
+<wire x1="6.1" y1="1.1" x2="6.1" y2="3.8" width="0.2" layer="51"/>
+<wire x1="6.1" y1="1.1" x2="6.1" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="6.1" y1="-3.8" x2="6.1" y2="-1.1" width="0.2" layer="51"/>
+<wire x1="5" y1="-6.1" x2="6.1" y2="-5" width="0.2" layer="21"/>
+<wire x1="6.1" y1="-5" x2="6.1" y2="-3.8" width="0.2" layer="21"/>
+<wire x1="-6.1" y1="1.1" x2="-6.1" y2="3.8" width="0.2" layer="51"/>
+<wire x1="-6.1" y1="1.1" x2="-6.1" y2="-1.1" width="0.2" layer="21"/>
+<wire x1="-6.1" y1="-3.8" x2="-6.1" y2="-1.1" width="0.2" layer="51"/>
+<wire x1="-6.1" y1="-3.8" x2="-6.1" y2="-5" width="0.2" layer="21"/>
+<wire x1="-6.1" y1="-5" x2="-5" y2="-6.1" width="0.2" layer="21"/>
+<wire x1="-5" y1="-6.1" x2="5" y2="-6.1" width="0.2" layer="21"/>
+<wire x1="-5" y1="6.1" x2="5" y2="6.1" width="0.2" layer="21"/>
+<wire x1="-5" y1="6.1" x2="-6.1" y2="5" width="0.2" layer="21"/>
+<wire x1="-6.1" y1="5" x2="-6.1" y2="3.8" width="0.2" layer="21"/>
+<wire x1="-5" y1="2.5" x2="-4.5" y2="2.5" width="0.2" layer="51"/>
+<wire x1="2.9" y1="2.5" x2="5" y2="2.5" width="0.2" layer="51"/>
+<wire x1="-5" y1="-2.5" x2="-4.5" y2="-2.5" width="0.2" layer="51"/>
+<wire x1="2.9" y1="-2.5" x2="5" y2="-2.5" width="0.2" layer="51"/>
+<wire x1="-4.5" y1="2.5" x2="-4.5" y2="0.7" width="0.2" layer="51"/>
+<wire x1="-4.5" y1="2.5" x2="-2.9" y2="2.5" width="0.2" layer="51"/>
+<wire x1="-4.5" y1="0.7" x2="-5" y2="-0.7" width="0.2" layer="51"/>
+<wire x1="-4.5" y1="-0.7" x2="-4.5" y2="-2.5" width="0.2" layer="51"/>
+<wire x1="-4.5" y1="-2.5" x2="-2.9" y2="-2.5" width="0.2" layer="51"/>
+<circle x="0" y="0" radius="3.6" width="0.2" layer="51"/>
+<circle x="0" y="0" radius="0.762" width="0.2" layer="21"/>
+<circle x="-4.5" y="2.5" radius="0.127" width="0.2" layer="51"/>
+<circle x="-4.5" y="-2.5" radius="0.127" width="0.2" layer="51"/>
+<pad name="1" x="-6.25" y="2.5" drill="1.2" shape="long"/>
+<pad name="2" x="6.25" y="2.5" drill="1.2" shape="long"/>
+<pad name="3" x="-6.25" y="-2.5" drill="1.2" shape="long"/>
+<pad name="4" x="6.25" y="-2.5" drill="1.2" shape="long"/>
+<text x="0" y="0" size="1.2" layer="25" ratio="17" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.2" layer="27" ratio="17" align="center">&gt;VALUE</text>
+<rectangle x1="6.1" y1="-2.95" x2="6.6" y2="-2.05" layer="51"/>
+<rectangle x1="6.1" y1="2.05" x2="6.6" y2="2.95" layer="51"/>
+<rectangle x1="-6.6" y1="2.05" x2="-6.1" y2="2.95" layer="51"/>
+<rectangle x1="-6.6" y1="-2.95" x2="-6.1" y2="-2.05" layer="51"/>
+<hole x="0" y="4.5" drill="1.8"/>
+<hole x="0" y="-4.5" drill="1.8"/>
+<wire x1="0.8" y1="3.5" x2="0.8" y2="-3.5" width="0.2" layer="21" curve="-152.9"/>
+<wire x1="-0.8" y1="-3.5" x2="-0.8" y2="3.5" width="0.2" layer="21" curve="-152.9"/>
+<circle x="0" y="0" radius="1.016" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -9907,6 +9961,15 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="_B3F-4000" package="SW_TACTSW_B3F-4000">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
