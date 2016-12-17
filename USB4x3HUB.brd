@@ -300,7 +300,7 @@
 <dimension x1="100.2" y1="22.3" x2="105.7" y2="4" x3="91.8" y3="13.15" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="100.2" y1="31.7" x2="100.2" y2="22.3" x3="97.2" y3="27" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="100.2" y1="34.3" x2="100.2" y2="31.7" x3="97.2" y3="33" textsize="1.778" layer="47" dtype="vertical"/>
-<dimension x1="110.4" y1="4" x2="93.7" y2="30.3" x3="102.05" y3="-3.5" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="110.4" y1="17" x2="93.7" y2="30.3" x3="102.05" y3="-3.5" textsize="1.778" layer="47" dtype="horizontal"/>
 <circle x="105.7" y="9.2" radius="1.6" width="0" layer="50"/>
 <circle x="105.7" y="80.8" radius="1.6" width="0" layer="50"/>
 <circle x="-37" y="80.8" radius="1.6" width="0" layer="50"/>
@@ -344,8 +344,8 @@
 <circle x="110.4" y="70.5" radius="4" width="0" layer="50"/>
 <wire x1="-50" y1="10.5" x2="120" y2="10.5" width="4" layer="39"/>
 <text x="55" y="69.7" size="2" layer="47" ratio="10" align="center">h=10</text>
-<dimension x1="100.4" y1="74" x2="93.7" y2="74" x3="97.05" y3="91" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
-<dimension x1="100.4" y1="74" x2="105.7" y2="86" x3="92.9" y3="80" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="106.4" y1="70.5" x2="93.7" y2="74" x3="100.05" y3="91" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
+<dimension x1="110.4" y1="74.5" x2="105.7" y2="86" x3="92.9" y3="80.25" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <text x="25" y="2.6" size="1.2" layer="51" ratio="17">JUST in MXA2-8-6SS (TAKACHI)</text>
 <wire x1="32.1" y1="43.2" x2="32.9" y2="43.2" width="0.2" layer="21"/>
 <wire x1="32.9" y1="43.2" x2="33.3" y2="43.6" width="0.2" layer="21"/>
@@ -416,7 +416,6 @@
 <wire x1="93.7" y1="74" x2="117.7" y2="74" width="0" layer="50" curve="-180"/>
 <wire x1="93.7" y1="16" x2="117.7" y2="16" width="0" layer="50" curve="180"/>
 <dimension x1="69.5" y1="71.4" x2="58.5" y2="71.4" x3="64" y3="71.4" textsize="1" textratio="20" layer="47"/>
-<dimension x1="104.9" y1="70.5" x2="100.4" y2="73.6" x3="102.65" y3="72.05" textsize="1" textratio="20" layer="20"/>
 </plain>
 <libraries>
 <library name="mylib">
@@ -3951,10 +3950,10 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
+Die Standard-Design-Rules sind so gewählt, dass sie für
+die meisten Anwendungen passen. Sollte ihre Platine
 besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
+Einstellungen hier und speichern die Design Rules unter
 einem neuen Namen ab.</description>
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
