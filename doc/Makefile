@@ -97,3 +97,4 @@ $(MDDIR)/$(WAVEDIR):
 
 clean: $(MDDIR)/$(TARGETDIR)
 	rm -rf $(MDDIR)/$(TARGETDIR)/* $(MDDIR)/$(WAVEDIR)/
+	rm $(MDDIR)/$(IMAGEDIR)/*_r[+-]*.png
