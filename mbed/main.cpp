@@ -2,12 +2,7 @@
 
 DigitalOut OE(P0_13, 1);
 BusOut SEL(P0_7, P0_6);
-/*
-InterruptIn SW1(P0_3);
-InterruptIn SW2(P0_2);
-InterruptIn SW3(P0_11);
-InterruptIn SW4(P0_10);
-*/
+
 InterruptIn SW1(P0_8);
 InterruptIn SW2(P0_1);
 InterruptIn SW3(P0_9);
