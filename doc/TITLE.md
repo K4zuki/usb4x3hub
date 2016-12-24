@@ -34,7 +34,6 @@ listingTitle: 'List'
 listingTemplate: '---**$$listingTitle$$ $$i$$$$titleDelim$$ $$t$$**---'
 ---
 
-\newpage
 # まえがき {.unnumbered}
 このドキュメントは、USB機器を最大４台のホストマシンで共有するガジェット
 _**USB4x3HUB**_ のソフトウェア・ハードウェアを解説する本です。
@@ -175,6 +174,7 @@ Table: 部品表
 
 \newpage
 ## 基板図
+\newpage
 
 ![基板外観図](images/USB4x3HUB_r04-a30fd1f.png){}
 
