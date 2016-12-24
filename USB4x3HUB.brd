@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -4179,16 +4179,19 @@ design rules under a new name.</description>
 <attribute name="NAME" x="19.2" y="70.5" size="1.2" layer="25" font="vector" ratio="17"/>
 <attribute name="VALUE" x="23.6" y="63.5" size="1.27" layer="27" font="vector" ratio="16" rot="R270"/>
 <attribute name="DIGIKEY" value="732-5962-1-ND" x="22" y="63" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER" value="710-614104150121" x="22" y="63" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="CON6" library="mylib" package="CON_USB_614104150121WURTH" value="" x="22" y="45" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.2" y="52.5" size="1.2" layer="25" font="vector" ratio="17"/>
 <attribute name="VALUE" x="23.6" y="45.5" size="1.27" layer="27" font="vector" ratio="16" rot="R270"/>
 <attribute name="DIGIKEY" value="732-5962-1-ND" x="22" y="45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER" value="710-614104150121" x="22" y="45" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="CON7" library="mylib" package="CON_USB_614104150121WURTH" value="" x="22" y="27" smashed="yes" rot="R270">
 <attribute name="NAME" x="19.2" y="34.5" size="1.2" layer="25" font="vector" ratio="17"/>
 <attribute name="VALUE" x="23.6" y="27.5" size="1.27" layer="27" font="vector" ratio="16" rot="R270"/>
 <attribute name="DIGIKEY" value="732-5962-1-ND" x="22" y="27" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER" value="710-614104150121" x="22" y="27" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="J1" library="mylib" package="CON_DCJACK_C-1604" value="" x="55" y="83.5" smashed="yes" rot="R270">
 <attribute name="AKIZUKI" value="C-01604" x="55" y="83.5" size="1.778" layer="27" rot="R270" display="off"/>

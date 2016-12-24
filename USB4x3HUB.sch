@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9715,6 +9715,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="732-5962-1-ND" constant="no"/>
+<attribute name="MOUSER" value="710-614104150121" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -12804,22 +12805,22 @@ LED1-4
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="IC1" gate="G$1" x="198.12" y="144.78">
-<attribute name="DIGIKEY" x="198.12" y="114.3" size="1.4224" layer="96" align="top-center" display="both"/>
+<attribute name="DIGIKEY" x="198.12" y="114.3" size="1.6764" layer="96" align="top-center" display="both"/>
 </instance>
 <instance part="IC2" gate="G$1" x="101.6" y="142.24">
-<attribute name="DIGIKEY" x="101.6" y="119.38" size="1.4224" layer="96" align="top-center" display="both"/>
+<attribute name="DIGIKEY" x="101.6" y="119.38" size="1.6764" layer="96" align="top-center" display="both"/>
 </instance>
 <instance part="CON1" gate="G$1" x="27.94" y="177.8" rot="R180">
-<attribute name="DIGIKEY" x="27.94" y="185.42" size="1.4224" layer="96" align="bottom-center" display="both"/>
+<attribute name="DIGIKEY" x="27.94" y="185.42" size="1.778" layer="96" align="bottom-center" display="both"/>
 </instance>
 <instance part="CON2" gate="G$1" x="27.94" y="154.94" rot="R180">
-<attribute name="DIGIKEY" x="27.94" y="162.56" size="1.4224" layer="96" align="bottom-center" display="both"/>
+<attribute name="DIGIKEY" x="27.94" y="162.56" size="1.778" layer="96" align="bottom-center" display="both"/>
 </instance>
 <instance part="CON3" gate="G$1" x="27.94" y="132.08" rot="R180">
-<attribute name="DIGIKEY" x="27.94" y="139.7" size="1.4224" layer="96" align="bottom-center" display="both"/>
+<attribute name="DIGIKEY" x="27.94" y="139.7" size="1.778" layer="96" align="bottom-center" display="both"/>
 </instance>
 <instance part="CON4" gate="G$1" x="27.94" y="106.68" rot="R180">
-<attribute name="DIGIKEY" x="27.94" y="114.3" size="1.4224" layer="96" align="bottom-center" display="both"/>
+<attribute name="DIGIKEY" x="27.94" y="114.3" size="1.778" layer="96" align="bottom-center" display="both"/>
 </instance>
 <instance part="IC3" gate="G$1" x="294.64" y="241.3">
 <attribute name="DIGIKEY" x="294.64" y="231.14" size="1.016" layer="96" align="top-center" display="both"/>
@@ -12834,20 +12835,20 @@ LED1-4
 <instance part="CON6" gate="G$1" x="370.84" y="213.36"/>
 <instance part="CON7" gate="G$1" x="370.84" y="185.42"/>
 <instance part="J1" gate="G$1" x="15.24" y="241.3">
-<attribute name="AKIZUKI" x="15.24" y="236.22" size="1.4224" layer="96" align="top-center" display="both"/>
+<attribute name="AKIZUKI" x="17.78" y="236.22" size="1.6764" layer="96" align="top-center" display="both"/>
 </instance>
 <instance part="U1" gate="G$1" x="139.7" y="78.74">
-<attribute name="DIGIKEY" x="139.7" y="63.5" size="1.4224" layer="96" align="top-center" display="both"/>
+<attribute name="DIGIKEY" x="139.7" y="63.5" size="1.6764" layer="96" align="top-center" display="both"/>
 </instance>
 <instance part="SW4" gate="G$1" x="195.58" y="76.2"/>
 <instance part="SW3" gate="G$1" x="210.82" y="76.2"/>
 <instance part="SW2" gate="G$1" x="226.06" y="76.2"/>
 <instance part="SW1" gate="G$1" x="241.3" y="76.2"/>
-<instance part="SUPPLY1" gate="GND" x="71.12" y="223.52"/>
+<instance part="SUPPLY1" gate="GND" x="88.9" y="226.06"/>
 <instance part="SUPPLY2" gate="GND" x="144.78" y="137.16"/>
 <instance part="SUPPLY4" gate="GND" x="127" y="154.94" rot="R90"/>
 <instance part="X1" gate="-1" x="142.24" y="53.34" rot="MR0">
-<attribute name="AKIZUKI" x="132.08" y="53.34" size="1.016" layer="96" rot="MR0" display="both"/>
+<attribute name="AKIZUKI" x="129.54" y="58.42" size="1.6764" layer="96" rot="MR180" align="bottom-center" display="both"/>
 </instance>
 <instance part="X1" gate="-2" x="142.24" y="50.8" rot="MR0"/>
 <instance part="X1" gate="-3" x="142.24" y="48.26" rot="MR0"/>
@@ -12856,7 +12857,9 @@ LED1-4
 </instance>
 <instance part="X1" gate="-5" x="142.24" y="43.18" rot="MR0"/>
 <instance part="X1" gate="-6" x="142.24" y="40.64" rot="MR0"/>
-<instance part="X2" gate="-1" x="142.24" y="30.48" rot="MR0"/>
+<instance part="X2" gate="-1" x="142.24" y="30.48" rot="MR0">
+<attribute name="DIGIKEY" x="132.08" y="35.56" size="1.6764" layer="96" rot="MR180" align="bottom-center" display="both"/>
+</instance>
 <instance part="X2" gate="-2" x="142.24" y="27.94" rot="MR0">
 <attribute name="NOT_COMPONENT" x="142.24" y="27.94" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
@@ -12882,12 +12885,14 @@ LED1-4
 <instance part="C9" gate="G$1" x="317.5" y="215.9"/>
 <instance part="C10" gate="G$1" x="322.58" y="187.96"/>
 <instance part="C11" gate="G$1" x="35.56" y="241.3"/>
-<instance part="C12" gate="G$1" x="71.12" y="238.76"/>
+<instance part="C12" gate="G$1" x="88.9" y="241.3"/>
 <instance part="C13" gate="G$1" x="175.26" y="76.2" rot="R270"/>
 <instance part="SUPPLY17" gate="GND" x="182.88" y="76.2" rot="R90"/>
 <instance part="R1" gate="G$1" x="160.02" y="45.72"/>
 <instance part="R2" gate="G$1" x="160.02" y="43.18"/>
-<instance part="X3" gate="-1" x="142.24" y="17.78" rot="MR0"/>
+<instance part="X3" gate="-1" x="142.24" y="17.78" rot="MR0">
+<attribute name="DIGIKEY" x="132.08" y="22.86" size="1.6764" layer="96" rot="MR180" align="bottom-center" display="both"/>
+</instance>
 <instance part="X3" gate="-2" x="142.24" y="15.24" rot="MR0">
 <attribute name="NOT_COMPONENT" x="142.24" y="15.24" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
@@ -12932,7 +12937,7 @@ LED1-4
 <instance part="R24" gate="G$1" x="167.64" y="30.48"/>
 <instance part="R25" gate="G$1" x="167.64" y="17.78"/>
 <instance part="IC10" gate="G$1" x="284.48" y="73.66">
-<attribute name="DIGIKEY" x="284.48" y="60.96" size="1.016" layer="96" align="top-center" display="both"/>
+<attribute name="DIGIKEY" x="284.48" y="60.96" size="1.6764" layer="96" align="top-center" display="both"/>
 </instance>
 <instance part="C22" gate="G$1" x="302.26" y="81.28"/>
 <instance part="SUPPLY33" gate="GND" x="307.34" y="78.74" rot="R90"/>
@@ -12961,7 +12966,9 @@ LED1-4
 <instance part="R35" gate="G$1" x="167.64" y="154.94"/>
 <instance part="R36" gate="G$1" x="167.64" y="152.4"/>
 <instance part="R37" gate="G$1" x="167.64" y="149.86"/>
-<instance part="IC6" gate="G$1" x="83.82" y="241.3"/>
+<instance part="IC6" gate="G$1" x="101.6" y="243.84">
+<attribute name="DIGIKEY" x="101.6" y="248.92" size="1.6764" layer="96" align="bottom-center" display="both"/>
+</instance>
 <instance part="IC7" gate="G$1" x="246.38" y="246.38"/>
 <instance part="IC8" gate="G$1" x="246.38" y="218.44"/>
 <instance part="IC9" gate="G$1" x="276.86" y="190.5"/>
@@ -12999,7 +13006,7 @@ LED1-4
 <instance part="R45" gate="G$1" x="241.3" y="165.1"/>
 <instance part="R46" gate="G$1" x="241.3" y="152.4"/>
 <instance part="R47" gate="G$1" x="241.3" y="139.7"/>
-<instance part="C14" gate="G$1" x="93.98" y="238.76"/>
+<instance part="C14" gate="G$1" x="111.76" y="241.3"/>
 <instance part="SUPPLY37" gate="GND" x="355.6" y="238.76" rot="R270"/>
 <instance part="SUPPLY40" gate="GND" x="355.6" y="210.82" rot="R270"/>
 <instance part="SUPPLY41" gate="GND" x="355.6" y="182.88" rot="R270"/>
@@ -13152,11 +13159,11 @@ LED1-4
 <pinref part="IC9" gate="G$1" pin="IN"/>
 </segment>
 <segment>
-<wire x1="76.2" y1="241.3" x2="71.12" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="243.84" x2="88.9" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<junction x="71.12" y="241.3"/>
-<wire x1="63.5" y1="241.3" x2="71.12" y2="241.3" width="0.1524" layer="91"/>
-<label x="63.5" y="241.3" size="1.778" layer="95"/>
+<junction x="88.9" y="243.84"/>
+<wire x1="81.28" y1="243.84" x2="88.9" y2="243.84" width="0.1524" layer="91"/>
+<label x="81.28" y="243.84" size="1.778" layer="95"/>
 <pinref part="IC6" gate="G$1" pin="IN"/>
 </segment>
 <segment>
@@ -13177,16 +13184,16 @@ LED1-4
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="226.06" x2="71.12" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="228.6" x2="88.9" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<junction x="71.12" y="226.06"/>
-<wire x1="71.12" y1="226.06" x2="71.12" y2="236.22" width="0.1524" layer="91"/>
+<junction x="88.9" y="228.6"/>
+<wire x1="88.9" y1="228.6" x2="88.9" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="IC6" gate="G$1" pin="ADJ"/>
 <pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="236.22" x2="93.98" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="226.06" x2="83.82" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="226.06" x2="83.82" y2="233.68" width="0.1524" layer="91"/>
-<junction x="83.82" y="226.06"/>
+<wire x1="111.76" y1="238.76" x2="111.76" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="228.6" x2="101.6" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="228.6" x2="101.6" y2="236.22" width="0.1524" layer="91"/>
+<junction x="101.6" y="228.6"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
@@ -13439,12 +13446,12 @@ LED1-4
 </net>
 <net name="3.3V" class="0">
 <segment>
-<wire x1="91.44" y1="241.3" x2="93.98" y2="241.3" width="0.1524" layer="91"/>
-<label x="101.6" y="241.3" size="1.778" layer="95"/>
+<wire x1="109.22" y1="243.84" x2="111.76" y2="243.84" width="0.1524" layer="91"/>
+<label x="119.38" y="243.84" size="1.778" layer="95"/>
 <pinref part="IC6" gate="G$1" pin="OUT"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="241.3" x2="101.6" y2="241.3" width="0.1524" layer="91"/>
-<junction x="93.98" y="241.3"/>
+<wire x1="111.76" y1="243.84" x2="119.38" y2="243.84" width="0.1524" layer="91"/>
+<junction x="111.76" y="243.84"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VDD"/>
