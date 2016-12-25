@@ -211,9 +211,9 @@ Table: 部品表
 \newpage
 `images/USB4x3HUB_r04-a30fd1f_meas.png`{.rotate .caption="寸法図" .angle=90}{}
 
-# あとがき
-## C91(2016-Dec)
-- このドキュメントの初版
+# 更新履歴 {.unnumbered}
+## Revision 1.0(C91) {.unnumbered}
+- 最初の発行。やばみ
 - 新基板落ちた（未発送@12月24日）
 - それでも本だけだしておく暴挙（）
 - キンコーズでオンライン注文の予定だけど落ちるかも（）
