@@ -8816,13 +8816,15 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="-6.3" y1="-9" x2="-6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="0" x2="-7.3" y2="-2.7" width="0.2" layer="51"/>
 <wire x1="-7.3" y1="-2.7" x2="-6.3" y2="-2.7" width="0.2" layer="51"/>
-<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-10" width="0.2" layer="51"/>
+<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-9.7" width="0.2" layer="51"/>
+<wire x1="-6.3" y1="-9.7" x2="-6.3" y2="-10" width="0.2" layer="51"/>
 <wire x1="7.3" y1="0" x2="7.3" y2="-2.6" width="0.2" layer="21"/>
 <wire x1="6.3" y1="-2.6" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
 <wire x1="6.3" y1="-9" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="7.3" y1="0" x2="7.3" y2="-2.6" width="0.2" layer="51"/>
 <wire x1="7.3" y1="-2.6" x2="6.3" y2="-2.6" width="0.2" layer="51"/>
-<wire x1="6.3" y1="-2.6" x2="6.3" y2="-10" width="0.2" layer="51"/>
+<wire x1="6.3" y1="-2.6" x2="6.3" y2="-9.7" width="0.2" layer="51"/>
+<wire x1="6.3" y1="-9.7" x2="6.3" y2="-10" width="0.2" layer="51"/>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="51"/>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="0" x2="7.3" y2="0" width="0.2" layer="51"/>
@@ -8830,6 +8832,12 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="6.4" y1="-6.6" x2="6.4" y2="-8.1" width="0.6" layer="46"/>
 <wire x1="6.3" y1="-2.6" x2="7.3" y2="-2.6" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="-2.7" x2="-6.3" y2="-2.7" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-10" x2="-6.6" y2="-10" width="0.2" layer="51"/>
+<wire x1="-6.6" y1="-10" x2="-7.3" y2="-10" width="0.2" layer="51"/>
+<wire x1="7.3" y1="-10" x2="6.6" y2="-10" width="0.2" layer="51"/>
+<wire x1="6.6" y1="-10" x2="6.3" y2="-10" width="0.2" layer="51"/>
+<wire x1="6.3" y1="-9.7" x2="6.6" y2="-10" width="0.2" layer="51"/>
+<wire x1="-6.6" y1="-10" x2="-6.3" y2="-9.7" width="0.2" layer="51"/>
 </package>
 <package name="C_2.5PHI5_875105142005WURTH">
 <wire x1="-2.5" y1="2.7" x2="-0.7" y2="2.7" width="0.2" layer="21"/>
