@@ -294,7 +294,7 @@
 <dimension x1="100.2" y1="16.3" x2="105.7" y2="4" x3="91.8" y3="10.15" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="100.2" y1="25.7" x2="100.2" y2="16.3" x3="97.2" y3="21" textsize="1.778" layer="47" dtype="vertical"/>
 <dimension x1="100.2" y1="28.3" x2="100.2" y2="25.7" x3="97.2" y3="27" textsize="1.778" layer="47" dtype="vertical"/>
-<dimension x1="110.4" y1="17" x2="93.7" y2="30.3" x3="102.05" y3="-3.5" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="110.4" y1="16" x2="93.7" y2="30.3" x3="102.05" y3="-3.5" textsize="1.778" layer="47" dtype="horizontal"/>
 <circle x="105.7" y="9.2" radius="1.4" width="0" layer="50"/>
 <circle x="105.7" y="80.8" radius="1.4" width="0" layer="50"/>
 <circle x="-37" y="80.8" radius="1.4" width="0" layer="50"/>
@@ -324,17 +324,17 @@
 <wire x1="100.2" y1="28.3" x2="69.5" y2="28.3" width="0" layer="47" style="dashdot"/>
 <wire x1="100.2" y1="25.7" x2="69.5" y2="25.7" width="0" layer="47" style="dashdot"/>
 <wire x1="100.2" y1="16.3" x2="69.5" y2="16.3" width="0" layer="47" style="dashdot"/>
-<circle x="110.4" y="34" radius="4" width="0" layer="50"/>
-<circle x="110.4" y="46" radius="4" width="0" layer="50"/>
-<circle x="110.4" y="58" radius="4" width="0" layer="50"/>
+<circle x="110.4" y="33" radius="4" width="0" layer="50"/>
+<circle x="110.4" y="45" radius="4" width="0" layer="50"/>
+<circle x="110.4" y="57" radius="4" width="0" layer="50"/>
 <dimension x1="105.7" y1="16" x2="111.1502125" y2="5.309109375" x3="114.692853125" y3="-1.639971875" textsize="2" textratio="10" layer="47" dtype="radius"/>
-<dimension x1="110.4" y1="26" x2="110.4" y2="18" x3="120.9" y3="22" textsize="2" textratio="10" layer="47" dtype="diameter"/>
-<dimension x1="110.4" y1="22" x2="110.4" y2="4" x3="110.4" y3="13" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="110.4" y1="25" x2="110.4" y2="17" x3="120.9" y3="21" textsize="2" textratio="10" layer="47" dtype="diameter"/>
+<dimension x1="110.4" y1="21" x2="110.4" y2="4" x3="110.4" y3="12.5" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="-49" y1="74" x2="-25" y2="74" x3="-37" y3="93.5" textsize="2" layer="47" dtype="horizontal"/>
-<dimension x1="110.4" y1="30" x2="110.4" y2="26" x3="120.9" y3="28" textsize="2" textratio="10" layer="47" dtype="vertical"/>
+<dimension x1="110.4" y1="29" x2="110.4" y2="25" x3="120.9" y3="27" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="104.3" y1="80.8" x2="107.1" y2="80.8" x3="105.7" y3="88.7" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="-37" y1="16" x2="-28.08046875" y2="7.972421875" x3="-22.282771875" y3="2.754496875" textsize="2" textratio="10" layer="47" dtype="radius"/>
-<circle x="110.4" y="22" radius="4" width="0" layer="50"/>
+<circle x="110.4" y="21" radius="4" width="0" layer="50"/>
 <wire x1="-50" y1="10.5" x2="120" y2="10.5" width="4" layer="39"/>
 <text x="55" y="69.7" size="2" layer="47" ratio="10" align="center">h=10</text>
 <dimension x1="106.4" y1="70.5" x2="93.7" y2="74" x3="100.05" y3="91" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
@@ -399,10 +399,10 @@
 <circle x="-37" y="80.8" radius="3" width="0.2" layer="50"/>
 <circle x="105.7" y="9.2" radius="3" width="0.2" layer="50"/>
 <circle x="105.7" y="80.8" radius="3" width="0.2" layer="50"/>
-<circle x="110.4" y="58" radius="5" width="0.2" layer="50"/>
-<circle x="110.4" y="46" radius="5" width="0.2" layer="50"/>
-<circle x="110.4" y="34" radius="5" width="0.2" layer="50"/>
-<circle x="110.4" y="22" radius="5" width="0.2" layer="50"/>
+<circle x="110.4" y="57" radius="5" width="0.2" layer="50"/>
+<circle x="110.4" y="45" radius="5" width="0.2" layer="50"/>
+<circle x="110.4" y="33" radius="5" width="0.2" layer="50"/>
+<circle x="110.4" y="21" radius="5" width="0.2" layer="50"/>
 <wire x1="-49" y1="16" x2="-25" y2="16" width="0" layer="50" curve="180"/>
 <wire x1="-49" y1="74" x2="-25" y2="74" width="0" layer="50" curve="-180"/>
 <wire x1="93.7" y1="74" x2="117.7" y2="74" width="0" layer="50" curve="-180"/>
