@@ -8774,10 +8774,10 @@ grid 7.62 mm, diameter 18 mm</description>
 <text x="0" y="0" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
 <pad name="SHLD@1" x="6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
 <pad name="SHLD" x="-6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
-<pad name="3" x="1" y="0" drill="0.9"/>
-<pad name="2" x="-1" y="0" drill="0.9"/>
-<pad name="4" x="3.5" y="0" drill="0.9"/>
-<pad name="1" x="-3.5" y="0" drill="0.9"/>
+<pad name="2" x="1" y="0" drill="0.9"/>
+<pad name="3" x="-1" y="0" drill="0.9"/>
+<pad name="1" x="3.5" y="0" drill="0.9"/>
+<pad name="4" x="-3.5" y="0" drill="0.9"/>
 <wire x1="-7.3" y1="0" x2="-4.5" y2="0" width="0.2" layer="21"/>
 <wire x1="4.5" y1="0" x2="7.3" y2="0" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="0" x2="-7.3" y2="-2.7" width="0.2" layer="21"/>
@@ -8797,8 +8797,8 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="51"/>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="0" x2="7.3" y2="0" width="0.2" layer="51"/>
-<wire x1="-6.4" y1="-6.6" x2="-6.4" y2="-8.1" width="0.6" layer="46"/>
-<wire x1="6.4" y1="-6.6" x2="6.4" y2="-8.1" width="0.6" layer="46"/>
+<wire x1="-6.4" y1="-6.65" x2="-6.4" y2="-8.05" width="0.6" layer="46"/>
+<wire x1="6.4" y1="-6.65" x2="6.4" y2="-8.05" width="0.6" layer="46"/>
 <wire x1="6.3" y1="-2.6" x2="7.3" y2="-2.6" width="0.2" layer="21"/>
 <wire x1="-7.3" y1="-2.7" x2="-6.3" y2="-2.7" width="0.2" layer="21"/>
 <wire x1="-6.3" y1="-10" x2="-6.6" y2="-10" width="0.2" layer="51"/>
