@@ -4672,10 +4672,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="24" y="38.6" size="1.2" layer="25" ratio="17" rot="R180" align="center"/>
 <attribute name="VALUE" x="28.3" y="38.6" size="1.2" layer="27" ratio="17" rot="R90" align="center"/>
 </element>
-<element name="R38" library="mylib" package="R0402SHORT" value="" x="41.1" y="38.8" smashed="yes" rot="R90">
+<element name="R38" library="mylib" package="R0402SHORT" value="" x="41" y="38.8" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.3" y="38.8" size="1" layer="25" font="vector" ratio="20" rot="R90" align="center"/>
-<attribute name="VALUE" x="41.1" y="38.8" size="1" layer="27" font="vector" rot="R90" align="center"/>
-<attribute name="NOT_COMPONENT" value="YES" x="41.1" y="38.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="41" y="38.8" size="1" layer="27" font="vector" rot="R90" align="center"/>
+<attribute name="NOT_COMPONENT" value="YES" x="41" y="38.8" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="TP100" library="mylib" package="FIDUCIAL" value="" x="5" y="15">
 <attribute name="NOT_COMPONENT" value="YES" x="5" y="15" size="1.2" layer="27" ratio="17" display="off"/>
@@ -4920,7 +4920,6 @@ design rules under a new name.</description>
 <contactref element="CON5" pad="4"/>
 <contactref element="CON6" pad="4"/>
 <contactref element="CON7" pad="4"/>
-<contactref element="R38" pad="1"/>
 <contactref element="R40" pad="1"/>
 <contactref element="R43" pad="1"/>
 <contactref element="R44" pad="1"/>
@@ -4964,12 +4963,9 @@ design rules under a new name.</description>
 <via x="29.4" y="64.8" extent="1-16" drill="0.3"/>
 <via x="34.7" y="51.2" extent="1-16" drill="0.3"/>
 <contactref element="R40" pad="2"/>
-<contactref element="R38" pad="2"/>
 <contactref element="R43" pad="2"/>
 <contactref element="R44" pad="2"/>
 <contactref element="R42" pad="2"/>
-<wire x1="41.1" y1="38.2" x2="41.1" y2="38.8" width="0.3" layer="1"/>
-<wire x1="41.1" y1="38.2" x2="41.8" y2="38.2" width="0.4" layer="1"/>
 </signal>
 <signal name="AVSS">
 </signal>
@@ -5398,6 +5394,11 @@ design rules under a new name.</description>
 <wire x1="46" y1="48.9" x2="45.4" y2="48.9" width="0.25" layer="1"/>
 <contactref element="R39" pad="2"/>
 <wire x1="40.1" y1="33.3" x2="39.5" y2="33.3" width="0.3" layer="1"/>
+<contactref element="R38" pad="1"/>
+<contactref element="R38" pad="2"/>
+<via x="41.8" y="38.2" extent="1-16" drill="0.3"/>
+<wire x1="41" y1="38.2" x2="41.8" y2="38.2" width="0.25" layer="1"/>
+<wire x1="41" y1="38.2" x2="41" y2="38.8" width="0.25" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="IC1" pad="30"/>
@@ -6238,8 +6239,8 @@ design rules under a new name.</description>
 <signal name="N$64">
 <contactref element="IC1" pad="31"/>
 <contactref element="R38" pad="3"/>
-<wire x1="40.9" y1="40.85" x2="40.9" y2="39.6" width="0.3" layer="1"/>
-<wire x1="40.9" y1="39.6" x2="41.1" y2="39.4" width="0.3" layer="1"/>
+<wire x1="40.9" y1="40.85" x2="40.9" y2="39.5" width="0.3" layer="1"/>
+<wire x1="40.9" y1="39.5" x2="41" y2="39.4" width="0.3" layer="1"/>
 </signal>
 <signal name="N$65">
 <contactref element="IC1" pad="22"/>

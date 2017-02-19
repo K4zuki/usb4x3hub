@@ -12750,6 +12750,15 @@ LED1-4
 <wire x1="132.08" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="94"/>
 <wire x1="157.48" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="94"/>
 <wire x1="162.56" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="94"/>
+<text x="147.32" y="180.34" size="1.778" layer="91">Mode select. 
+When MODE is low, the APLL output clock 
+is selected as the clock source to drive the
+internal core of the device and 6-MHz 
+crystal or oscillator can be used. 
+When MODE is high, the clock on 
+XTAL1/CLK48 is selected as the clock
+source and 48-MHz oscillator or other 
+on-board clock source can be used.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -13307,8 +13316,7 @@ LED1-4
 <wire x1="165.1" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="132.08" x2="154.94" y2="134.62" width="0.1524" layer="91"/>
 <junction x="154.94" y="142.24"/>
-<wire x1="154.94" y1="134.62" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="137.16" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="134.62" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="139.7" x2="154.94" y2="142.24" width="0.1524" layer="91"/>
 <junction x="154.94" y="134.62"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
@@ -13321,10 +13329,7 @@ LED1-4
 <wire x1="154.94" y1="129.54" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
 <junction x="154.94" y="132.08"/>
 <junction x="154.94" y="139.7"/>
-<pinref part="R38" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="139.7" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="137.16" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
-<junction x="154.94" y="137.16"/>
 <pinref part="R40" gate="G$1" pin="1"/>
 <pinref part="R43" gate="G$1" pin="1"/>
 <pinref part="R44" gate="G$1" pin="1"/>
@@ -13404,7 +13409,8 @@ LED1-4
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <label x="137.16" y="147.32" size="1.778" layer="95"/>
 <wire x1="144.78" y1="147.32" x2="149.86" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="147.32" x2="152.4" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="147.32" x2="172.72" y2="147.32" width="0.1524" layer="91"/>
 <junction x="154.94" y="147.32"/>
 <wire x1="165.1" y1="154.94" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
@@ -13423,6 +13429,10 @@ LED1-4
 <junction x="154.94" y="147.32"/>
 <junction x="154.94" y="149.86"/>
 <junction x="154.94" y="152.4"/>
+<wire x1="152.4" y1="147.32" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
+<junction x="152.4" y="147.32"/>
+<pinref part="R38" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
