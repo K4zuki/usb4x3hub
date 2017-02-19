@@ -9570,6 +9570,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-27129-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="32"/>
 </technology>
 </technologies>
 </device>
@@ -9603,6 +9604,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="FSUSB74MPXCT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="17"/>
 </technology>
 </technologies>
 </device>
@@ -9672,6 +9674,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="WM17143CT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="11"/>
 </technology>
 </technologies>
 </device>
@@ -9687,6 +9690,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technology name="">
 <attribute name="DIGIKEY" value="732-5962-1-ND" constant="no"/>
 <attribute name="MOUSER" value="710-614104150121" constant="no"/>
+<attribute name="TH_PAD" value="6"/>
 </technology>
 </technologies>
 </device>
@@ -9709,6 +9713,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-35520-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="5"/>
 </technology>
 </technologies>
 </device>
@@ -9763,6 +9768,9 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="AKIZUKI" value="C-01604" constant="no"/>
+<attribute name="MOUSER" value="163-179PH-EX" constant="no"/>
+<attribute name="SEEED" value="320120003" constant="no"/>
+<attribute name="TH_PAD" value="3" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9821,6 +9829,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="568-10436-5-ND" constant="no"/>
+<attribute name="SMD_PAD" value="16"/>
 </technology>
 </technologies>
 </device>
@@ -9893,6 +9902,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="450-2146-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -10038,9 +10048,11 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SMD_PAD" value="" constant="no"/>
 </technology>
 <technology name="100U">
 <attribute name="DIGIKEY" value="P16468CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="2" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10066,9 +10078,11 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SMD_PAD" value="" constant="no"/>
 </technology>
 <technology name="100U">
 <attribute name="DIGIKEY" value="732-6394-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="2" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10091,24 +10105,28 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="0.1U">
 <attribute name="AKIZUKI" value="P-05650" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="1.0U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010139" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="10U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="445-11238-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -10122,11 +10140,13 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="4.7U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-9962-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -10150,54 +10170,63 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="0.1U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-3261-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010024 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="1.0U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-3890-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010040 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="10P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-5921-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010001 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="10U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="81-GRM155R60J106ME4D" constant="no"/>
 <attribute name="SEEED" value="302010053 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="12P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010049 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="18P">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="490-5858-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010016 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="2.2U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="4.7U">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="302010019 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -10297,66 +10326,77 @@ grid 7.62 mm, diameter 18 mm</description>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="1.0K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P1.00KLCT-ND " constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010006 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="1.5K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P1.50KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010001 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="100R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P100LCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010028 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="10K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P10.0KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010047 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="15K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P15.0KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010042 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="220R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010550 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="270R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="33R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P33.0LCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010609 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="4.7K">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="P4.70KLCT-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010010 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="75R">
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
 <attribute name="SEEED" value="301010058 " constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -10408,6 +10448,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="296-18235-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="8"/>
 </technology>
 </technologies>
 </device>
@@ -10508,14 +10549,17 @@ grid 7.62 mm, diameter 18 mm</description>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="9"/>
 </technology>
 <technology name="3.3">
 <attribute name="DIGIKEY" value="296-32364-1-ND" constant="no"/>
 <attribute name="MOUSER" value="" constant="no"/>
+<attribute name="SMD_PAD" value="9"/>
 </technology>
 <technology name="5.0">
 <attribute name="DIGIKEY" value="296-19663-1-ND" constant="no"/>
 <attribute name="MOUSER" value="595-TLV1117-50CDRJR" constant="no"/>
+<attribute name="SMD_PAD" value="9"/>
 </technology>
 </technologies>
 </device>
@@ -10554,6 +10598,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="A106145CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="1"/>
 </technology>
 </technologies>
 </device>
@@ -10564,6 +10609,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="36-5019CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="1"/>
 </technology>
 </technologies>
 </device>
@@ -10612,12 +10658,15 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 <technology name="48M">
-<attribute name="DIGIKEY" value="887-2327-1-ND" constant="no"/>
+<attribute name="DIGIKEY" value="478-4782-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 <technology name="6.0M">
 <attribute name="DIGIKEY" value="CTX974CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 </technologies>
 </device>
@@ -10854,6 +10903,7 @@ Source: Samtec TSW.pdf</description>
 <attribute name="AKIZUKI" value="C-05336" constant="no"/>
 <attribute name="DIGIKEY" value="952-2372-ND" constant="no"/>
 <attribute name="SEEED" value="320020019" constant="no"/>
+<attribute name="TH_PAD" value="6"/>
 </technology>
 </technologies>
 </device>
@@ -10876,6 +10926,7 @@ Source: Samtec TSW.pdf</description>
 <technology name="">
 <attribute name="DIGIKEY" value="S1011EC-02-ND" constant="no"/>
 <attribute name="SEEED" value="320020016" constant="no"/>
+<attribute name="TH_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -12306,31 +12357,37 @@ Source: www.kingbright.com</description>
 <attribute name="AKIZUKI" value="" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="BL">
 <attribute name="AKIZUKI" value="I-06424" constant="no"/>
 <attribute name="DIGIKEY" value="160-1643-1-ND" constant="no"/>
 <attribute name="SEEED" value="304090061" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="GR">
 <attribute name="AKIZUKI" value="I-06423" constant="no"/>
 <attribute name="DIGIKEY" value="160-1169-1-ND" constant="no"/>
 <attribute name="SEEED" value="304090057" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="RD">
 <attribute name="AKIZUKI" value="I-06419" constant="no"/>
 <attribute name="DIGIKEY" value="160-1168-1-ND" constant="no"/>
 <attribute name="SEEED" value="304090046" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="WH">
 <attribute name="AKIZUKI" value="I-06425" constant="no"/>
 <attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="SEEED" value="" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 <technology name="YL">
 <attribute name="AKIZUKI" value="I-06420" constant="no"/>
 <attribute name="DIGIKEY" value="160-1170-1-ND" constant="no"/>
 <attribute name="SEEED" value="304090039" constant="no"/>
+<attribute name="SMD_PAD" value="2"/>
 </technology>
 </technologies>
 </device>
@@ -12539,9 +12596,9 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY8" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="mylib" deviceset="GND" device=""/>
-<part name="C1" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
-<part name="C2" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
-<part name="C3" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
+<part name="C1" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
+<part name="C2" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
+<part name="C3" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
 <part name="SUPPLY11" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="mylib" deviceset="GND" device=""/>
@@ -12556,7 +12613,7 @@ Source: www.kingbright.com</description>
 <part name="C10" library="mylib" deviceset="C_DENKAI_*" device="_875105142005WURTH" technology="100U" value="100u/OS-CON"/>
 <part name="C11" library="mylib" deviceset="C_DENKAI_*" device="_2.5P6.3_C6" technology="100U" value="100u/OS-CON"/>
 <part name="C12" library="mylib" deviceset="C_SMD_*" device="_2012" technology="4.7U" value="4.7u/2012"/>
-<part name="C13" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
+<part name="C13" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
 <part name="SUPPLY17" library="mylib" deviceset="GND" device=""/>
 <part name="R1" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R2" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
@@ -12570,12 +12627,12 @@ Source: www.kingbright.com</description>
 <part name="R6" library="mylib" deviceset="R_US_*" device="_1005" technology="33R" value="33/1005"/>
 <part name="R7" library="mylib" deviceset="R_US_*" device="_1005" technology="33R" value="33/1005"/>
 <part name="R8" library="mylib" deviceset="R_US_*" device="_1005" technology="33R" value="33/1005"/>
-<part name="R9" library="mylib" deviceset="R_US_*" device="_1005" technology="15K"/>
-<part name="R10" library="mylib" deviceset="R_US_*" device="_1005" technology="15K"/>
-<part name="R11" library="mylib" deviceset="R_US_*" device="_1005" technology="15K"/>
-<part name="R12" library="mylib" deviceset="R_US_*" device="_1005" technology="15K"/>
-<part name="R13" library="mylib" deviceset="R_US_*" device="_1005" technology="15K"/>
-<part name="R14" library="mylib" deviceset="R_US_*" device="_1005" technology="15K"/>
+<part name="R9" library="mylib" deviceset="R_US_*" device="_1005" technology="15K" value="15k/1005"/>
+<part name="R10" library="mylib" deviceset="R_US_*" device="_1005" technology="15K" value="15k/1005"/>
+<part name="R11" library="mylib" deviceset="R_US_*" device="_1005" technology="15K" value="15k/1005"/>
+<part name="R12" library="mylib" deviceset="R_US_*" device="_1005" technology="15K" value="15k/1005"/>
+<part name="R13" library="mylib" deviceset="R_US_*" device="_1005" technology="15K" value="15k/1005"/>
+<part name="R14" library="mylib" deviceset="R_US_*" device="_1005" technology="15K" value="15k/1005"/>
 <part name="SUPPLY19" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="mylib" deviceset="GND" device=""/>
@@ -12601,27 +12658,27 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY28" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY30" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY31" library="mylib" deviceset="GND" device=""/>
-<part name="R24" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="R25" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
+<part name="R24" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
+<part name="R25" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
 <part name="IC10" library="mylib" deviceset="IC_TTL_SINGLE_74_139" device="_FLAT" value="SN74LVC1G139DCTR"/>
-<part name="C22" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
+<part name="C22" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
 <part name="SUPPLY33" library="mylib" deviceset="GND" device=""/>
 <part name="LED1" library="led_local" deviceset="LED" device="CHIPLED_0805" technology="RD" value="RD"/>
 <part name="LED2" library="led_local" deviceset="LED" device="CHIPLED_0805" technology="BL" value="BL"/>
 <part name="LED3" library="led_local" deviceset="LED" device="CHIPLED_0805" technology="GR" value="GR"/>
 <part name="LED4" library="led_local" deviceset="LED" device="CHIPLED_0805" technology="YL" value="YL"/>
-<part name="R27" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K"/>
-<part name="R28" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K"/>
-<part name="R29" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K"/>
-<part name="R30" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K"/>
-<part name="R34" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="R33" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="R32" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="R31" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
+<part name="R27" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K" value="1k/1005"/>
+<part name="R28" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K" value="1k/1005"/>
+<part name="R29" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K" value="1k/1005"/>
+<part name="R30" library="mylib" deviceset="R_US_*" device="_1005" technology="1.0K" value="1k/1005"/>
+<part name="R34" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
+<part name="R33" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
+<part name="R32" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
+<part name="R31" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
 <part name="SUPPLY35" library="mylib" deviceset="GND" device=""/>
 <part name="R35" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R36" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
-<part name="R37" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
+<part name="R37" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
 <part name="IC6" library="mylib" deviceset="LDO4_*" device="_DRJ" technology="3.3" value="3.3V"/>
 <part name="IC7" library="mylib" deviceset="LDO4_*" device="_DRJ" technology="5.0" value="5V"/>
 <part name="IC8" library="mylib" deviceset="LDO4_*" device="_DRJ" technology="5.0" value="5V"/>
@@ -12632,17 +12689,17 @@ Source: www.kingbright.com</description>
 <part name="TP102" library="mylib" deviceset="TESTPAD" device="_F"/>
 <part name="ICON1" library="mylib" deviceset="ICON_OSHW" device="" value="OSHW"/>
 <part name="ICON2" library="mylib" deviceset="ICON_REVISION" device="_2.0" value="r0.5"/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.0" value="3d97858"/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.0" value="7236034"/>
 <part name="TP1" library="mylib" deviceset="TESTPAD" device="_4020"/>
-<part name="R41" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
+<part name="R41" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
 <part name="R40" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R43" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R44" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R42" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
-<part name="Q1" library="mylib" deviceset="OSC4_*" device="" technology="48M" value="OSC4_48M"/>
+<part name="Q1" library="mylib" deviceset="OSC4_*" device="" technology="6.0M" value="OSC4_6.0M"/>
 <part name="SUPPLY32" library="mylib" deviceset="GND" device=""/>
 <part name="TP3" library="mylib" deviceset="TESTPAD" device=""/>
-<part name="C4" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
+<part name="C4" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
 <part name="R39" library="mylib" deviceset="R_US_*" device="_1005SHORT" value="10k/1005"/>
 <part name="C18" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
 <part name="C19" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
@@ -12654,9 +12711,9 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY39" library="mylib" deviceset="GND" device=""/>
 <part name="C23" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
 <part name="TP4" library="mylib" deviceset="TESTPAD" device=""/>
-<part name="R45" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="R46" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
-<part name="R47" library="mylib" deviceset="R_US_*" device="_1005" technology="10K"/>
+<part name="R45" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
+<part name="R46" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
+<part name="R47" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
 <part name="C14" library="mylib" deviceset="C_SMD_*" device="_2012" technology="4.7U" value="4.7u/2012"/>
 <part name="SUPPLY37" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY40" library="mylib" deviceset="GND" device=""/>
@@ -12750,7 +12807,7 @@ LED1-4
 <wire x1="132.08" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="94"/>
 <wire x1="157.48" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="94"/>
 <wire x1="162.56" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="94"/>
-<text x="147.32" y="180.34" size="1.778" layer="91">Mode select. 
+<text x="134.62" y="182.88" size="2.1844" layer="91">Mode select. 
 When MODE is low, the APLL output clock 
 is selected as the clock source to drive the
 internal core of the device and 6-MHz 
@@ -12861,12 +12918,24 @@ on-board clock source can be used.</text>
 <instance part="R6" gate="G$1" x="307.34" y="147.32"/>
 <instance part="R7" gate="G$1" x="307.34" y="137.16"/>
 <instance part="R8" gate="G$1" x="307.34" y="134.62"/>
-<instance part="R9" gate="G$1" x="320.04" y="160.02" rot="R90"/>
-<instance part="R10" gate="G$1" x="325.12" y="157.48" rot="R90"/>
-<instance part="R11" gate="G$1" x="320.04" y="147.32" rot="R90"/>
-<instance part="R12" gate="G$1" x="325.12" y="144.78" rot="R90"/>
-<instance part="R13" gate="G$1" x="320.04" y="134.62" rot="R90"/>
-<instance part="R14" gate="G$1" x="325.12" y="132.08" rot="R90"/>
+<instance part="R9" gate="G$1" x="320.04" y="160.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="320.294" y="157.48" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R10" gate="G$1" x="325.12" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="325.374" y="154.94" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R11" gate="G$1" x="320.04" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="320.294" y="144.78" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R12" gate="G$1" x="325.12" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="325.374" y="142.24" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R13" gate="G$1" x="320.04" y="134.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="320.294" y="132.08" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R14" gate="G$1" x="325.12" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="325.374" y="129.54" size="1.778" layer="95" rot="R270"/>
+</instance>
 <instance part="SUPPLY19" gate="GND" x="320.04" y="154.94"/>
 <instance part="SUPPLY20" gate="GND" x="325.12" y="152.4"/>
 <instance part="SUPPLY21" gate="GND" x="320.04" y="142.24"/>
@@ -12892,8 +12961,12 @@ on-board clock source can be used.</text>
 <instance part="SUPPLY28" gate="GND" x="236.22" y="231.14"/>
 <instance part="SUPPLY30" gate="GND" x="236.22" y="203.2"/>
 <instance part="SUPPLY31" gate="GND" x="266.7" y="175.26"/>
-<instance part="R24" gate="G$1" x="167.64" y="30.48"/>
-<instance part="R25" gate="G$1" x="167.64" y="17.78"/>
+<instance part="R24" gate="G$1" x="167.64" y="30.48" smashed="yes">
+<attribute name="NAME" x="165.1" y="30.226" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R25" gate="G$1" x="167.64" y="17.78" smashed="yes">
+<attribute name="NAME" x="165.1" y="17.526" size="1.778" layer="95" rot="R180"/>
+</instance>
 <instance part="IC10" gate="G$1" x="284.48" y="73.66">
 <attribute name="DIGIKEY" x="284.48" y="60.96" size="1.6764" layer="96" align="top-center" display="both"/>
 </instance>
@@ -12911,18 +12984,36 @@ on-board clock source can be used.</text>
 <instance part="LED4" gate="G$1" x="330.2" y="58.42" rot="R270">
 <attribute name="DIGIKEY" x="332.74" y="58.674" size="0.8128" layer="96" display="both"/>
 </instance>
-<instance part="R27" gate="G$1" x="360.68" y="73.66"/>
-<instance part="R28" gate="G$1" x="360.68" y="68.58"/>
-<instance part="R29" gate="G$1" x="360.68" y="63.5"/>
-<instance part="R30" gate="G$1" x="360.68" y="58.42"/>
-<instance part="R34" gate="G$1" x="200.66" y="96.52" rot="R90"/>
-<instance part="R33" gate="G$1" x="215.9" y="96.52" rot="R90"/>
-<instance part="R32" gate="G$1" x="231.14" y="96.52" rot="R90"/>
-<instance part="R31" gate="G$1" x="246.38" y="96.52" rot="R90"/>
+<instance part="R27" gate="G$1" x="360.68" y="73.66" smashed="yes">
+<attribute name="NAME" x="358.14" y="73.406" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R28" gate="G$1" x="360.68" y="68.58" smashed="yes">
+<attribute name="NAME" x="358.14" y="68.326" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R29" gate="G$1" x="360.68" y="63.5" smashed="yes">
+<attribute name="NAME" x="358.14" y="63.246" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R30" gate="G$1" x="360.68" y="58.42" smashed="yes">
+<attribute name="NAME" x="358.14" y="58.166" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R34" gate="G$1" x="200.66" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="200.914" y="93.98" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R33" gate="G$1" x="215.9" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="216.154" y="93.98" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R32" gate="G$1" x="231.14" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="231.394" y="93.98" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R31" gate="G$1" x="246.38" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="246.634" y="93.98" size="1.778" layer="95" rot="R270"/>
+</instance>
 <instance part="SUPPLY35" gate="GND" x="266.7" y="15.24"/>
 <instance part="R35" gate="G$1" x="167.64" y="154.94"/>
 <instance part="R36" gate="G$1" x="167.64" y="152.4"/>
-<instance part="R37" gate="G$1" x="167.64" y="149.86"/>
+<instance part="R37" gate="G$1" x="167.64" y="149.86" smashed="yes">
+<attribute name="NAME" x="165.1" y="149.606" size="1.778" layer="95" rot="R180"/>
+</instance>
 <instance part="IC6" gate="G$1" x="111.76" y="243.84">
 <attribute name="DIGIKEY" x="111.76" y="248.92" size="1.6764" layer="96" align="bottom-center" display="both"/>
 </instance>
@@ -12939,7 +13030,9 @@ on-board clock source can be used.</text>
 <instance part="ICON2" gate="G$1" x="289.56" y="5.08"/>
 <instance part="GIT1" gate="G$1" x="342.9" y="20.32"/>
 <instance part="TP1" gate="1" x="266.7" y="27.94" rot="R90"/>
-<instance part="R41" gate="G$1" x="241.3" y="127"/>
+<instance part="R41" gate="G$1" x="241.3" y="127" smashed="yes">
+<attribute name="NAME" x="238.76" y="126.746" size="1.778" layer="95" rot="R180"/>
+</instance>
 <instance part="R40" gate="G$1" x="167.64" y="139.7"/>
 <instance part="R43" gate="G$1" x="167.64" y="134.62"/>
 <instance part="R44" gate="G$1" x="167.64" y="132.08"/>
@@ -12961,9 +13054,15 @@ on-board clock source can be used.</text>
 <instance part="SUPPLY39" gate="GND" x="43.18" y="109.22" rot="R90"/>
 <instance part="C23" gate="G$1" x="162.56" y="144.78" rot="R270"/>
 <instance part="TP4" gate="1" x="109.22" y="71.12" rot="R180"/>
-<instance part="R45" gate="G$1" x="241.3" y="165.1"/>
-<instance part="R46" gate="G$1" x="241.3" y="152.4"/>
-<instance part="R47" gate="G$1" x="241.3" y="139.7"/>
+<instance part="R45" gate="G$1" x="241.3" y="165.1" smashed="yes">
+<attribute name="NAME" x="238.76" y="164.846" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R46" gate="G$1" x="241.3" y="152.4" smashed="yes">
+<attribute name="NAME" x="238.76" y="152.146" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R47" gate="G$1" x="241.3" y="139.7" smashed="yes">
+<attribute name="NAME" x="238.76" y="139.446" size="1.778" layer="95" rot="R180"/>
+</instance>
 <instance part="C14" gate="G$1" x="134.62" y="241.3"/>
 <instance part="SUPPLY37" gate="GND" x="355.6" y="238.76" rot="R270"/>
 <instance part="SUPPLY40" gate="GND" x="355.6" y="210.82" rot="R270"/>
@@ -13316,7 +13415,8 @@ on-board clock source can be used.</text>
 <wire x1="165.1" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="132.08" x2="154.94" y2="134.62" width="0.1524" layer="91"/>
 <junction x="154.94" y="142.24"/>
-<wire x1="154.94" y1="134.62" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="134.62" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="137.16" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="139.7" x2="154.94" y2="142.24" width="0.1524" layer="91"/>
 <junction x="154.94" y="134.62"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
@@ -13337,6 +13437,9 @@ on-board clock source can be used.</text>
 <pinref part="C23" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="144.78" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
 <junction x="160.02" y="142.24"/>
+<pinref part="R38" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="137.16" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
+<junction x="154.94" y="137.16"/>
 </segment>
 <segment>
 <pinref part="IC10" gate="G$1" pin="GND"/>
@@ -13409,8 +13512,7 @@ on-board clock source can be used.</text>
 <pinref part="IC1" gate="G$1" pin="VCC"/>
 <label x="137.16" y="147.32" size="1.778" layer="95"/>
 <wire x1="144.78" y1="147.32" x2="149.86" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="147.32" x2="152.4" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="147.32" x2="154.94" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="147.32" x2="172.72" y2="147.32" width="0.1524" layer="91"/>
 <junction x="154.94" y="147.32"/>
 <wire x1="165.1" y1="154.94" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
@@ -13429,10 +13531,6 @@ on-board clock source can be used.</text>
 <junction x="154.94" y="147.32"/>
 <junction x="154.94" y="149.86"/>
 <junction x="154.94" y="152.4"/>
-<wire x1="152.4" y1="147.32" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
-<junction x="152.4" y="147.32"/>
-<pinref part="R38" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="137.16" x2="165.1" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
@@ -14253,6 +14351,11 @@ on-board clock source can be used.</text>
 <pinref part="IC1" gate="G$1" pin="!NP3!"/>
 <wire x1="172.72" y1="129.54" x2="170.18" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R42" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$73" class="0">
+<segment>
+<wire x1="170.18" y1="180.34" x2="180.34" y2="137.16" width="0.3048" layer="91"/>
 </segment>
 </net>
 </nets>
