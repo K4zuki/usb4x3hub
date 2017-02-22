@@ -12762,10 +12762,18 @@ Source: www.kingbright.com</description>
 <part name="X7" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
 <attribute name="NOT_COMPONENT" value="YES"/>
 </part>
-<part name="SW4" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH"/>
-<part name="SW3" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH"/>
-<part name="SW2" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH"/>
-<part name="SW1" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH"/>
+<part name="SW4" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SW3" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SW2" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SW1" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
 <part name="SUPPLY34" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY42" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY43" library="mylib" deviceset="GND" device=""/>
@@ -13147,10 +13155,18 @@ on-board clock source can be used.</text>
 <instance part="X6" gate="-2" x="205.74" y="27.94" rot="MR0"/>
 <instance part="X7" gate="-1" x="205.74" y="17.78" rot="MR0"/>
 <instance part="X7" gate="-2" x="205.74" y="15.24" rot="MR0"/>
-<instance part="SW4" gate="G$1" x="195.58" y="76.2"/>
-<instance part="SW3" gate="G$1" x="210.82" y="76.2"/>
-<instance part="SW2" gate="G$1" x="226.06" y="76.2"/>
-<instance part="SW1" gate="G$1" x="241.3" y="76.2"/>
+<instance part="SW4" gate="G$1" x="195.58" y="76.2">
+<attribute name="NOT_COMPONENT" x="195.58" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SW3" gate="G$1" x="210.82" y="76.2">
+<attribute name="NOT_COMPONENT" x="210.82" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SW2" gate="G$1" x="226.06" y="76.2">
+<attribute name="NOT_COMPONENT" x="226.06" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SW1" gate="G$1" x="241.3" y="76.2">
+<attribute name="NOT_COMPONENT" x="241.3" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY34" gate="GND" x="208.28" y="48.26"/>
 <instance part="SUPPLY42" gate="GND" x="208.28" y="35.56"/>
 <instance part="SUPPLY43" gate="GND" x="208.28" y="22.86"/>
