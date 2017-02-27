@@ -4736,9 +4736,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="39.1" y="30.4" size="1" layer="27" font="vector" rot="R90" align="center"/>
 <attribute name="NOT_COMPONENT" value="YES" x="39.1" y="30.4" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q1" library="mylib" package="CLOCK_2520" value="OSC4_48M" x="39.5" y="35.6" smashed="yes">
+<element name="Q1" library="mylib" package="CLOCK_2520" value="OSC4_6.0M" x="39.5" y="35.6" smashed="yes">
 <attribute name="NAME" x="42.6" y="35.6" size="1" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="DIGIKEY" value="887-2327-1-ND" x="39.5" y="35.6" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY" value="CTX974CT-ND" x="39.5" y="35.6" size="1.778" layer="27" display="off"/>
+<attribute name="SMD_PAD" value="4" x="39.5" y="35.6" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP3" library="mylib" package="TP06RECT" value="" x="39.4" y="39.2" rot="R180">
 <attribute name="NOT_COMPONENT" value="YES" x="39.4" y="39.2" size="1.2" layer="27" ratio="17" rot="R180" display="off"/>

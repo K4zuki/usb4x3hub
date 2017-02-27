@@ -10451,12 +10451,15 @@ grid 7.62 mm, diameter 18 mm</description>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 <technology name="48M">
-<attribute name="DIGIKEY" value="887-2327-1-ND" constant="no"/>
+<attribute name="DIGIKEY" value="478-4782-1-ND" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 <technology name="6.0M">
 <attribute name="DIGIKEY" value="CTX974CT-ND" constant="no"/>
+<attribute name="SMD_PAD" value="4"/>
 </technology>
 </technologies>
 </device>
@@ -12474,7 +12477,7 @@ Source: www.kingbright.com</description>
 <part name="R43" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R44" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R42" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
-<part name="Q1" library="mylib" deviceset="OSC4_*" device="" technology="48M" value="OSC4_48M"/>
+<part name="Q1" library="mylib" deviceset="OSC4_*" device="" technology="6.0M" value="OSC4_6.0M"/>
 <part name="SUPPLY32" library="mylib" deviceset="GND" device=""/>
 <part name="TP3" library="mylib" deviceset="TESTPAD" device=""/>
 <part name="C4" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U"/>
