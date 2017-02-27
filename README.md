@@ -2,7 +2,7 @@
 - この本のPDFファイルは
   [こちら](https://github.com/K4zuki/usb4x3hub/releases/tag/C91publish)
 - この本に登場する基板のデータは
-  [こちら](https://github.com/K4zuki/usb4x3hub/releases/tag/r0.4-a30fd1f)
+  [こちら](https://github.com/K4zuki/usb4x3hub/releases/tag/r0.4-e7f3974)
 - 秋月メモリ液晶基板の本は[こちら](https://github.com/K4zuki/AkiSpiLcd)です
 
 # このリポジトリは何
