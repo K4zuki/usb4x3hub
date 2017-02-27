@@ -374,8 +374,8 @@
 <wire x1="127.5" y1="64.3" x2="96" y2="64.3" width="0" layer="47" style="dashdot"/>
 <polygon width="0" layer="50">
 <vertex x="127.5" y="73.7"/>
-<vertex x="137.5" y="73.7"/>
-<vertex x="137.5" y="64.3"/>
+<vertex x="138.5" y="73.7"/>
+<vertex x="138.5" y="64.3"/>
 <vertex x="127.5" y="64.3"/>
 </polygon>
 <wire x1="58.6" y1="46" x2="58.2" y2="45.6" width="0.2" layer="21"/>
