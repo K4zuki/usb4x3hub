@@ -48,8 +48,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -152,7 +152,6 @@
 <text x="14.1" y="16.3" size="2" layer="21" ratio="10">@_K4ZUKI_</text>
 <text x="49.4" y="78.9" size="2" layer="21" ratio="10" rot="R180">USB4x3HUB</text>
 <text x="22.9" y="85.4" size="2" layer="21" ratio="10">thickness t=1.2mm</text>
-<dimension x1="50" y1="83.5" x2="12" y2="73" x3="31" y3="94.8" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="96" y1="73" x2="12" y2="73" x3="54" y3="101.4" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <wire x1="33.4" y1="42.6" x2="35.1" y2="42.6" width="0" layer="41"/>
 <dimension x1="39.5" y1="18.9" x2="12" y2="14" x3="25.75" y3="-3.9" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
@@ -217,7 +216,6 @@
 <dimension x1="12" y1="8.5" x2="12" y2="81.5" x3="-12.7" y3="45" textsize="2" textratio="10" layer="47" dtype="vertical"/>
 <dimension x1="0" y1="90" x2="107" y2="90" x3="53.5" y3="104.8" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="0" y1="0" x2="0" y2="90" x3="-16.4" y3="45" textsize="2" textratio="10" layer="47" dtype="vertical"/>
-<dimension x1="50" y1="83.5" x2="59" y2="83.5" x3="54.5" y3="94.8" textsize="2" textratio="10" layer="47" dtype="horizontal"/>
 <dimension x1="7" y1="5" x2="3" y2="5" x3="5" y3="-9.2" textsize="2" textratio="10" layer="47" dtype="diameter" visible="yes"/>
 <dimension x1="66.6" y1="12.5" x2="63.4" y2="12.5" x3="65" y3="6.6" textsize="2" textratio="10" layer="47" dtype="diameter" visible="yes"/>
 <dimension x1="0" y1="0" x2="0" y2="8.5" x3="-5.5" y3="4.25" textsize="2" textratio="10" layer="47"/>
@@ -297,14 +295,14 @@
 <wire x1="127.5" y1="28.3" x2="96" y2="28.3" width="0" layer="47" style="dashdot"/>
 <wire x1="127.5" y1="25.7" x2="96" y2="25.7" width="0" layer="47" style="dashdot"/>
 <wire x1="127.5" y1="16.3" x2="96" y2="16.3" width="0" layer="47" style="dashdot"/>
-<circle x="134.5" y="33" radius="1.8" width="0" layer="50"/>
-<circle x="134.5" y="45" radius="1.8" width="0" layer="50"/>
-<circle x="134.5" y="57" radius="1.8" width="0" layer="50"/>
+<circle x="134.5" y="33" radius="2" width="0" layer="50"/>
+<circle x="134.5" y="45" radius="2" width="0" layer="50"/>
+<circle x="134.5" y="57" radius="2" width="0" layer="50"/>
 <dimension x1="133" y1="16" x2="138.4502125" y2="5.309109375" x3="141.992853125" y3="-1.63996875" textsize="2" textratio="10" layer="47" dtype="radius"/>
 <dimension x1="-50" y1="74" x2="-26" y2="74" x3="-38" y3="93.5" textsize="2" layer="47" dtype="horizontal"/>
 <dimension x1="131.6" y1="80.8" x2="134.4" y2="80.8" x3="133" y3="88.7" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="-38" y1="16" x2="-29.08046875" y2="7.972421875" x3="-23.282775" y3="2.754496875" textsize="2" textratio="10" layer="47" dtype="radius"/>
-<circle x="134.5" y="21" radius="1.8" width="0" layer="50"/>
+<circle x="134.5" y="21" radius="2" width="0" layer="50"/>
 <wire x1="-51" y1="10.5" x2="147.3" y2="10.5" width="4" layer="39"/>
 <text x="54.5" y="69.7" size="2" layer="47" ratio="10" align="center">h=10</text>
 <text x="24.5" y="2.6" size="1.2" layer="51" ratio="17">JUST in MXA2-8-7SS (TAKACHI)</text>
@@ -398,7 +396,8 @@
 <hole x="55" y="61" drill="2.8"/>
 <circle x="55" y="61" radius="3" width="0" layer="41"/>
 <circle x="55" y="61" radius="3" width="0" layer="42"/>
-<wire x1="70" y1="72.4" x2="70" y2="17.6" width="2" layer="46"/>
+<wire x1="70" y1="72.5" x2="70" y2="65.5" width="2" layer="46"/>
+<wire x1="70" y1="65.5" x2="70" y2="17.6" width="2" layer="46"/>
 <wire x1="65" y1="82.5" x2="70" y2="82.5" width="2" layer="46"/>
 <wire x1="70" y1="82.5" x2="70" y2="77.5" width="2" layer="46"/>
 <wire x1="65" y1="7.5" x2="70" y2="7.5" width="2" layer="46"/>
@@ -410,27 +409,43 @@
 <wire x1="11" y1="7.5" x2="11" y2="12.5" width="2" layer="46"/>
 <wire x1="70" y1="82.5" x2="75" y2="82.5" width="2" layer="46"/>
 <wire x1="61" y1="57" x2="69" y2="57" width="0.2" layer="47"/>
-<wire x1="88" y1="57" x2="96" y2="57" width="0" layer="47"/>
 <wire x1="97" y1="72.4" x2="97" y2="17.6" width="2" layer="46"/>
-<wire x1="88" y1="45" x2="96" y2="45" width="0" layer="47"/>
-<wire x1="88" y1="33" x2="96" y2="33" width="0" layer="47"/>
-<wire x1="88" y1="21" x2="96" y2="21" width="0" layer="47"/>
 <wire x1="61" y1="57" x2="55" y2="61" width="0" layer="47"/>
 <wire x1="61" y1="57" x2="62.5" y2="63" width="0" layer="47"/>
-<hole x="81" y="61" drill="2.8"/>
-<circle x="81" y="61" radius="3" width="0" layer="42"/>
-<circle x="81" y="61" radius="3" width="0" layer="41"/>
+<hole x="85" y="61" drill="2.8"/>
+<circle x="85" y="61" radius="3" width="0" layer="42"/>
+<circle x="85" y="61" radius="3" width="0" layer="41"/>
 <wire x1="69" y1="71.4" x2="69" y2="18.6" width="0" layer="20"/>
 <wire x1="71" y1="71.4" x2="71" y2="18.6" width="0" layer="20"/>
 <wire x1="96" y1="71.4" x2="96" y2="18.6" width="0" layer="20"/>
 <wire x1="61" y1="57" x2="62.5" y2="51" width="0" layer="47"/>
-<wire x1="88" y1="57" x2="89.5" y2="51" width="0" layer="47"/>
-<wire x1="88" y1="45" x2="89.5" y2="39" width="0" layer="47"/>
-<wire x1="88" y1="33" x2="89.5" y2="27" width="0" layer="47"/>
-<wire x1="88" y1="57" x2="89.5" y2="63" width="0" layer="47"/>
 <dimension x1="134.5" y1="57" x2="138.5" y2="57" x3="136.5" y3="0.8" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="134.5" y1="58.8" x2="134.5" y2="55.2" x3="141.4" y3="57" textsize="1.778" layer="47" dtype="diameter"/>
+<dimension x1="134.5" y1="59" x2="134.5" y2="55" x3="141.4" y3="57" textsize="1.778" layer="47" dtype="diameter"/>
 <dimension x1="71" y1="8.5" x2="96" y2="8.5" x3="83.5" y3="-4.1" textsize="1.778" layer="47" dtype="horizontal"/>
+<wire x1="55" y1="61" x2="69" y2="61" width="0" layer="47"/>
+<wire x1="71" y1="61" x2="85" y2="61" width="0" layer="47"/>
+<wire x1="71" y1="57" x2="79" y2="57" width="0" layer="47"/>
+<wire x1="79" y1="57" x2="77.5" y2="63" width="0" layer="47"/>
+<wire x1="79" y1="57" x2="77.5" y2="51" width="0" layer="47"/>
+<wire x1="71" y1="45" x2="79" y2="45" width="0" layer="47"/>
+<wire x1="79" y1="45" x2="77.5" y2="51" width="0" layer="47"/>
+<wire x1="79" y1="45" x2="77.5" y2="39" width="0" layer="47"/>
+<wire x1="71" y1="33" x2="79" y2="33" width="0" layer="47"/>
+<wire x1="79" y1="33" x2="77.5" y2="39" width="0" layer="47"/>
+<wire x1="79" y1="33" x2="77.5" y2="27" width="0" layer="47"/>
+<wire x1="71" y1="21" x2="79" y2="21" width="0" layer="47"/>
+<wire x1="79" y1="21" x2="77.5" y2="27" width="0" layer="47"/>
+<wire x1="70" y1="72.5" x2="83" y2="72.5" width="2" layer="46"/>
+<wire x1="83" y1="72.5" x2="83" y2="65.5" width="2" layer="46"/>
+<wire x1="83" y1="65.5" x2="70" y2="65.5" width="2" layer="46"/>
+<wire x1="70" y1="73.5" x2="84" y2="73.5" width="0.8" layer="41"/>
+<wire x1="84" y1="73.5" x2="84" y2="64.5" width="0.8" layer="41"/>
+<wire x1="84" y1="64.5" x2="70" y2="64.5" width="0.8" layer="41"/>
+<rectangle x1="70" y1="64.5" x2="84" y2="73.5" layer="41"/>
+<wire x1="70" y1="73.5" x2="84" y2="73.5" width="0.8" layer="42"/>
+<wire x1="84" y1="73.5" x2="84" y2="64.5" width="0.8" layer="42"/>
+<wire x1="84" y1="64.5" x2="70" y2="64.5" width="0.8" layer="42"/>
+<rectangle x1="70" y1="64.5" x2="84" y2="73.5" layer="42"/>
 </plain>
 <libraries>
 <library name="mylib">
@@ -3846,7 +3861,6 @@ SOT23-5&lt;br&gt;</description>
 <vertex x="-1.7" y="-1.5"/>
 <vertex x="-2.5" y="-1.5"/>
 </polygon>
-<text x="0" y="0" size="1" layer="25" ratio="20" align="center">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -5019,34 +5033,54 @@ design rules under a new name.</description>
 <element name="P8" library="mylib" package="PCB_CORNER_NH" value="" x="92" y="77.5" rot="R90">
 <attribute name="NOT_COMPONENT" value="YES" x="92" y="77.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="X8" library="con-samtec.local" package="TSW-102-02-S-S" value="TSW-102-02-S-S" x="89.5" y="27" rot="MR180">
-<attribute name="DIGIKEY" value="S1011EC-02-ND" x="81.4" y="31.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TH_PAD" value="2" x="81.4" y="31.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NOT_COMPONENT" value="YES" x="81.4" y="31.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="SEEED" value="320020016" x="81.4" y="31.6" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="X8" library="con-samtec.local" package="TSW-102-02-S-S" value="TSW-102-02-S-S" x="77.5" y="27" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="S1011EC-02-ND" x="85.6" y="31.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TH_PAD" value="2" x="85.6" y="31.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NOT_COMPONENT" value="YES" x="85.6" y="31.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SEEED" value="320020016" x="85.6" y="31.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="81.4" y="27" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="77.5" y="27" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="X9" library="con-samtec.local" package="TSW-102-02-S-S" value="TSW-102-02-S-S" x="89.5" y="39" rot="MR180">
-<attribute name="DIGIKEY" value="S1011EC-02-ND" x="77.8" y="43.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TH_PAD" value="2" x="77.8" y="43.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NOT_COMPONENT" value="YES" x="77.8" y="43.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="SEEED" value="320020016" x="77.8" y="43.6" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="X9" library="con-samtec.local" package="TSW-102-02-S-S" value="TSW-102-02-S-S" x="77.5" y="39" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="S1011EC-02-ND" x="89.2" y="43.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TH_PAD" value="2" x="89.2" y="43.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NOT_COMPONENT" value="YES" x="89.2" y="43.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SEEED" value="320020016" x="89.2" y="43.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="81.4" y="39" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="77.5" y="39" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="X10" library="con-samtec.local" package="TSW-102-02-S-S" value="TSW-102-02-S-S" x="89.5" y="51" rot="MR180">
-<attribute name="DIGIKEY" value="S1011EC-02-ND" x="74.2" y="55.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TH_PAD" value="2" x="74.2" y="55.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NOT_COMPONENT" value="YES" x="74.2" y="55.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="SEEED" value="320020016" x="74.2" y="55.6" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="X10" library="con-samtec.local" package="TSW-102-02-S-S" value="TSW-102-02-S-S" x="77.5" y="51" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="S1011EC-02-ND" x="92.8" y="55.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TH_PAD" value="2" x="92.8" y="55.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NOT_COMPONENT" value="YES" x="92.8" y="55.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SEEED" value="320020016" x="92.8" y="55.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="81.9" y="51" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="77.5" y="51" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="X11" library="con-samtec.local" package="TSW-102-02-S-S" value="TSW-102-02-S-S" x="89.5" y="63" rot="MR180">
-<attribute name="DIGIKEY" value="S1011EC-02-ND" x="70.6" y="67.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TH_PAD" value="2" x="70.6" y="67.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NOT_COMPONENT" value="YES" x="70.6" y="67.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="SEEED" value="320020016" x="70.6" y="67.6" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="X11" library="con-samtec.local" package="TSW-102-02-S-S" value="TSW-102-02-S-S" x="77.5" y="63" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="S1011EC-02-ND" x="96.4" y="67.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TH_PAD" value="2" x="96.4" y="67.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NOT_COMPONENT" value="YES" x="96.4" y="67.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SEEED" value="320020016" x="96.4" y="67.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="73.3" y="63" size="1" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
+<attribute name="VALUE" x="77.5" y="63" size="1" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="SW5" library="mylib" package="SW_TACTSW_TL1105S" value="" x="92" y="57" rot="MR270"/>
-<element name="SW6" library="mylib" package="SW_TACTSW_TL1105S" value="" x="92" y="45" rot="MR270"/>
-<element name="SW7" library="mylib" package="SW_TACTSW_TL1105S" value="" x="92" y="33" rot="MR270"/>
-<element name="SW8" library="mylib" package="SW_TACTSW_TL1105S" value="" x="92" y="21" rot="MR270"/>
+<element name="SW5" library="mylib" package="SW_TACTSW_TL1105S" value="" x="75" y="57" rot="R270">
+<attribute name="DIGIKEY" value="EG1839-ND" x="75" y="57" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER" value="EG1839-ND" x="75" y="57" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="SW6" library="mylib" package="SW_TACTSW_TL1105S" value="" x="75" y="45" rot="R270">
+<attribute name="DIGIKEY" value="EG1839-ND" x="75" y="45" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER" value="EG1839-ND" x="75" y="45" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="SW7" library="mylib" package="SW_TACTSW_TL1105S" value="" x="75" y="33" rot="R270">
+<attribute name="DIGIKEY" value="EG1839-ND" x="75" y="33" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER" value="EG1839-ND" x="75" y="33" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="SW8" library="mylib" package="SW_TACTSW_TL1105S" value="" x="75" y="21" rot="R270">
+<attribute name="DIGIKEY" value="EG1839-ND" x="75" y="21" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER" value="EG1839-ND" x="75" y="21" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -5350,11 +5384,11 @@ design rules under a new name.</description>
 <contactref element="IC3" pad="1"/>
 <contactref element="CON5" pad="1"/>
 <contactref element="C8" pad="+"/>
-<wire x1="24.2" y1="69.2" x2="23.8" y2="68.8" width="0.8" layer="1"/>
+<wire x1="24.2" y1="69.2" x2="23.7" y2="68.7" width="0.8" layer="1"/>
 <wire x1="25.1" y1="60.6" x2="25.1" y2="59.5" width="0.8" layer="1"/>
 <wire x1="25.1" y1="60.6" x2="25.1" y2="61.7" width="0.8" layer="1"/>
-<wire x1="23.8" y1="68.8" x2="23.8" y2="63" width="0.8" layer="1"/>
-<wire x1="23.8" y1="63" x2="25.1" y2="61.7" width="0.8" layer="1"/>
+<wire x1="23.7" y1="68.7" x2="23.7" y2="63.1" width="0.8" layer="1"/>
+<wire x1="23.7" y1="63.1" x2="25.1" y2="61.7" width="0.8" layer="1"/>
 <wire x1="21.5" y1="59.5" x2="25.1" y2="59.5" width="0.8" layer="1"/>
 <wire x1="25.1" y1="69.15" x2="25.1" y2="69.2" width="0.2" layer="1"/>
 <wire x1="25.1" y1="69.2" x2="24.2" y2="69.2" width="0.8" layer="1"/>
@@ -6555,34 +6589,34 @@ design rules under a new name.</description>
 <signal name="SW8">
 <contactref element="X8" pad="1"/>
 <contactref element="SW8" pad="1"/>
-<wire x1="90.77" y1="27" x2="90.8" y2="27" width="0.25" layer="1"/>
-<wire x1="90.8" y1="27" x2="90.8" y2="26.9" width="0.25" layer="1"/>
-<wire x1="92" y1="23.2" x2="92" y2="25.7" width="0.25" layer="1"/>
-<wire x1="90.8" y1="26.9" x2="92" y2="25.7" width="0.25" layer="1"/>
+<wire x1="76.23" y1="27" x2="76.2" y2="27" width="0.25" layer="1"/>
+<wire x1="76.2" y1="27" x2="76.2" y2="26.9" width="0.25" layer="1"/>
+<wire x1="76.2" y1="26.9" x2="75" y2="25.7" width="0.25" layer="1"/>
+<wire x1="75" y1="25.7" x2="75" y2="23.2" width="0.25" layer="1"/>
 </signal>
 <signal name="SW7">
 <contactref element="X9" pad="1"/>
 <contactref element="SW7" pad="1"/>
-<wire x1="90.77" y1="39" x2="90.8" y2="39" width="0.25" layer="1"/>
-<wire x1="90.8" y1="39" x2="90.8" y2="38.9" width="0.25" layer="1"/>
-<wire x1="90.8" y1="38.9" x2="92" y2="37.7" width="0.25" layer="1"/>
-<wire x1="92" y1="37.7" x2="92" y2="35.2" width="0.25" layer="1"/>
+<wire x1="76.23" y1="39" x2="76.2" y2="39" width="0.25" layer="1"/>
+<wire x1="76.2" y1="39" x2="76.2" y2="38.9" width="0.25" layer="1"/>
+<wire x1="76.2" y1="38.9" x2="75" y2="37.7" width="0.25" layer="1"/>
+<wire x1="75" y1="37.7" x2="75" y2="35.2" width="0.25" layer="1"/>
 </signal>
 <signal name="SW6">
 <contactref element="X10" pad="1"/>
 <contactref element="SW6" pad="1"/>
-<wire x1="90.77" y1="51" x2="90.8" y2="51" width="0.25" layer="1"/>
-<wire x1="90.8" y1="51" x2="90.8" y2="50.9" width="0.25" layer="1"/>
-<wire x1="90.8" y1="50.9" x2="92" y2="49.7" width="0.25" layer="1"/>
-<wire x1="92" y1="49.7" x2="92" y2="47.2" width="0.25" layer="1"/>
+<wire x1="76.23" y1="51" x2="76.2" y2="51" width="0.25" layer="1"/>
+<wire x1="76.2" y1="51" x2="76.2" y2="50.9" width="0.25" layer="1"/>
+<wire x1="76.2" y1="50.9" x2="75" y2="49.7" width="0.25" layer="1"/>
+<wire x1="75" y1="49.7" x2="75" y2="47.2" width="0.25" layer="1"/>
 </signal>
 <signal name="SW5">
 <contactref element="X11" pad="1"/>
 <contactref element="SW5" pad="1"/>
-<wire x1="90.77" y1="63" x2="90.8" y2="63" width="0.25" layer="1"/>
-<wire x1="90.8" y1="63" x2="90.8" y2="62.9" width="0.25" layer="1"/>
-<wire x1="90.8" y1="62.9" x2="92" y2="61.7" width="0.25" layer="1"/>
-<wire x1="92" y1="61.7" x2="92" y2="59.2" width="0.25" layer="1"/>
+<wire x1="76.23" y1="63" x2="76.2" y2="63" width="0.25" layer="1"/>
+<wire x1="76.2" y1="63" x2="76.2" y2="62.9" width="0.25" layer="1"/>
+<wire x1="76.2" y1="62.9" x2="75" y2="61.7" width="0.25" layer="1"/>
+<wire x1="75" y1="61.7" x2="75" y2="59.2" width="0.25" layer="1"/>
 </signal>
 <signal name="N$73">
 <polygon width="0.4" layer="16">
@@ -6601,30 +6635,38 @@ design rules under a new name.</description>
 <signal name="N$74">
 <contactref element="SW8" pad="2"/>
 <contactref element="X8" pad="2"/>
-<wire x1="92" y1="18.8" x2="88.2" y2="22.6" width="0.25" layer="1"/>
-<wire x1="88.23" y1="27" x2="88.2" y2="27" width="0.25" layer="1"/>
-<wire x1="88.2" y1="27" x2="88.2" y2="22.6" width="0.25" layer="1"/>
+<wire x1="78.8" y1="22.6" x2="75" y2="18.8" width="0.25" layer="1"/>
+<wire x1="78.77" y1="27" x2="78.9" y2="27" width="0.25" layer="1"/>
+<wire x1="78.9" y1="27" x2="78.9" y2="26.9" width="0.25" layer="1"/>
+<wire x1="78.9" y1="26.9" x2="78.8" y2="26.9" width="0.25" layer="1"/>
+<wire x1="78.8" y1="26.9" x2="78.8" y2="22.6" width="0.25" layer="1"/>
 </signal>
 <signal name="N$75">
 <contactref element="SW7" pad="2"/>
 <contactref element="X9" pad="2"/>
-<wire x1="92" y1="30.8" x2="88.2" y2="34.6" width="0.25" layer="1"/>
-<wire x1="88.2" y1="34.6" x2="88.2" y2="39" width="0.25" layer="1"/>
-<wire x1="88.23" y1="39" x2="88.2" y2="39" width="0.25" layer="1"/>
+<wire x1="78.8" y1="34.6" x2="75" y2="30.8" width="0.25" layer="1"/>
+<wire x1="78.77" y1="39" x2="78.9" y2="39" width="0.25" layer="1"/>
+<wire x1="78.9" y1="39" x2="78.9" y2="38.9" width="0.25" layer="1"/>
+<wire x1="78.9" y1="38.9" x2="78.8" y2="38.9" width="0.25" layer="1"/>
+<wire x1="78.8" y1="38.9" x2="78.8" y2="34.6" width="0.25" layer="1"/>
 </signal>
 <signal name="N$76">
 <contactref element="SW6" pad="2"/>
 <contactref element="X10" pad="2"/>
-<wire x1="92" y1="42.8" x2="88.2" y2="46.6" width="0.25" layer="1"/>
-<wire x1="88.2" y1="46.6" x2="88.2" y2="51" width="0.25" layer="1"/>
-<wire x1="88.23" y1="51" x2="88.2" y2="51" width="0.25" layer="1"/>
+<wire x1="78.8" y1="46.6" x2="75" y2="42.8" width="0.25" layer="1"/>
+<wire x1="78.77" y1="51" x2="78.9" y2="51" width="0.25" layer="1"/>
+<wire x1="78.9" y1="51" x2="78.9" y2="50.9" width="0.25" layer="1"/>
+<wire x1="78.9" y1="50.9" x2="78.8" y2="50.9" width="0.25" layer="1"/>
+<wire x1="78.8" y1="50.9" x2="78.8" y2="46.6" width="0.25" layer="1"/>
 </signal>
 <signal name="N$77">
 <contactref element="SW5" pad="2"/>
 <contactref element="X11" pad="2"/>
-<wire x1="92" y1="54.8" x2="88.2" y2="58.6" width="0.25" layer="1"/>
-<wire x1="88.2" y1="58.6" x2="88.2" y2="63" width="0.25" layer="1"/>
-<wire x1="88.23" y1="63" x2="88.2" y2="63" width="0.25" layer="1"/>
+<wire x1="78.8" y1="58.6" x2="75" y2="54.8" width="0.25" layer="1"/>
+<wire x1="78.77" y1="63" x2="78.9" y2="63" width="0.25" layer="1"/>
+<wire x1="78.9" y1="63" x2="78.9" y2="62.9" width="0.25" layer="1"/>
+<wire x1="78.9" y1="62.9" x2="78.8" y2="62.9" width="0.25" layer="1"/>
+<wire x1="78.8" y1="62.9" x2="78.8" y2="58.6" width="0.25" layer="1"/>
 </signal>
 </signals>
 <errors>

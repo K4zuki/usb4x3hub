@@ -8975,7 +8975,6 @@ grid 7.62 mm, diameter 18 mm</description>
 <vertex x="-1.7" y="-1.5"/>
 <vertex x="-2.5" y="-1.5"/>
 </polygon>
-<text x="0" y="0" size="1" layer="25" ratio="20" align="center">&gt;NAME</text>
 </package>
 <package name="SW_TACTSW_B3F-10XX">
 <description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
@@ -9094,6 +9093,30 @@ grid 7.62 mm, diameter 18 mm</description>
 <text x="0" y="0" size="1" layer="25" ratio="20" align="center">&gt;NAME</text>
 <wire x1="-1.5" y1="-8.4" x2="-1.5" y2="0" width="0.2" layer="51"/>
 <wire x1="1.5" y1="-8.4" x2="1.5" y2="0" width="0.2" layer="51"/>
+</package>
+<package name="CON_USB_HW-UAF-08">
+<text x="0" y="0" size="1.27" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+<pad name="SHLD@1" x="6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<pad name="SHLD" x="-6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<pad name="2" x="1" y="0" drill="0.9"/>
+<pad name="3" x="-1" y="0" drill="0.9"/>
+<pad name="1" x="-3.5" y="0" drill="0.9"/>
+<pad name="4" x="3.5" y="0" drill="0.9"/>
+<wire x1="-5.6" y1="0" x2="-4.5" y2="0" width="0.2" layer="21"/>
+<wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-9" x2="-6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-2.6" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-9" x2="6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="-6.4" y1="-6.65" x2="-6.4" y2="-8.05" width="0.6" layer="46"/>
+<wire x1="6.4" y1="-6.65" x2="6.4" y2="-8.05" width="0.6" layer="46"/>
+<pad name="SHLD@2" x="6.3" y="-1.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<pad name="SHLD1" x="-6.5" y="-1.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<wire x1="-6.5" y1="-0.65" x2="-6.5" y2="-2.05" width="0.6" layer="46"/>
+<wire x1="6.3" y1="-0.65" x2="6.3" y2="-2.05" width="0.6" layer="46"/>
+<wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9714,6 +9737,21 @@ grid 7.62 mm, diameter 18 mm</description>
 </technology>
 </technologies>
 </device>
+<device name="_A_UAF-08" package="CON_USB_HW-UAF-08">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SHLD" pad="SHLD SHLD1 SHLD@1 SHLD@2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TH_PAD" value="8" constant="no"/>
+<attribute name="URL" value="http://www.aitendo.com/product/4396" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="IC_POWER_TPS2041C" prefix="IC" uservalue="yes">
@@ -9980,8 +10018,14 @@ grid 7.62 mm, diameter 18 mm</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
-<technology name="BK"/>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="BK">
+<attribute name="DIGIKEY" value="EG1839-ND" constant="no"/>
+<attribute name="MOUSER" value="EG1839-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14515,16 +14559,32 @@ on-board clock source can be used.</text>
 <attribute name="DIGIKEY" x="99.06" y="149.86" size="1.6764" layer="96" rot="MR180" align="bottom-center" display="both"/>
 </instance>
 <instance part="X8" gate="-2" x="147.32" y="144.78" rot="MR180"/>
-<instance part="X9" gate="-1" x="109.22" y="132.08" rot="MR0"/>
-<instance part="X9" gate="-2" x="147.32" y="132.08" rot="MR180"/>
-<instance part="X10" gate="-1" x="109.22" y="119.38" rot="MR0"/>
-<instance part="X10" gate="-2" x="147.32" y="119.38" rot="MR180"/>
-<instance part="X11" gate="-1" x="109.22" y="106.68" rot="MR0"/>
-<instance part="X11" gate="-2" x="147.32" y="106.68" rot="MR180"/>
-<instance part="SW5" gate="G$1" x="129.54" y="109.22" rot="R270"/>
-<instance part="SW6" gate="G$1" x="129.54" y="121.92" rot="R270"/>
-<instance part="SW7" gate="G$1" x="129.54" y="134.62" rot="R270"/>
-<instance part="SW8" gate="G$1" x="129.54" y="147.32" rot="R270"/>
+<instance part="X9" gate="-1" x="109.22" y="127" rot="MR0"/>
+<instance part="X9" gate="-2" x="147.32" y="127" rot="MR180"/>
+<instance part="X10" gate="-1" x="109.22" y="109.22" rot="MR0"/>
+<instance part="X10" gate="-2" x="147.32" y="109.22" rot="MR180"/>
+<instance part="X11" gate="-1" x="109.22" y="91.44" rot="MR0"/>
+<instance part="X11" gate="-2" x="147.32" y="91.44" rot="MR180"/>
+<instance part="SW5" gate="G$1" x="129.54" y="93.98" smashed="yes" rot="R270">
+<attribute name="NAME" x="132.715" y="97.79" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.715" y="95.25" size="1.016" layer="96"/>
+<attribute name="DIGIKEY" x="147.32" y="101.6" size="1.778" layer="96" rot="R180" display="both"/>
+</instance>
+<instance part="SW6" gate="G$1" x="129.54" y="111.76" smashed="yes" rot="R270">
+<attribute name="NAME" x="132.715" y="115.57" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.715" y="113.03" size="1.016" layer="96"/>
+<attribute name="DIGIKEY" x="147.32" y="119.38" size="1.778" layer="96" rot="R180" display="both"/>
+</instance>
+<instance part="SW7" gate="G$1" x="129.54" y="129.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="132.715" y="133.35" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.715" y="130.81" size="1.016" layer="96"/>
+<attribute name="DIGIKEY" x="147.32" y="137.16" size="1.778" layer="96" rot="R180" display="both"/>
+</instance>
+<instance part="SW8" gate="G$1" x="129.54" y="147.32" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" x="147.32" y="154.94" size="1.778" layer="96" rot="R180" display="both"/>
+<attribute name="NAME" x="132.715" y="151.13" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.715" y="148.59" size="1.016" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14539,25 +14599,25 @@ on-board clock source can be used.</text>
 </net>
 <net name="SW7" class="0">
 <segment>
-<wire x1="111.76" y1="132.08" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="127" x2="124.46" y2="127" width="0.1524" layer="91"/>
 <pinref part="X9" gate="-1" pin="1"/>
-<label x="114.3" y="132.08" size="1.778" layer="95"/>
+<label x="114.3" y="127" size="1.778" layer="95"/>
 <pinref part="SW7" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="SW6" class="0">
 <segment>
-<wire x1="111.76" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="X10" gate="-1" pin="1"/>
-<label x="114.3" y="119.38" size="1.778" layer="95"/>
+<label x="114.3" y="109.22" size="1.778" layer="95"/>
 <pinref part="SW6" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="SW5" class="0">
 <segment>
-<wire x1="111.76" y1="106.68" x2="124.46" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="X11" gate="-1" pin="1"/>
-<label x="114.3" y="106.68" size="1.778" layer="95"/>
+<label x="114.3" y="91.44" size="1.778" layer="95"/>
 <pinref part="SW5" gate="G$1" pin="P"/>
 </segment>
 </net>
@@ -14572,21 +14632,21 @@ on-board clock source can be used.</text>
 <segment>
 <pinref part="SW7" gate="G$1" pin="S"/>
 <pinref part="X9" gate="-2" pin="1"/>
-<wire x1="144.78" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$76" class="0">
 <segment>
 <pinref part="SW6" gate="G$1" pin="S"/>
 <pinref part="X10" gate="-2" pin="1"/>
-<wire x1="144.78" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$77" class="0">
 <segment>
 <pinref part="SW5" gate="G$1" pin="S"/>
 <pinref part="X11" gate="-2" pin="1"/>
-<wire x1="144.78" y1="106.68" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
