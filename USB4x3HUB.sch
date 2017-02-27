@@ -9075,6 +9075,49 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="-0.8" y1="-3.5" x2="-0.8" y2="3.5" width="0.2" layer="21" curve="-152.9"/>
 <circle x="0" y="0" radius="1.016" width="0.2" layer="21"/>
 </package>
+<package name="SW_TACTSW_TL1105S">
+<pad name="P$1" x="-3.5" y="2.5" drill="1.3" shape="octagon"/>
+<pad name="P$2" x="3.5" y="2.5" drill="1.3" shape="octagon"/>
+<pad name="2" x="2.2" y="0" drill="1" shape="octagon"/>
+<pad name="1" x="-2.2" y="0" drill="1" shape="octagon"/>
+<wire x1="-3.6" y1="-3" x2="-3.6" y2="1.1" width="0.2" layer="21"/>
+<wire x1="-3.6" y1="1.1" x2="-3.6" y2="4" width="0.2" layer="51"/>
+<wire x1="-3.6" y1="4" x2="3.6" y2="4" width="0.2" layer="21"/>
+<wire x1="3.6" y1="4" x2="3.6" y2="1.1" width="0.2" layer="51"/>
+<wire x1="3.6" y1="-3" x2="-3.6" y2="-3" width="0.2" layer="21"/>
+<wire x1="3.6" y1="0" x2="-3.6" y2="0" width="0.2" layer="51"/>
+<wire x1="-1.5" y1="-8.4" x2="1.5" y2="-8.4" width="0.2" layer="51"/>
+<wire x1="3.6" y1="-3" x2="3.6" y2="1.1" width="0.2" layer="21"/>
+<rectangle x1="-4.2" y1="2" x2="-3.5" y2="3" layer="51"/>
+<rectangle x1="3.6" y1="2" x2="4.3" y2="3" layer="51"/>
+<text x="0" y="0" size="1" layer="25" ratio="20" align="center">&gt;NAME</text>
+<wire x1="-1.5" y1="-8.4" x2="-1.5" y2="0" width="0.2" layer="51"/>
+<wire x1="1.5" y1="-8.4" x2="1.5" y2="0" width="0.2" layer="51"/>
+</package>
+<package name="CON_USB_HW-UAF-08">
+<text x="0" y="0" size="1.27" layer="25" font="vector" ratio="16" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+<pad name="SHLD@1" x="6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<pad name="SHLD" x="-6.4" y="-7.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<pad name="2" x="1" y="0" drill="0.9"/>
+<pad name="3" x="-1" y="0" drill="0.9"/>
+<pad name="1" x="-3.5" y="0" drill="0.9"/>
+<pad name="4" x="3.5" y="0" drill="0.9"/>
+<wire x1="-5.6" y1="0" x2="-4.5" y2="0" width="0.2" layer="21"/>
+<wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-9" x2="-6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-2.6" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-9" x2="6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
+<wire x1="-6.4" y1="-6.65" x2="-6.4" y2="-8.05" width="0.6" layer="46"/>
+<wire x1="6.4" y1="-6.65" x2="6.4" y2="-8.05" width="0.6" layer="46"/>
+<pad name="SHLD@2" x="6.3" y="-1.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<pad name="SHLD1" x="-6.5" y="-1.35" drill="0.6" diameter="1.3" shape="long" rot="R90"/>
+<wire x1="-6.5" y1="-0.65" x2="-6.5" y2="-2.05" width="0.6" layer="46"/>
+<wire x1="6.3" y1="-0.65" x2="6.3" y2="-2.05" width="0.6" layer="46"/>
+<wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IC_USBHUB_TUSB2036">
@@ -9694,6 +9737,21 @@ grid 7.62 mm, diameter 18 mm</description>
 </technology>
 </technologies>
 </device>
+<device name="_A_UAF-08" package="CON_USB_HW-UAF-08">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SHLD" pad="SHLD SHLD1 SHLD@1 SHLD@2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TH_PAD" value="8" constant="no"/>
+<attribute name="URL" value="http://www.aitendo.com/product/4396" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="IC_POWER_TPS2041C" prefix="IC" uservalue="yes">
@@ -9952,6 +10010,22 @@ grid 7.62 mm, diameter 18 mm</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="_TL1105S" package="SW_TACTSW_TL1105S">
+<connects>
+<connect gate="G$1" pin="P" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="BK">
+<attribute name="DIGIKEY" value="EG1839-ND" constant="no"/>
+<attribute name="MOUSER" value="EG1839-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12577,10 +12651,6 @@ Source: www.kingbright.com</description>
 <part name="CON7" library="mylib" deviceset="CON_USB" device="_A_614104150121"/>
 <part name="J1" library="mylib" deviceset="CON_DCJACK" device="_C1604"/>
 <part name="U1" library="mylib" deviceset="IC_LPC81X_16" device="_JDH16" value="LPC812M101JDH16"/>
-<part name="SW4" library="mylib" deviceset="TACTSW2_*" device="FSM2JMTR" value="YL"/>
-<part name="SW3" library="mylib" deviceset="TACTSW2_*" device="FSM2JMTR" value="GR"/>
-<part name="SW2" library="mylib" deviceset="TACTSW2_*" device="FSM2JMTR" value="BL"/>
-<part name="SW1" library="mylib" deviceset="TACTSW2_*" device="FSM2JMTR" value="RD"/>
 <part name="SUPPLY1" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="mylib" deviceset="GND" device=""/>
@@ -12724,9 +12794,59 @@ Source: www.kingbright.com</description>
 <part name="P3" library="mylib" deviceset="PCB_CORNER" device=""/>
 <part name="P4" library="mylib" deviceset="PCB_CORNER" device=""/>
 <part name="TP5" library="mylib" deviceset="TESTPAD" device=""/>
+<part name="X4" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="X5" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="X6" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="X7" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SW4" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SW3" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SW2" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SW1" library="mylib" deviceset="TACTSW2_*" device="_SKRPACE010" technology="WH">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SUPPLY34" library="mylib" deviceset="GND" device=""/>
+<part name="SUPPLY42" library="mylib" deviceset="GND" device=""/>
+<part name="SUPPLY43" library="mylib" deviceset="GND" device=""/>
+<part name="SUPPLY44" library="mylib" deviceset="GND" device=""/>
+<part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
+<part name="P5" library="mylib" deviceset="PCB_CORNER" device="_NH"/>
+<part name="P6" library="mylib" deviceset="PCB_CORNER" device="_NH"/>
+<part name="P7" library="mylib" deviceset="PCB_CORNER" device="_NH"/>
+<part name="P8" library="mylib" deviceset="PCB_CORNER" device="_NH"/>
+<part name="X8" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="X9" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="X10" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="X11" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
+<attribute name="NOT_COMPONENT" value="YES"/>
+</part>
+<part name="SW5" library="mylib" deviceset="TACTSW2_*" device="_TL1105S" technology="BK"/>
+<part name="SW6" library="mylib" deviceset="TACTSW2_*" device="_TL1105S" technology="BK"/>
+<part name="SW7" library="mylib" deviceset="TACTSW2_*" device="_TL1105S" technology="BK"/>
+<part name="SW8" library="mylib" deviceset="TACTSW2_*" device="_TL1105S" technology="BK"/>
 </parts>
 <sheets>
 <sheet>
+<description>main</description>
 <plain>
 <text x="167.64" y="43.18" size="1.778" layer="94">&lt;-</text>
 <text x="167.64" y="45.72" size="1.778" layer="94">-&gt;</text>
@@ -12855,10 +12975,6 @@ on-board clock source can be used.</text>
 <instance part="U1" gate="G$1" x="139.7" y="78.74">
 <attribute name="DIGIKEY" x="139.7" y="63.5" size="1.6764" layer="96" align="top-center" display="both"/>
 </instance>
-<instance part="SW4" gate="G$1" x="195.58" y="76.2"/>
-<instance part="SW3" gate="G$1" x="210.82" y="76.2"/>
-<instance part="SW2" gate="G$1" x="226.06" y="76.2"/>
-<instance part="SW1" gate="G$1" x="241.3" y="76.2"/>
 <instance part="SUPPLY1" gate="GND" x="88.9" y="226.06"/>
 <instance part="SUPPLY2" gate="GND" x="144.78" y="137.16"/>
 <instance part="SUPPLY4" gate="GND" x="127" y="154.94" rot="R90"/>
@@ -13073,6 +13189,32 @@ on-board clock source can be used.</text>
 <instance part="P3" gate="G$1" x="246.38" y="10.16" rot="R270"/>
 <instance part="P4" gate="G$1" x="251.46" y="10.16"/>
 <instance part="TP5" gate="1" x="165.1" y="157.48" rot="R180"/>
+<instance part="X4" gate="-1" x="205.74" y="55.88" rot="MR0">
+<attribute name="DIGIKEY" x="195.58" y="60.96" size="1.6764" layer="96" rot="MR180" align="bottom-center" display="both"/>
+</instance>
+<instance part="X4" gate="-2" x="205.74" y="53.34" rot="MR0"/>
+<instance part="X5" gate="-1" x="205.74" y="43.18" rot="MR0"/>
+<instance part="X5" gate="-2" x="205.74" y="40.64" rot="MR0"/>
+<instance part="X6" gate="-1" x="205.74" y="30.48" rot="MR0"/>
+<instance part="X6" gate="-2" x="205.74" y="27.94" rot="MR0"/>
+<instance part="X7" gate="-1" x="205.74" y="17.78" rot="MR0"/>
+<instance part="X7" gate="-2" x="205.74" y="15.24" rot="MR0"/>
+<instance part="SW4" gate="G$1" x="195.58" y="76.2">
+<attribute name="NOT_COMPONENT" x="195.58" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SW3" gate="G$1" x="210.82" y="76.2">
+<attribute name="NOT_COMPONENT" x="210.82" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SW2" gate="G$1" x="226.06" y="76.2">
+<attribute name="NOT_COMPONENT" x="226.06" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SW1" gate="G$1" x="241.3" y="76.2">
+<attribute name="NOT_COMPONENT" x="241.3" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SUPPLY34" gate="GND" x="208.28" y="48.26"/>
+<instance part="SUPPLY42" gate="GND" x="208.28" y="35.56"/>
+<instance part="SUPPLY43" gate="GND" x="208.28" y="22.86"/>
+<instance part="SUPPLY44" gate="GND" x="208.28" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -13265,36 +13407,36 @@ on-board clock source can be used.</text>
 <junction x="119.38" y="154.94"/>
 </segment>
 <segment>
-<pinref part="SW4" gate="G$1" pin="P"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="71.12" x2="200.66" y2="73.66" width="0.1524" layer="91"/>
 <junction x="198.12" y="71.12"/>
+<pinref part="SW4" gate="G$1" pin="P"/>
 </segment>
 <segment>
-<pinref part="SW3" gate="G$1" pin="P"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="71.12" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
 <junction x="213.36" y="71.12"/>
+<pinref part="SW3" gate="G$1" pin="P"/>
 </segment>
 <segment>
-<pinref part="SW2" gate="G$1" pin="P"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <pinref part="C19" gate="G$1" pin="2"/>
 <wire x1="228.6" y1="71.12" x2="231.14" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="71.12" x2="231.14" y2="73.66" width="0.1524" layer="91"/>
 <junction x="228.6" y="71.12"/>
+<pinref part="SW2" gate="G$1" pin="P"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="P"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="243.84" y1="71.12" x2="246.38" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="71.12" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
 <junction x="243.84" y="71.12"/>
+<pinref part="SW1" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-2" pin="1"/>
@@ -13488,6 +13630,26 @@ on-board clock source can be used.</text>
 <segment>
 <pinref part="CON7" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY41" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="X4" gate="-2" pin="1"/>
+<pinref part="SUPPLY34" gate="GND" pin="GND"/>
+<wire x1="208.28" y1="50.8" x2="208.28" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X5" gate="-2" pin="1"/>
+<pinref part="SUPPLY42" gate="GND" pin="GND"/>
+<wire x1="208.28" y1="38.1" x2="208.28" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X6" gate="-2" pin="1"/>
+<pinref part="SUPPLY43" gate="GND" pin="GND"/>
+<wire x1="208.28" y1="25.4" x2="208.28" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X7" gate="-2" pin="1"/>
+<pinref part="SUPPLY44" gate="GND" pin="GND"/>
+<wire x1="208.28" y1="12.7" x2="208.28" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -13865,7 +14027,6 @@ on-board clock source can be used.</text>
 <net name="SW1" class="0">
 <segment>
 <wire x1="243.84" y1="88.9" x2="243.84" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="S"/>
 <label x="243.84" y="88.9" size="1.778" layer="95" rot="R90"/>
 <pinref part="R31" gate="G$1" pin="1"/>
 <wire x1="243.84" y1="86.36" x2="243.84" y2="81.28" width="0.1524" layer="91"/>
@@ -13876,17 +14037,22 @@ on-board clock source can be used.</text>
 <wire x1="243.84" y1="81.28" x2="246.38" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="81.28" x2="246.38" y2="78.74" width="0.1524" layer="91"/>
 <junction x="243.84" y="81.28"/>
+<pinref part="SW1" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <wire x1="172.72" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="P0_8/XTALIN"/>
 <label x="167.64" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="208.28" y1="17.78" x2="210.82" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="X7" gate="-1" pin="1"/>
+<label x="210.82" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SW2" class="0">
 <segment>
 <wire x1="228.6" y1="88.9" x2="228.6" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="G$1" pin="S"/>
 <label x="228.6" y="88.9" size="1.778" layer="95" rot="R90"/>
 <wire x1="228.6" y1="86.36" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="86.36" x2="231.14" y2="86.36" width="0.1524" layer="91"/>
@@ -13897,17 +14063,22 @@ on-board clock source can be used.</text>
 <wire x1="228.6" y1="81.28" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="81.28" x2="231.14" y2="78.74" width="0.1524" layer="91"/>
 <junction x="228.6" y="81.28"/>
+<pinref part="SW2" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <wire x1="172.72" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="P0_1/ACMP_I2"/>
 <label x="167.64" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="208.28" y1="30.48" x2="210.82" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="X6" gate="-1" pin="1"/>
+<label x="210.82" y="30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SW3" class="0">
 <segment>
 <wire x1="213.36" y1="88.9" x2="213.36" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SW3" gate="G$1" pin="S"/>
 <label x="213.36" y="88.9" size="1.778" layer="95" rot="R90"/>
 <wire x1="213.36" y1="86.36" x2="213.36" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="86.36" x2="215.9" y2="86.36" width="0.1524" layer="91"/>
@@ -13918,17 +14089,22 @@ on-board clock source can be used.</text>
 <wire x1="213.36" y1="81.28" x2="215.9" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="81.28" x2="215.9" y2="78.74" width="0.1524" layer="91"/>
 <junction x="213.36" y="81.28"/>
+<pinref part="SW3" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <wire x1="172.72" y1="71.12" x2="165.1" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="P0_9/XTALOUT"/>
 <label x="167.64" y="71.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="208.28" y1="43.18" x2="210.82" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="X5" gate="-1" pin="1"/>
+<label x="210.82" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SW4" class="0">
 <segment>
 <wire x1="198.12" y1="88.9" x2="198.12" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SW4" gate="G$1" pin="S"/>
 <label x="198.12" y="88.9" size="1.778" layer="95" rot="R90"/>
 <wire x1="198.12" y1="86.36" x2="198.12" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
@@ -13939,11 +14115,17 @@ on-board clock source can be used.</text>
 <wire x1="198.12" y1="81.28" x2="200.66" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="81.28" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
 <junction x="198.12" y="81.28"/>
+<pinref part="SW4" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <wire x1="114.3" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="P0_10"/>
 <label x="106.68" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="208.28" y1="55.88" x2="210.82" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="X4" gate="-1" pin="1"/>
+<label x="210.82" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TGT_RX" class="0">
@@ -14356,6 +14538,115 @@ on-board clock source can be used.</text>
 <net name="N$73" class="0">
 <segment>
 <wire x1="170.18" y1="180.34" x2="180.34" y2="137.16" width="0.3048" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<wire x1="271.78" y1="17.78" x2="271.78" y2="10.16" width="0.3048" layer="94"/>
+<wire x1="276.86" y1="5.08" x2="281.94" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="287.02" y1="10.16" x2="287.02" y2="17.78" width="0.3048" layer="94"/>
+<wire x1="281.94" y1="22.86" x2="276.86" y2="22.86" width="0.3048" layer="94"/>
+</plain>
+<instances>
+<instance part="FRAME2" gate="G$1" x="0" y="0"/>
+<instance part="P5" gate="G$1" x="281.94" y="17.78" rot="R90"/>
+<instance part="P6" gate="G$1" x="276.86" y="17.78" rot="R180"/>
+<instance part="P7" gate="G$1" x="276.86" y="10.16" rot="R270"/>
+<instance part="P8" gate="G$1" x="281.94" y="10.16"/>
+<instance part="X8" gate="-1" x="109.22" y="144.78" rot="MR0">
+<attribute name="DIGIKEY" x="99.06" y="149.86" size="1.6764" layer="96" rot="MR180" align="bottom-center" display="both"/>
+</instance>
+<instance part="X8" gate="-2" x="147.32" y="144.78" rot="MR180"/>
+<instance part="X9" gate="-1" x="109.22" y="127" rot="MR0"/>
+<instance part="X9" gate="-2" x="147.32" y="127" rot="MR180"/>
+<instance part="X10" gate="-1" x="109.22" y="109.22" rot="MR0"/>
+<instance part="X10" gate="-2" x="147.32" y="109.22" rot="MR180"/>
+<instance part="X11" gate="-1" x="109.22" y="91.44" rot="MR0"/>
+<instance part="X11" gate="-2" x="147.32" y="91.44" rot="MR180"/>
+<instance part="SW5" gate="G$1" x="129.54" y="93.98" smashed="yes" rot="R270">
+<attribute name="NAME" x="132.715" y="97.79" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.715" y="95.25" size="1.016" layer="96"/>
+<attribute name="DIGIKEY" x="147.32" y="101.6" size="1.778" layer="96" rot="R180" display="both"/>
+</instance>
+<instance part="SW6" gate="G$1" x="129.54" y="111.76" smashed="yes" rot="R270">
+<attribute name="NAME" x="132.715" y="115.57" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.715" y="113.03" size="1.016" layer="96"/>
+<attribute name="DIGIKEY" x="147.32" y="119.38" size="1.778" layer="96" rot="R180" display="both"/>
+</instance>
+<instance part="SW7" gate="G$1" x="129.54" y="129.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="132.715" y="133.35" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.715" y="130.81" size="1.016" layer="96"/>
+<attribute name="DIGIKEY" x="147.32" y="137.16" size="1.778" layer="96" rot="R180" display="both"/>
+</instance>
+<instance part="SW8" gate="G$1" x="129.54" y="147.32" smashed="yes" rot="R270">
+<attribute name="DIGIKEY" x="147.32" y="154.94" size="1.778" layer="96" rot="R180" display="both"/>
+<attribute name="NAME" x="132.715" y="151.13" size="1.778" layer="95"/>
+<attribute name="VALUE" x="132.715" y="148.59" size="1.016" layer="96"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="SW8" class="0">
+<segment>
+<wire x1="111.76" y1="144.78" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="X8" gate="-1" pin="1"/>
+<label x="114.3" y="144.78" size="1.778" layer="95"/>
+<pinref part="SW8" gate="G$1" pin="P"/>
+</segment>
+</net>
+<net name="SW7" class="0">
+<segment>
+<wire x1="111.76" y1="127" x2="124.46" y2="127" width="0.1524" layer="91"/>
+<pinref part="X9" gate="-1" pin="1"/>
+<label x="114.3" y="127" size="1.778" layer="95"/>
+<pinref part="SW7" gate="G$1" pin="P"/>
+</segment>
+</net>
+<net name="SW6" class="0">
+<segment>
+<wire x1="111.76" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="X10" gate="-1" pin="1"/>
+<label x="114.3" y="109.22" size="1.778" layer="95"/>
+<pinref part="SW6" gate="G$1" pin="P"/>
+</segment>
+</net>
+<net name="SW5" class="0">
+<segment>
+<wire x1="111.76" y1="91.44" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="X11" gate="-1" pin="1"/>
+<label x="114.3" y="91.44" size="1.778" layer="95"/>
+<pinref part="SW5" gate="G$1" pin="P"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="SW8" gate="G$1" pin="S"/>
+<pinref part="X8" gate="-2" pin="1"/>
+<wire x1="144.78" y1="144.78" x2="134.62" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<pinref part="SW7" gate="G$1" pin="S"/>
+<pinref part="X9" gate="-2" pin="1"/>
+<wire x1="144.78" y1="127" x2="134.62" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$76" class="0">
+<segment>
+<pinref part="SW6" gate="G$1" pin="S"/>
+<pinref part="X10" gate="-2" pin="1"/>
+<wire x1="144.78" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$77" class="0">
+<segment>
+<pinref part="SW5" gate="G$1" pin="S"/>
+<pinref part="X11" gate="-2" pin="1"/>
+<wire x1="144.78" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
