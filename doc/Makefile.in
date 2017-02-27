@@ -28,7 +28,7 @@ SVN=
 SVNDIR=
 REPO= ${PWD##*/}
 
-PANFLAGS= -s -S
+PANFLAGS= -s
 PANFLAGS += --read=markdown+east_asian_line_breaks
 # +implicit_figures+inline_code_attributes+header_attributes+escaped_line_breaks
 PANFLAGS += --filter $(PCROSSREF)

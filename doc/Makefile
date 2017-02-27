@@ -45,7 +45,7 @@ $(DOCX): $(HTML)
 
 html: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(HTML)
 $(HTML): $(MDDIR)/$(TARGETDIR)/$(TARGET).md
-	$(PANDOC) $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
+	$(PANDOC) -S $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
 		$(FILTERED) -o $(HTML)
 
 pdf: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
