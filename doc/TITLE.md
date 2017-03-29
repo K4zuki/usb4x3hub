@@ -31,7 +31,7 @@ chapter: true
 listings: true
 codeBlockCaptions: true
 listingTitle: 'List'
-# front: images/USB4x3HUB_r04-a30fd1f.png
+front: images/USB4x3HUB-block.png
 listingTemplate: '---**$$listingTitle$$ $$i$$$$titleDelim$$ $$t$$**---'
 ---
 
@@ -173,7 +173,7 @@ LED色が3種類しかないので赤を4個使用するつもりで考えてあ
 パネル加工の方針によっては基板のLEDを取り除くべきです。
 
 ### アイデア２：市販のケースを購入し工夫する（２）
-デバイス側を少し削るとタカチのＹＭ−９０という
+デバイス側を少し削るとタカチのYM-90という
 メタルシャーシも使えそうです。千石・マルツ・共立などで買える定番品です。
 MX2-8-7よりもUSB面の幅に余裕があるのでパネル用DCジャックと端子台を
 つけて配線するのは簡単そうです。パネル用ボタンスイッチを取り付けるのは
