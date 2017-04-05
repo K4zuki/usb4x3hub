@@ -19,7 +19,7 @@ If you have **PCs, MACs, LINUXes, XBOXes and/or PS4s**, you can share your favor
 
 > NOTE: I do not have PS4 so it is not tested;USB4x3HUB might not work with PS4
 
-![](doc/images/USB4x3HUB_r04-a30fd1f.png)
+![](doc/images/USB4x3HUB-block.png)
 **rev 0.4 - みんなのラボ brand**
 
 <!-- ![](doc/images/USB4x3HUBr1.png)
