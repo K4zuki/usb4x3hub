@@ -1,4 +1,4 @@
-# C91で新刊を買われた方へ
+# C91/技術書典２で購入いただいた方へ
 - この本のPDFファイルは
   [こちら](https://github.com/K4zuki/usb4x3hub/releases/tag/C91publish)
 - この本に登場する基板のデータは
