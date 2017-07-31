@@ -117,7 +117,12 @@ LPC812マイクロコントローラの16ピンタイプを
 ![回路図(マイコン部分を拡大)](images/USB4x3HUB_r04_LPC812.png)
 
 \\newpage
-`../mbed/main.cpp`{.listingtable .cpp}
+```listingtable
+source: ../mbed/main.cpp
+class: cpp
+tex: False
+---
+```
 
 \\newpage
 ## エンクロージャ（ケース）を用意する
@@ -147,15 +152,25 @@ USBコネクタとLEDつきスイッチ（後述）、パネル用DCジャック
 
 #### 追加で必要になる部品
 
-<!-- Table: 部品表
-
-`Out/case1.tmd`{.include} -->
 ```table
 ---
 caption: 部品表
-include: data/case1.csv
 markdown: True
+width:
+    - 0.35
+    - 0.35
+    - 0.1
+    - 0.1
+    - 0.1
 ---
+部品,型番,個数,入手先,URL
+ケース,MX-2-8-7BB,1,マルツ,[125226](http://www.marutsu.co.jp/pc/i/125226/)
+"LEDつきスイッチ",PB01-11A-LR-N-3M,4,秋月,[P-04073](http://akizukidenshi.com/catalog/g/gP-04073/)
+"DCジャック","MJ-22（外ナット）",1,秋月,[C-06647](http://akizukidenshi.com/catalog/g/gC-06647/)
+"DCジャック","MJ-14（内ナット）",1,秋月,[C-06342](http://akizukidenshi.com/catalog/g/gC-06342/)
+"ACアダプタ9V/0.65A",GF06-US09065A,1,秋月,[M-03681](http://akizukidenshi.com/catalog/g/gM-03681/)
+端子台2P,TB111-2-2-U-1-1,1,秋月,[P-01306](http://akizukidenshi.com/catalog/g/gP-01306/)
+端子台2P,"MPT0.5/2-2.54/1725656",1,秋月,[P-08450](http://akizukidenshi.com/catalog/g/gP-08450/)
 ```
 
 LEDつきスイッチ・DCジャック・端子台は秋月、ケースは千石（取り寄せ）かマルツ
@@ -165,7 +180,7 @@ LEDつきスイッチ・DCジャック・端子台は秋月、ケースは千石
 押しボタンスイッチを使ってもいいと思います。リストに挙げたLEDつきスイッチは
 LED色が3種類しかないので赤を4個使用するつもりで考えてあります。このスイッチの
 取り付け穴はパネル厚さで変える必要があるようです。外観がそっくりな
-[デジキー取扱品のデータシート](https://www.e-switch.com/system/asset/product_line/data_sheet/37/LP1.pdf)
+デジキー取扱品のデータシート[^006]
 によると以下のようになっています。
 
 | パネル厚さt[mm] | 取付穴径d[mm] |
@@ -208,15 +223,21 @@ MX2-8-7よりもUSB面の幅に余裕があるのでパネル用DCジャック�
 
 #### 追加で必要になる部品
 
-<!-- Table: 部品表
-
-`Out/case2.tmd`{.include} -->
 ```table
 ---
 caption: 部品表
-include: data/case2.csv
 markdown: True
+width:
+    - 0.3
+    - 0.2
+    - 0.1
+    - 0.3
+    - 0.1
 ---
+部品,型番,個数,入手先,URL
+ACアダプタ9V/0.65A,GF06-US09065A,1,秋月 ,[M-03681](http://akizukidenshi.com/catalog/g/gM-03681/)
+基板用DCジャック,2DC0005D100,1,秋月,[C-01604](http://akizukidenshi.com/catalog/g/gC-01604/)
+自作アクリルケース,,1 set,アクリル加工サービスなど,
 ```
 
 ほぼ全て秋月のみで揃います。
@@ -259,3 +280,4 @@ markdown: True
 [^003]: http://www.ti.com/lit/ds/symlink/tusb2036.pdf
 [^004]: http://akizukidenshi.com/catalog/g/gK-05258/
 [^005]: https://developer.mbed.org/platforms/NXP-LPC800-MAX/
+[^006]: https://www.e-switch.com/system/asset/product_line/data_sheet/37/LP1.pdf
