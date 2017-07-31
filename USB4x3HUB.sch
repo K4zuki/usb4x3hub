@@ -12759,7 +12759,7 @@ Source: www.kingbright.com</description>
 <part name="TP102" library="mylib" deviceset="TESTPAD" device="_F"/>
 <part name="ICON1" library="mylib" deviceset="ICON_OSHW" device="" value="OSHW"/>
 <part name="ICON2" library="mylib" deviceset="ICON_REVISION" device="_2.0" value="r0.5"/>
-<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.0" value="7236034"/>
+<part name="GIT1" library="git-revision" deviceset="GIT-REVISION" device="_1.0" value="edbc0af"/>
 <part name="TP1" library="mylib" deviceset="TESTPAD" device="_4020"/>
 <part name="R41" library="mylib" deviceset="R_US_*" device="_1005" technology="10K" value="10k/1005"/>
 <part name="R40" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>

@@ -442,6 +442,7 @@
 <wire x1="80.2" y1="73.7" x2="80.2" y2="64.3" width="0.8" layer="42"/>
 <wire x1="80.2" y1="64.3" x2="66" y2="64.3" width="0.8" layer="42"/>
 <rectangle x1="66" y1="64.5" x2="80" y2="73.5" layer="42"/>
+<wire x1="71" y1="7.5" x2="66" y2="7.5" width="2" layer="46"/>
 </plain>
 <libraries>
 <library name="mylib">
@@ -4802,7 +4803,7 @@ design rules under a new name.</description>
 <element name="ICON2" library="mylib" package="ICON_REVISION2.0" value="r0.5" x="48.8" y="77.9">
 <attribute name="NOT_COMPONENT" value="YES" x="48.8" y="77.9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="GIT1" library="git-revision" package="GIT-REVISION" value="7236034" x="48.8" y="76">
+<element name="GIT1" library="git-revision" package="GIT-REVISION" value="edbc0af" x="48.8" y="76">
 <attribute name="NOT_COMPONENT" value="YES" x="48.8" y="76" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP1" library="mylib" package="TP_4020" value="" x="17.6" y="75.9" rot="R180">
@@ -5216,7 +5217,6 @@ design rules under a new name.</description>
 <contactref element="X6" pad="2"/>
 <contactref element="X7" pad="2"/>
 <via x="55.7" y="41.8" extent="1-16" drill="0.3"/>
-<via x="60.5" y="16" extent="1-16" drill="0.3"/>
 <via x="55.8" y="21.9" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="AVSS">
