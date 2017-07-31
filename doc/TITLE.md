@@ -91,9 +91,16 @@ USB-Aコネクタです。`r0.4`と`r0.5`で部品が異なります。基板設
 フットプリントは同一ですが、`r0.5`のコネクタは _USBケーブルを指す向きが逆_
 になっています。
 
-Table: 追加部品リスト
+<!-- Table: 追加部品リスト
 
-`Out/additionalBOM.tmd`{.include}
+`Out/additionalBOM.tmd`{.include} -->
+```table
+---
+caption: 追加部品リスト
+include: "data/additionalBOM.csv"
+markdown: True
+---
+```
 
 # 組み立てる
 ## ファームウェアをコンパイルする
@@ -109,10 +116,10 @@ LPC812マイクロコントローラの16ピンタイプを
 
 ![回路図(マイコン部分を拡大)](images/USB4x3HUB_r04_LPC812.png)
 
-\newpage
+\\newpage
 `../mbed/main.cpp`{.listingtable .cpp}
 
-\newpage
+\\newpage
 ## エンクロージャ（ケース）を用意する
 エンクロージャ（ケース）は、頒布しません。代わりにアイデアを３点提示します。
 いずれもアクリル（など）の加工が必要です。TechShopやDMM.Makeなどの工作室
@@ -140,9 +147,16 @@ USBコネクタとLEDつきスイッチ（後述）、パネル用DCジャック
 
 #### 追加で必要になる部品
 
-Table: 部品表
+<!-- Table: 部品表
 
-`Out/case1.tmd`{.include}
+`Out/case1.tmd`{.include} -->
+```table
+---
+caption: 部品表
+include: data/case1.csv
+markdown: True
+---
+```
 
 LEDつきスイッチ・DCジャック・端子台は秋月、ケースは千石（取り寄せ）かマルツ
 （秋葉原本店なら *運が良ければ* 店頭にある）で購入できます。
@@ -194,30 +208,37 @@ MX2-8-7よりもUSB面の幅に余裕があるのでパネル用DCジャック�
 
 #### 追加で必要になる部品
 
-Table: 部品表
+<!-- Table: 部品表
 
-`Out/case2.tmd`{.include}
+`Out/case2.tmd`{.include} -->
+```table
+---
+caption: 部品表
+include: data/case2.csv
+markdown: True
+---
+```
 
 ほぼ全て秋月のみで揃います。
 
 # 付録
-\newpage
+\\newpage
 ## 回路図
-\newpage
+\\newpage
 `images/USB4x3HUB_r04_sch.png`{.rotate .caption="回路図" .angle=90}{}
 
-\newpage
+\\newpage
 ## 基板図
 
-\newpage
+\\newpage
 ![基板外観図](images/USB4x3HUB_r04-a30fd1f.png){}
 
-\newpage
+\\newpage
 ## 基板寸法とパネル寸法の例
 基板外形、DCジャックなどの開口部の位置寸法とMX2-8-7のパネル寸法図面を
 兼ねています。
 
-\newpage
+\\newpage
 `images/USB4x3HUB_r04-a30fd1f_meas.png`{.rotate .caption="寸法図" .angle=90}{}
 
 # 更新履歴 {.unnumbered}

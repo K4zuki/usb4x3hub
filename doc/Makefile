@@ -1,100 +1,149 @@
-# include Makefile.win
 include Makefile.in
+
+REQ = 'Requirements -\n'
+REQ += '\033[92m'
+REQ += 'pandoc'
+REQ += '\033[0m'
+REQ += 'to convert Markdown to TeX/html\n\033[0m'
+REQ += '\033[92m'
+REQ += 'XeLaTeX'
+REQ += '\033[0m'
+REQ += 'to convert TeX to PDF\n\033[0m'
+REQ += '\033[92m'
+REQ += 'pyYAML(via pip)'
+REQ += '\033[0m'
+REQ += 'to convert yaml to json waveform file \n\033[0m'
+REQ += '\033[92m'
+REQ += 'WAVEDROM+PhantomJS(via npm)'
+REQ += '\033[0m'
+REQ += 'to convert JSON to waveform png\n\033[0m'
+REQ += '\033[92m'
+REQ += 'rsvg-convert(via librsvg)'
+REQ += '\033[0m'
+REQ += 'to convert SVG to PNG\n\033[0m'
 
 MDDIR:= .
 DATADIR:= data
 TARGETDIR:= Out
 IMAGEDIR:= images
-WAVEDIR:= images/waves
+WAVEDIR:= waves
+BITDIR:= bitfields
 
 INPUT:= TITLE.md
-TARGET = USB4x3HUB
+TARGET = TARGET
 
-CSV:= $(shell cd $(MDDIR)/$(DATADIR); ls *.csv)
-TABLES:= $(CSV:%.csv=$(MDDIR)/$(TARGETDIR)/%.tmd)
+CSV:= $(shell cd $(DATADIR); ls *.csv)
+# TABLES:= $(CSV:%.csv=$(TARGETDIR)/%.tmd)
 
-WAVEYAML:= $(shell cd $(MDDIR)/$(DATADIR); ls *.yaml)
+WAVEYAML:= $(shell cd $(DATADIR)/$(WAVEDIR); ls *.yaml)
 PYWAVEOPTS:= -c
 PYWAVEOPTS += 'import sys, yaml, json; \
 							json.dump(yaml.load(sys.stdin), sys.stdout, indent=4)'
-WAVEJSON:= $(WAVEYAML:%.yaml=$(MDDIR)/$(TARGETDIR)/%.json)
-WAVEPNG:= $(WAVEYAML:%.yaml=$(MDDIR)/$(WAVEDIR)/%.png)
+WAVEJSON:= $(WAVEYAML:%.yaml=$(TARGETDIR)/%.wavejson)
+WAVEPNG:= $(WAVEYAML:%.yaml=$(IMAGEDIR)/$(WAVEDIR)/%.png)
 
-FILTERED= $(INPUT:%.md=$(MDDIR)/$(TARGETDIR)/%.fmd)
-HTML:=$(MDDIR)/$(TARGETDIR)/$(TARGET).html
-DOCX:=$(MDDIR)/$(TARGETDIR)/$(TARGET).docx
+BITYAML:= $(shell cd $(DATADIR)/$(BITDIR); ls *.yaml)
+BITJSON:= $(BITYAML:%.yaml=$(TARGETDIR)/%.bitjson)
+BITPNG:=  $(BITYAML:%.yaml=$(IMAGEDIR)/$(BITDIR)/%.png)
+# rsvg-convert alpha.svg --format=png --output=sample_rsvg.png
 
-PANFLAGS += --toc
-PANFLAGS += --listings
-PANFLAGS += --number-sections --highlight-style=pygments
-PANFLAGS += -M localfontdir=$(FONTDIR)
-PANFLAGS += -M css=$(MISC)/github_css/github.css
-PANFLAGS += -M short-hash=`git rev-parse --short HEAD`
-PANFLAGS += -M tables=true
+FILTERED= $(INPUT:%.md=$(TARGETDIR)/%.md)
+HTML:=$(TARGETDIR)/$(TARGET).html
+DOCX:=$(TARGETDIR)/$(TARGET).docx
 
 MARKDOWN = $(shell ls $(MDDIR)/*.md)
 
-.PHONY: docx html filtered tables pdf tex merge clean linking
+.PHONY: docx html filtered pdf tex merge clean linking
 
 all: html
 
+help:
+	@echo $(REQ)"\033[0m"
+
 docx: $(DOCX)
-$(DOCX): $(HTML)
-	$(PANDOC) --reference-docx=$(REFERENCE) $(HTML) -o $(DOCX); \
+$(DOCX): $(FILTERED)
+	$(PANDOC) $(PANFLAGS) --reference-docx=$(REFERENCE) $(FILTERED) -o $(DOCX); \
 	$(PYTHON) $(DOCXPWRTR) -I $(MDDIR)/$(INPUT) -O $(DOCX)
 
-html: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(HTML)
-$(HTML): $(MDDIR)/$(TARGETDIR)/$(TARGET).md
-	$(PANDOC) -S $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
+html: $(HTML)
+$(HTML): $(TARGETDIR)/$(INPUT)
+	$(PANDOC) $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
 		$(FILTERED) -o $(HTML)
 
-pdf: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
-	cd $(MDDIR)/$(TARGETDIR);\
+pdf: $(TARGETDIR)/$(IMAGEDIR) $(TARGETDIR)/$(TARGET).tex
+	cd $(TARGETDIR);\
 	xelatex --no-pdf $(TARGET).tex; \
 	xelatex $(TARGET).tex
 
-linking: $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR)
-$(MDDIR)/$(TARGETDIR)/$(IMAGEDIR):
-	rm -f $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR); \
-	cd $(MDDIR)/$(TARGETDIR);\
+
+linking: $(TARGETDIR)/$(IMAGEDIR)
+$(TARGETDIR)/$(IMAGEDIR):
+	rm -f $(TARGETDIR)/$(IMAGEDIR); \
+	cd $(TARGETDIR);\
 	ln -s ../$(IMAGEDIR)
 
-tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
-$(MDDIR)/$(TARGETDIR)/$(TARGET).tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
+tex: $(TARGETDIR)/$(TARGET).tex
+$(TARGETDIR)/$(TARGET).tex: $(FILTERED)
 	$(PANDOC) $(PANFLAGS) --template=$(MISC)/CJK_xelatex.tex --latex-engine=xelatex \
-	$(MDDIR)/$(TARGETDIR)/$(TARGET).md -o $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
+		$(FILTERED) -o $(TARGETDIR)/$(TARGET).tex
 
-merge: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
-$(MDDIR)/$(TARGETDIR)/$(TARGET).md: $(FILTERED)
-	cat $(FILTERED) > $(MDDIR)/$(TARGETDIR)/$(TARGET).md
+# merge: filtered $(TARGETDIR)/$(TARGET).md
+# $(TARGETDIR)/$(TARGET).md: $(FILTERED)
+# 	cat $(FILTERED) > $(TARGETDIR)/$(TARGET).md
 
 filtered: $(FILTERED)
-$(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(TABLES) $(WAVEPNG)
-	cat $< | $(PYTHON) $(FILTER) --mode tex --out $@
+$(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(WAVEPNG) $(BITPNG)
+ifneq ($(OS),Windows_NT)
+	$(GPP) $(GPPFLAGS) $< | $(PYTHON) $(FILTER) --mode tex --out $@
+else
+	$(GPP) $(GPPFLAGS) $< > $@
+endif
 
-tables: $(TABLES)
-$(MDDIR)/$(TARGETDIR)/%.tmd: $(MDDIR)/$(DATADIR)/%.csv
-	$(PYTHON) $(CSV2TABLE) --file $< --out $@ --delimiter ','
+# tables: $(TABLES)
+# $(TARGETDIR)/%.tmd: $(DATADIR)/%.csv
+# 	$(PYTHON) $(CSV2TABLE) --file $< --out $@ --delimiter ','
 
-wavedrom: $(WAVEPNG)
-$(MDDIR)/$(WAVEDIR)/%.png: $(MDDIR)/$(TARGETDIR)/%.json
+wavedrom: $(WAVEDIR) $(WAVEPNG)
+$(IMAGEDIR)/$(WAVEDIR)/%.png: $(TARGETDIR)/%.wavejson
+ifneq ($(OS),Windows_NT)
 	phantomjs $(WAVEDROM) -i $< -p $@
+else
+	cp $(IMAGEDIR)/dummy.png $@
+endif
 
-yaml2json: $(WAVEJSON)
-$(MDDIR)/$(TARGETDIR)/%.json: $(MDDIR)/$(DATADIR)/%.yaml
+bitfield: $(BITDIR) $(BITPNG)
+$(IMAGEDIR)/$(BITDIR)/%.png: $(TARGETDIR)/%.bitjson
+	$(BITFIELD) --input $< --vspace 80 --hspace 640 --lanes 1 --bits 8 \
+	--fontfamily "source code pro" --fontsize 16 --fontweight normal> $<.svg
+ifneq ($(OS),Windows_NT)
+	$(RSVG) $<.svg --format=png --output=$@
+else
+	cp $(IMAGEDIR)/dummy.png $@
+endif
+
+yaml2json: $(WAVEDIR) $(BITDIR) $(WAVEJSON) $(BITJSON)
+$(TARGETDIR)/%.wavejson: $(DATADIR)/$(WAVEDIR)/%.yaml
+	if [ ! -e $(IMAGEDIR)/$(WAVEDIR) ]; then mkdir -p $(IMAGEDIR)/$(WAVEDIR); fi
 	$(PYTHON) $(PYWAVEOPTS) < $< > $@
 
-$(MDDIR)/$(TARGETDIR):
-	mkdir -p $(MDDIR)/$(TARGETDIR)
-$(MDDIR)/$(DATADIR):
-	mkdir -p $(MDDIR)/$(DATADIR)
+$(TARGETDIR)/%.bitjson: $(DATADIR)/$(BITDIR)/%.yaml
+	if [ ! -e $(IMAGEDIR)/$(BITDIR) ]; then mkdir -p $(IMAGEDIR)/$(BITDIR); fi
+	$(PYTHON) $(PYWAVEOPTS) < $< > $@
+
+$(TARGETDIR):
+	mkdir -p $(TARGETDIR)
+$(DATADIR):
+	mkdir -p $(DATADIR)
 $(MDDIR):
 	mkdir -p $(MDDIR)
-$(MDDIR)/$(IMAGEDIR):
-	mkdir -p $(MDDIR)/$(IMAGEDIR)
-$(MDDIR)/$(WAVEDIR):
-	mkdir -p $(MDDIR)/$(WAVEDIR)
+$(IMAGEDIR):
+	mkdir -p $(IMAGEDIR)
+$(WAVEDIR):
+	mkdir -p $(IMAGEDIR)/$(WAVEDIR)
+$(BITDIR):
+	mkdir -p $(IMAGEDIR)/$(BITDIR)
 
-clean: $(MDDIR)/$(TARGETDIR)
-	rm -rf $(MDDIR)/$(TARGETDIR)/* $(MDDIR)/$(WAVEDIR)/
-	rm $(MDDIR)/$(IMAGEDIR)/*_r[+-]*.png
+clean: $(TARGETDIR)
+	rm -rf $(TARGETDIR)/*
+	rm -rf $(IMAGEDIR)/$(WAVEDIR)/
+	rm -rf $(IMAGEDIR)/$(BITDIR)/
