@@ -91,15 +91,14 @@ USB-Aコネクタです。`r0.4`と`r0.5`で部品が異なります。基板設
 フットプリントは同一ですが、`r0.5`のコネクタは _USBケーブルを指す向きが逆_
 になっています。
 
-<!-- Table: 追加部品リスト
-
-`Out/additionalBOM.tmd`{.include} -->
 ```table
 ---
 caption: 追加部品リスト
-include: "data/additionalBOM.csv"
 markdown: True
 ---
+Ref,Manuf,Part,DIGIKEY,MOUSER,適用
+CON 5-7,Wurth Electronics,614104150121,732-5962-1-ND,710-614104150121,`r0.5`
+CON 5-7,aitendo,UAF-99 ,NA,NA,`r0.4`
 ```
 
 # 組み立てる
