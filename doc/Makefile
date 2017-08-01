@@ -11,6 +11,9 @@ TARGETDIR:= Out
 IMAGEDIR:= images
 WAVEDIR:= waves
 BITDIR:= bitfields
+BIT16DIR:= bitfield16
+MFILTDIR:= mermaid-filter
+IMAGINEDIR:= pd-images
 
 INPUT:= TITLE.md
 TARGET:= TARGET
