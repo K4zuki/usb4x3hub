@@ -6,16 +6,16 @@ MISC= $(PANSTYLES)/pandoc_misc
 include $(MISC)/Makefile.in
 
 MDDIR=.
-DATADIR:= data
-TARGETDIR:= Out
-IMAGEDIR:= images
-WAVEDIR:= waves
-BITDIR:= bitfields
-BIT16DIR:= bitfield16
-MFILTDIR:= mermaid-filter
-IMAGINEDIR:= pd-images
+# DATADIR:= data
+# TARGETDIR:= Out
+# IMAGEDIR:= images
+# WAVEDIR:= waves
+# BITDIR:= bitfields
+# BIT16DIR:= bitfield16
+# MFILTDIR:= mermaid-filter
+# IMAGINEDIR:= pd-images
 
-INPUT:= TITLE.md
-TARGET:= TARGET
+# INPUT:= TITLE.md
+TARGET:= USB4x3HUB
 
 include $(MISC)/Makefile
