@@ -1,5 +1,5 @@
 ---
-title: 改訂\ \ USB4x3HUBの本
+title: 【改訂】 USB4x3HUBの本
 abstract: Windows/Mac/XBOX/PS4でキーボードとマウス（ともう一つ）を切り替えて共有できる基板
 circle: KY技研
 author: "@_K4ZUKI_"
@@ -268,7 +268,7 @@ ACアダプタ9V/0.65A,GF06-US09065A,1,秋月 ,[M-03681](http://akizukidenshi.co
 - それでも本だけだしておく暴挙（）
 - キンコーズでオンライン注文の予定だけど落ちるかも（）
 
-## Revision 2.0(技術書典２) {.unnumbered}
+## Revision 2.0(C92) {.unnumbered}
 - 改訂。やばみ
 - 表紙絵にはいらすとやさんのフリー素材を使用、ポンチ絵感ある
 - `r0.4`に関連する記述を削除
