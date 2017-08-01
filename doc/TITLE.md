@@ -49,10 +49,19 @@ _**USB4x3HUBプロジェクト**_ は、筆者がWindowsマシンとLinuxマシ�
 
 ## 免責事項 {-}
 
-+-----------------------------------------------------------+
-| この本の内容によって読者に生じたいかなる不利益についても\ |
-| 筆者は一切責任を取りません。                              |
-+-----------------------------------------------------------+
+```table
+---
+# caption:
+alignment: C
+# table-width:
+markdown: True
+# inline markdown
+# include:
+header: False
+---
+"この本の内容によって読者に生じたいかなる不利益についても\\
+筆者は一切責任を取りません。"
+```
 
 # USB4x3HUBの概要
 
@@ -77,10 +86,20 @@ USBミニBコネクタDIP化キット[^004]を接続しただけの、簡素で�
 接続が _必ず_ 一旦切断されたあとスイッチに対応したホストコネクタと再接続
 されます。
 
-+---------------------------------------------------------------------------+
-| USBハブ側につながっているものがキーボードやマウスなら問題は少ないと       |
-| 思いますが、USBメモリを接続した際は突然の切断に気をつける必要があります。 |
-+---------------------------------------------------------------------------+
+```table
+---
+# caption:
+alignment: C
+# table-width:
+markdown: True
+# inline markdown
+# include:
+header: False
+---
+"USBハブ側につながっているものがキーボードやマウスなら問題は少ないと思いますが、\\
+USBメモリを接続した際は突然の切断に気をつける必要があります。"
+```
+
 
 基板上のスイッチは、DCジャックに近い方から赤青緑黄の順で
 実装されています。
@@ -95,6 +114,7 @@ USB-Aコネクタです。`r0.4`と`r0.5`で部品が異なります。基板設
 ---
 caption: 追加部品リスト
 markdown: True
+alignment: CCCCCC
 ---
 Ref,Manuf,Part,DIGIKEY,MOUSER,適用
 CON 5-7,Wurth Electronics,614104150121,732-5962-1-ND,710-614104150121,`r0.5`
@@ -119,7 +139,7 @@ LPC812マイクロコントローラの16ピンタイプを
 ```listingtable
 source: ../mbed/main.cpp
 class: cpp
-tex: False
+tex: True
 ---
 ```
 
@@ -135,10 +155,18 @@ tex: False
 タッピングネジを使うか、M3のタップを立てるなどもよく行われているようです。
 筆者はその手の加工は苦手なのでアクリル加工と付属タッピングネジで
 済ませました。
-
-+--------------------------------------------------------------+
-| 付録に基板及びパネルの寸法図を載せますので参考にしてください |
-+--------------------------------------------------------------+
+```table
+---
+# caption:
+alignment: C
+# table-width:
+markdown: True
+# inline markdown
+# include:
+header: False
+---
+付録に基板及びパネルの寸法図を載せますので参考にしてください
+```
 
 #### パネルの穴あけ加工
 前後のパネルにUSBコネクタの穴を空けます。付属品のパネルにがんばって
@@ -245,13 +273,33 @@ ACアダプタ9V/0.65A,GF06-US09065A,1,秋月 ,[M-03681](http://akizukidenshi.co
 \\newpage
 ## 回路図
 \\newpage
-`images/USB4x3HUB_r04_sch.png`{.rotate .caption="回路図" .angle=90}{}
+```rotate
+source: images/USB4x3HUB_r0.5-edbc0af-sch.png
+angle: 90
+# title: 'Alt title'
+caption: 回路図
+attr:
+#  width: 80%
+#  height: 50%
+---
+```
+<!-- `images/USB4x3HUB-r0.5-edbc0af-sch.png`{.rotate .caption="回路図" .angle=90}{} -->
 
 \\newpage
 ## 基板図
 
 \\newpage
-![基板外観図](images/USB4x3HUB_r04-a30fd1f.png){}
+```rotate
+source: images/USB4x3HUB_r0.5-edbc0af.png
+angle: 90
+# title: 'Alt title'
+caption: 基板外観図
+attr:
+#  width: 80%
+#  height: 50%
+---
+```
+<!-- ![基板外観図](images/USB4x3HUB-r0.5-edbc0afpng){} -->
 
 \\newpage
 ## 基板寸法とパネル寸法の例
@@ -259,7 +307,17 @@ ACアダプタ9V/0.65A,GF06-US09065A,1,秋月 ,[M-03681](http://akizukidenshi.co
 兼ねています。
 
 \\newpage
-`images/USB4x3HUB_r04-a30fd1f_meas.png`{.rotate .caption="寸法図" .angle=90}{}
+```rotate
+source: images/USB4x3HUB_r0.5-edbc0af-meas.png
+angle: 90
+# title: 'Alt title'
+caption: 寸法図
+attr:
+#  width: 80%
+#  height: 50%
+---
+```
+<!-- `images/USB4x3HUB_r04-a30fd1f_meas.png`{.rotate .caption="寸法図" .angle=90}{} -->
 
 # 更新履歴 {.unnumbered}
 ## Revision 1.0(C91) {.unnumbered}
