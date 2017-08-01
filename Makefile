@@ -1,6 +1,3 @@
-# include Makefile.win
-include Makefile.in
-
 MDDIR:= doc
 DATADIR:= data
 TARGETDIR:= Out
@@ -36,91 +33,54 @@ MARKDOWN = $(shell ls $(MDDIR)/*.md)
 
 .PHONY: docx html filtered tables pdf tex merge clean linking
 
+ifeq ($(OS),Windows_NT)
+MAKE= make-4.1_64bit.exe
+else
+MAKE= make
+endif
+
 all: html
 
 docx:
 	cd $(MDDIR);\
-	make docx
-# $(DOCX): $(HTML)
-# 	$(PANDOC) --reference-docx=$(REFERENCE) $(HTML) -o $(DOCX); \
-# 	$(PYTHON) $(DOCXPWRTR) -I $(MDDIR)/$(INPUT) -O $(DOCX)
+	$(MAKE) docx
 
 html:
 	cd $(MDDIR);\
-	make html
-# $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(HTML)
-# $(HTML): $(MDDIR)/$(TARGETDIR)/$(TARGET).md
-# 	$(PANDOC) $(PANFLAGS) --self-contained -thtml5 --template=$(MISC)/github.html \
-# 		$(FILTERED) -o $(HTML)
+	$(MAKE) html
 
 pdf:
 	cd $(MDDIR);\
-	make pdf
-# $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR) $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
-# 	cd $(MDDIR)/$(TARGETDIR);\
-# 	xelatex --no-pdf $(TARGET).tex; \
-# 	xelatex $(TARGET).tex
+	$(MAKE) pdf
 
 linking:
 	cd $(MDDIR);\
-	make linking
-
-# $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR):
-# 	rm -f $(MDDIR)/$(TARGETDIR)/$(IMAGEDIR); \
-# 	cd $(MDDIR)/$(TARGETDIR);\
-# 	ln -s ../$(IMAGEDIR)
+	$(MAKE) linking
 
 tex:
 	cd $(MDDIR);\
-	make tex
-
-# $(MDDIR)/$(TARGETDIR)/$(TARGET).tex: $(MDDIR)/$(TARGETDIR)/$(TARGET).md
-# 	$(PANDOC) $(PANFLAGS) --template=$(MISC)/CJK_xelatex.tex --latex-engine=xelatex \
-# 	$(MDDIR)/$(TARGETDIR)/$(TARGET).md -o $(MDDIR)/$(TARGETDIR)/$(TARGET).tex
+	$(MAKE) tex
 
 merge:
 	cd $(MDDIR);\
-	make merge
-# $(MDDIR)/$(TARGETDIR)/$(TARGET).md: $(FILTERED)
-# 	cat $(FILTERED) > $(MDDIR)/$(TARGETDIR)/$(TARGET).md
+	$(MAKE) merge
 
 filtered:
 	cd $(MDDIR);\
-	make filtered
-# $(FILTERED): $(MDDIR)/$(INPUT) $(MARKDOWN) $(TABLES) $(WAVEPNG)
-# 	cat $< | $(PYTHON) $(FILTER) --out $@
+	$(MAKE) filtered
 
 tables:
 	cd $(MDDIR);\
-	make tables
-# $(MDDIR)/$(TARGETDIR)/%.tmd: $(MDDIR)/$(DATADIR)/%.csv
-# 	$(PYTHON) $(CSV2TABLE) --file $< --out $@ --delimiter ','
+	$(MAKE) tables
 
 wavedrom:
 	cd $(MDDIR);\
-	make wavedrom
-# $(MDDIR)/$(WAVEDIR)/%.png: $(MDDIR)/$(TARGETDIR)/%.json
-# 	phantomjs $(WAVEDROM) -i $< -p $@
+	$(MAKE) wavedrom
 
 yaml2json:
 	cd $(MDDIR);\
-	make yaml2json
-# $(MDDIR)/$(TARGETDIR)/%.json: $(MDDIR)/$(DATADIR)/%.yaml
-# 	$(PYTHON) $(PYWAVEOPTS) < $< > $@
-
-# $(MDDIR)/$(TARGETDIR):
-# 	mkdir -p $(MDDIR)/$(TARGETDIR)
-# $(MDDIR)/$(DATADIR):
-# 	mkdir -p $(MDDIR)/$(DATADIR)
-# $(MDDIR):
-# 	mkdir -p $(MDDIR)
-# $(MDDIR)/$(IMAGEDIR):
-# 	mkdir -p $(MDDIR)/$(IMAGEDIR)
-# $(MDDIR)/$(WAVEDIR):
-# 	mkdir -p $(MDDIR)/$(WAVEDIR)
+	$(MAKE) yaml2json
 
 clean:
 	cd $(MDDIR);\
-	make clean
-# $(MDDIR)/$(TARGETDIR)
-	# rm -rf $(MDDIR)/$(TARGETDIR)/* $(MDDIR)/$(WAVEDIR)/
+	$(MAKE) clean
