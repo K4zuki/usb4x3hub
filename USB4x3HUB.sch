@@ -9105,9 +9105,9 @@ grid 7.62 mm, diameter 18 mm</description>
 <pad name="4" x="3.5" y="0" drill="0.9"/>
 <wire x1="-5.6" y1="0" x2="-4.5" y2="0" width="0.2" layer="21"/>
 <wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
-<wire x1="-6.3" y1="-2.7" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="-6.3" y1="-3" x2="-6.3" y2="-5.7" width="0.2" layer="21"/>
 <wire x1="-6.3" y1="-9" x2="-6.3" y2="-10" width="0.2" layer="21"/>
-<wire x1="6.3" y1="-2.6" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-3" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
 <wire x1="6.3" y1="-9" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-6.3" y1="-10" x2="6.3" y2="-10" width="0.2" layer="21"/>
 <wire x1="-6.4" y1="-6.65" x2="-6.4" y2="-8.05" width="0.6" layer="46"/>
@@ -9117,6 +9117,7 @@ grid 7.62 mm, diameter 18 mm</description>
 <wire x1="-6.5" y1="-0.65" x2="-6.5" y2="-2.05" width="0.6" layer="46"/>
 <wire x1="6.3" y1="-0.65" x2="6.3" y2="-2.05" width="0.6" layer="46"/>
 <wire x1="4.5" y1="0" x2="5.6" y2="0" width="0.2" layer="21"/>
+<wire x1="6.3" y1="-3" x2="6.3" y2="-5.7" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9752,6 +9753,21 @@ grid 7.62 mm, diameter 18 mm</description>
 </technology>
 </technologies>
 </device>
+<device name="_A_UAF-99" package="CON_USB_614104150121WURTH">
+<connects>
+<connect gate="G$1" pin="D+" pad="2"/>
+<connect gate="G$1" pin="D-" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SHLD" pad="SHLD SHLD@1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TH_PAD" value="6" constant="no"/>
+<attribute name="URL" value="http://www.aitendo.com/product/4403" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="IC_POWER_TPS2041C" prefix="IC" uservalue="yes">
@@ -10025,6 +10041,22 @@ grid 7.62 mm, diameter 18 mm</description>
 <technology name="BK">
 <attribute name="DIGIKEY" value="EG1839-ND" constant="no"/>
 <attribute name="MOUSER" value="EG1839-ND" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SKRPABE010" package="SW_TACTSW_SKRPACE010">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="" constant="no"/>
+</technology>
+<technology name="WH">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="MOUSER" value="688-SKRPAB" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10717,7 +10749,7 @@ grid 7.62 mm, diameter 18 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OSC4_*" prefix="Q">
+<deviceset name="OSC4_*" prefix="Y" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="OSC_4P" x="0" y="0"/>
 </gates>
@@ -10998,6 +11030,7 @@ Source: Samtec TSW.pdf</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="AKIZUKI" value="C-08593" constant="no"/>
 <attribute name="DIGIKEY" value="S1011EC-02-ND" constant="no"/>
 <attribute name="SEEED" value="320020016" constant="no"/>
 <attribute name="TH_PAD" value="2"/>
@@ -12766,7 +12799,7 @@ Source: www.kingbright.com</description>
 <part name="R43" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R44" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
 <part name="R42" library="mylib" deviceset="R_US_*" device="_1005SHORT"/>
-<part name="Q1" library="mylib" deviceset="OSC4_*" device="" technology="6.0M" value="OSC4_6.0M"/>
+<part name="Y1" library="mylib" deviceset="OSC4_*" device="" technology="6.0M" value="OSC4_6.0M"/>
 <part name="SUPPLY32" library="mylib" deviceset="GND" device=""/>
 <part name="TP3" library="mylib" deviceset="TESTPAD" device=""/>
 <part name="C4" library="mylib" deviceset="C_SMD_*" device="_1005" technology="0.1U" value="0.1u/1005"/>
@@ -12914,9 +12947,6 @@ SW4 = P0_10
 <wire x1="246.38" y1="5.08" x2="251.46" y2="5.08" width="0.3048" layer="94"/>
 <wire x1="256.54" y1="10.16" x2="256.54" y2="17.78" width="0.3048" layer="94"/>
 <wire x1="251.46" y1="22.86" x2="246.38" y2="22.86" width="0.3048" layer="94"/>
-<text x="228.6" y="53.34" size="2.54" layer="94">SW1-4 and
-LED1-4
-= P-04073(EG4643-ND) if use panel</text>
 <wire x1="165.1" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="94"/>
 <wire x1="170.18" y1="152.4" x2="165.1" y2="152.4" width="0.1524" layer="94"/>
 <wire x1="165.1" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="94"/>
@@ -13153,7 +13183,7 @@ on-board clock source can be used.</text>
 <instance part="R43" gate="G$1" x="167.64" y="134.62"/>
 <instance part="R44" gate="G$1" x="167.64" y="132.08"/>
 <instance part="R42" gate="G$1" x="167.64" y="129.54"/>
-<instance part="Q1" gate="G$1" x="152.4" y="114.3">
+<instance part="Y1" gate="G$1" x="152.4" y="114.3">
 <attribute name="DIGIKEY" x="137.16" y="101.6" size="1.778" layer="96" display="both"/>
 </instance>
 <instance part="SUPPLY32" gate="GND" x="134.62" y="106.68"/>
@@ -13598,7 +13628,7 @@ on-board clock source can be used.</text>
 </segment>
 <segment>
 <pinref part="SUPPLY32" gate="GND" pin="GND"/>
-<pinref part="Q1" gate="G$1" pin="GND@1"/>
+<pinref part="Y1" gate="G$1" pin="GND@1"/>
 <wire x1="134.62" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <junction x="134.62" y="109.22"/>
@@ -13761,7 +13791,7 @@ on-board clock source can be used.</text>
 <pinref part="R39" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="119.38" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="VCC@2"/>
+<pinref part="Y1" gate="G$1" pin="VCC@2"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
 <junction x="134.62" y="114.3"/>
@@ -13791,7 +13821,7 @@ on-board clock source can be used.</text>
 <segment>
 <pinref part="IC1" gate="G$1" pin="XTAL1/CLK48"/>
 <wire x1="170.18" y1="119.38" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="OUT@1"/>
+<pinref part="Y1" gate="G$1" pin="OUT@1"/>
 <wire x1="162.56" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="114.3" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
 </segment>
@@ -14474,7 +14504,7 @@ on-board clock source can be used.</text>
 </net>
 <net name="N$68" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="C"/>
+<pinref part="Y1" gate="G$1" pin="C"/>
 <wire x1="139.7" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="R39" gate="G$1" pin="2"/>
 </segment>
