@@ -123,17 +123,17 @@ width:
     - 0.15
 ---
 Ref,Manuf,Part,DIGIKEY,MOUSER,適用
-CON 5-7,Wurth Electronics,614104150121,732-5962-1-ND,710-614104150121,`r0.5`
 CON 5-7,aitendo,UAF-99 ,NA,NA,`r0.4`
-X 4-7,秋月,[C-03136](http://akizukidenshi.com/catalog/g/gC-03136/)
-X 8-11,秋月,[C-08593](http://akizukidenshi.com/catalog/g/gC-08593/)
+CON 5-7,Wurth Electronics,614104150121,732-5962-1-ND,710-614104150121,`r0.5`
+X 4-7,秋月,[C-03136](http://akizukidenshi.com/catalog/g/gC-03136/),NA,NA,`r0.5`
+X 8-11,秋月,[C-08593](http://akizukidenshi.com/catalog/g/gC-08593/),NA,NA,`r0.5`
 "スペーサ\\
 両メス\\
 M3x10ミリ","\\
 秋月\\
-",[P-07313](http://akizukidenshi.com/catalog/g/gP-07313/)
+",[P-07313](http://akizukidenshi.com/catalog/g/gP-07313/),NA,NA,`r0.5`
 "ネジ\\
-M3x6ミリ",秋月,[P-10245](http://akizukidenshi.com/catalog/g/gP-10245/)
+M3x6ミリ",秋月,[P-10245](http://akizukidenshi.com/catalog/g/gP-10245/),NA,NA,`r0.5`
 ```
 
 # 組み立てる
@@ -228,7 +228,7 @@ width:
 ---
 caption: 部品表
 markdown: True
-alignment: DDCCCC
+alignment: DDCCC
 width:
     - 0.3
     - 0.2
@@ -281,6 +281,18 @@ attr:
 ---
 ```
 <!-- ![基板外観図](images/USB4x3HUB-r0.5-edbc0afpng){} -->
+\\newpage
+## BOMリスト
+DCジャック以外は全部Digikeyで購入できます。Digikey品番をMouserで検索すると
+Mouserの商品ページに飛べるらしいです。
+
+```table
+---
+caption: BOMリスト(r0.5)
+include: USB4x3HUB.csv
+markdown: True
+---
+```
 
 \\newpage
 ## 基板寸法とパネル寸法の例
