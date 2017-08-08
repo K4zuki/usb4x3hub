@@ -67,7 +67,7 @@ header: False
 
 # USB4x3HUBの概要
 
-_**USB4x3HUB**_ の初期のプロトタイプ -- といっても最近まで稼働していた --
+_**USB4x3HUB**_ の初期のプロトタイプ
 はArduino形状の**mbed LPC1768**拡張基板にArduino用タッチシールド[^001]と
 USBバススイッチIC[^002]をつなげ、市販のUSBハブを分解したものと秋月電子の
 USBミニBコネクタDIP化キット[^004]を接続しただけの、簡素で手抜き感があるもの
@@ -178,8 +178,7 @@ LPC812マイクロコントローラの16ピンタイプを
 ターゲットにします。外形は異なりますがバイナリに互換性があるので20ピン用に
 コンパイルされたものでも16ピン版で実行できます。
 
-書込みはFTDIケーブルなどのUSB−UART変換ケーブルとLPC21ISP、あるいはmbed LPC1768と
-**_イカ醤油ポッポ焼き_** (TM~(誰の？)~)で行います。
+<https://developer.mbed.org/users/k4zuki/code/usb4x3hub/> が実際のリポジトリです。
 
 ![回路図(マイコン部分を拡大)](images/USB4x3HUB-r05-ISP.png)
 
@@ -189,6 +188,28 @@ source: ../mbed/main.cpp
 class: cpp
 tex: True
 ---
+```
+
+## ファームウェアを書き込む
+書込みはFTDIケーブルなどのUSB−UART変換ケーブルとLPC21ISP、あるいはmbed LPC1768と
+**_イカ醤油ポッポ焼き_**^[https://developer.mbed.org/users/okano/code/ika_shouyu_poppoyaki/] で行います。
+イカ醤油ポッポ焼きを行うときの接続表は以下のようになります。USB4x3HUBは予め電源を入れておきます。
+
+ソースをオンラインコンパイラ上でLPC800-MAX向けにコンパイルし、ダウンロードした _usb4x3hub.bin_
+を _bin_ にリネームしてLPC1768にコピーします。
+
+```table
+---
+caption: イカ醤油ポッポ焼き接続表
+markdown: True
+---
+mbed LPC1768,Function,USB4x3HUB
+VOUT,3.3V supply,
+GND,GND,X1-1
+p25,ISP enable,X3-1
+p26,UART (RX)<-(TX),X1-5
+p27,UART (TX)->(RX),X1-4
+p28,RESET,X2-1
 ```
 
 \\newpage
