@@ -289,7 +289,7 @@ Mouserの商品ページに飛べるらしいです。
 ```table
 ---
 caption: BOMリスト(r0.5)
-include: USB4x3HUB.csv
+include: data/BOM-r0.5.csv
 markdown: True
 ---
 ```
