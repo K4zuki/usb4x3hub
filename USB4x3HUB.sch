@@ -12856,8 +12856,8 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY43" library="mylib" deviceset="GND" device=""/>
 <part name="SUPPLY44" library="mylib" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="P5" library="mylib" deviceset="PCB_CORNER" device="_NH"/>
-<part name="P6" library="mylib" deviceset="PCB_CORNER" device="_NH"/>
+<part name="P5" library="mylib" deviceset="PCB_CORNER" device=""/>
+<part name="P6" library="mylib" deviceset="PCB_CORNER" device=""/>
 <part name="P7" library="mylib" deviceset="PCB_CORNER" device="_NH"/>
 <part name="P8" library="mylib" deviceset="PCB_CORNER" device="_NH"/>
 <part name="X8" library="con-samtec.local" deviceset="TSW-102-02-S-S" device="" value="TSW-102-02-S-S">
@@ -13994,28 +13994,30 @@ on-board clock source can be used.</text>
 <pinref part="CON3" gate="G$1" pin="VCC"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="SHIELD" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="SHLD"/>
 <junction x="38.1" y="182.88"/>
+<wire x1="38.1" y1="182.88" x2="45.72" y2="182.88" width="0.1524" layer="91"/>
+<label x="45.72" y="182.88" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$32" class="0">
 <segment>
 <pinref part="CON2" gate="G$1" pin="SHLD"/>
 <junction x="38.1" y="160.02"/>
+<wire x1="38.1" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
+<label x="45.72" y="160.02" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$33" class="0">
 <segment>
 <pinref part="CON3" gate="G$1" pin="SHLD"/>
 <junction x="38.1" y="137.16"/>
+<wire x1="38.1" y1="137.16" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+<label x="45.72" y="137.16" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$34" class="0">
 <segment>
 <pinref part="CON4" gate="G$1" pin="SHLD"/>
 <junction x="38.1" y="111.76"/>
+<wire x1="38.1" y1="111.76" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
+<label x="45.72" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEL0" class="0">
@@ -14581,10 +14583,10 @@ on-board clock source can be used.</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="P5" gate="G$1" x="281.94" y="17.78" rot="R90"/>
-<instance part="P6" gate="G$1" x="276.86" y="17.78" rot="R180"/>
-<instance part="P7" gate="G$1" x="276.86" y="10.16" rot="R270"/>
-<instance part="P8" gate="G$1" x="281.94" y="10.16"/>
+<instance part="P5" gate="G$1" x="276.86" y="17.78" rot="R180"/>
+<instance part="P6" gate="G$1" x="276.86" y="10.16" rot="R270"/>
+<instance part="P7" gate="G$1" x="281.94" y="10.16"/>
+<instance part="P8" gate="G$1" x="281.94" y="17.78" rot="R90"/>
 <instance part="X8" gate="-1" x="109.22" y="144.78" rot="MR0">
 <attribute name="DIGIKEY" x="99.06" y="149.86" size="1.6764" layer="96" rot="MR180" align="bottom-center" display="both"/>
 </instance>
