@@ -179,7 +179,7 @@ LPC812マイクロコントローラの16ピンタイプを
 書込みはFTDIケーブルなどのUSB−UART変換ケーブルとLPC21ISP、あるいはmbed LPC1768と
 **_イカ醤油ポッポ焼き_** (TM~(誰の？)~)で行います。
 
-![回路図(マイコン部分を拡大)](images/USB4x3HUB_r04_LPC812.png)
+![回路図(マイコン部分を拡大)](images/USB4x3HUB-r05-ISP.png)
 
 \\newpage
 ```listingtable
