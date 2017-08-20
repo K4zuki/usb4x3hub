@@ -4,8 +4,7 @@ endif
 PANSTYLES= $(HOME)/.pandoc
 MISC= $(PANSTYLES)/pandoc_misc
 include $(MISC)/Makefile.in
-include $(MISC)/Makefile
-
+PROJECT= `pwd`
 ## userland: uncomment and replace
 # MDDIR:= markdown
 # DATADIR:= data
@@ -19,3 +18,4 @@ include $(MISC)/Makefile
 # INPUT:= TITLE.md
 TARGET:= USB4x3HUB
 ##
+include $(MISC)/Makefile
