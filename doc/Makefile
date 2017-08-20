@@ -4,18 +4,18 @@ endif
 PANSTYLES= $(HOME)/.pandoc
 MISC= $(PANSTYLES)/pandoc_misc
 include $(MISC)/Makefile.in
+include $(MISC)/Makefile
 
-MDDIR=.
+## userland: uncomment and replace
+# MDDIR:= markdown
 # DATADIR:= data
 # TARGETDIR:= Out
 # IMAGEDIR:= images
 # WAVEDIR:= waves
 # BITDIR:= bitfields
 # BIT16DIR:= bitfield16
-# MFILTDIR:= mermaid-filter
-# IMAGINEDIR:= pd-images
 
+# CONFIG:= config.yaml
 # INPUT:= TITLE.md
 TARGET:= USB4x3HUB
-
-include $(MISC)/Makefile
+##
