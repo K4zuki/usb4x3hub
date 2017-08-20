@@ -1,6 +1,6 @@
 # C92で購入いただいた方へ
 - この本のPDFファイルは
-  [こちら](https://github.com/K4zuki/usb4x3hub/releases/tag/C92publish)
+  [こちら](https://github.com/K4zuki/usb4x3hub/releases/tag/c92-print-out)
 - この本に登場する基板のデータは
   [こちら](https://github.com/K4zuki/usb4x3hub/releases/tag/r0.5-gerber-out)
 - 秋月メモリ液晶基板の本は[こちら](https://github.com/K4zuki/AkiSpiLcd)です
