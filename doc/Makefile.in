@@ -1,5 +1,5 @@
-ifeq ($(OS),Windows_NT)
-HOME = C:/Users/$(USERNAME)
-endif
-PANSTYLES= $(HOME)/.pandoc
-MISC= $(PANSTYLES)/pandoc_misc
+# ifeq ($(OS),Windows_NT)
+# HOME = C:/Users/$(USERNAME)
+# endif
+# PANSTYLES= $(HOME)/.pandoc
+# MISC= $(PANSTYLES)/pandoc_misc
