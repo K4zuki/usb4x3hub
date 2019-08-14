@@ -84,6 +84,6 @@ references/
 pcb/tinyI2C_P.top.png
 .~*#
 *.lck
-/doc/Out
+/doc/Out/
 eagle.epf
 *.log
